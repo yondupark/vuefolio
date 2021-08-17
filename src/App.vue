@@ -1,52 +1,31 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-        ㄸㅓㄹ ㅎ ㅏ
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <Menubar/>
+    <Guide/>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import Menubar from './views/Menubar';
+import Guide from './views/Guide';
 
 export default {
-  name: 'App',
+  name: 'VufolioApp',
 
   components: {
-    HelloWorld,
-  },
-
-  data: () => ({
-    //
-  }),
+    Menubar,
+    Guide,
+  }
 };
 </script>
+
+
+<style lang="scss">
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+</style>

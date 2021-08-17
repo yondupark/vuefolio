@@ -1,7 +1,7 @@
 <template>
-  <v-app>
-  </v-app>
+  <h1>This is Home page</h1>
 </template>
 
 <script>
+
 </script>
