@@ -17,23 +17,19 @@ export default {
   data: () => ({
     menus: [
       {
-        text: 'Home',
+        text: 'H1',
         colors: '#',
       },
       {
-        text: 'Portfolios',
+        text: 'H2',
         colors: '#',
       },
       {
-        text: 'Lists Up',
+        text: 'H3',
         colors: '#',
       },
       {
-        text: 'I am',
-        colors: '#',
-      },
-      {
-        text: 'Reviews',
+        text: 'Paragraph',
         colors: '#',
       },
     ],

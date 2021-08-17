@@ -1,18 +1,18 @@
 <template>
   <div>
-    <Menubar/>
+    <vueRouter/>
     <Guide/>
   </div>
 </template>
 
 <script>
-import Menubar from './views/Menubar';
+import vueRouter from './views/vueRouter';
 import Guide from './views/Guide';
 
 export default {
   name: 'VufolioApp',
   components: {
-    Menubar,
+    vueRouter,
     Guide,
   }
 };
