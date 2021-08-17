@@ -13,6 +13,7 @@
  - [Vue Router](https://router.vuejs.org/)
  - [Vuetify](https://vuetifyjs.com/en/)
  - [Sass](https://sass-lang.com/)
+ - [Logomaster.ai](https://logomaster.ai/ko/)
   
 ## 빌드된 사이트 보기
 
