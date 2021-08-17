@@ -2,7 +2,7 @@
   <div class="vue-container">
     <nav id="nav" class="flexbox">
       <div class="logo">
-        <router-link to="/">Logo Place</router-link>
+        <router-link to="/" class="logoico">S.W__Portfolio</router-link>
       </div>
       <div class="flexbox">
         <router-link to="/">Home</router-link>
@@ -12,7 +12,7 @@
         <router-link to="/Guide">Guide</router-link>
         <div>
           <label class="darkmode-toggle" for="toggle-checkbox">
-              <span class="visually-hidden">Enable dark mode</span>
+              <span class="__hidden">Enable dark mode</span>
               <input type="checkbox" id="toggle-checkbox" />
               <span class="toggle-slider" aria-hidden="true"></span>
           </label>
