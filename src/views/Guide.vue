@@ -1,17 +1,14 @@
 <template>
-    <!-- <v-row justify="center">
-        <a
-            v-for="(link, i) in menus"
+    <div class="guidewrap">
+        <div
+            v-for="(guidetypes, i) in menus"
             :key="i"
-            :href="link.href"
-            class="subheading mx-3"
-            target="_blank"
+            class="guide boxs"            
         >
-        {{ link.text }}
-        </a>
-    </v-row> -->
-
-  <h1>This is Guide page</h1>
+          <p class="desc">{{ guidetypes.text }}</p>
+          <p class="colorDesc">{{ guidetypes.colors }}</p>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -21,23 +18,23 @@ export default {
     menus: [
       {
         text: 'Home',
-        href: '#',
+        colors: '#',
       },
       {
         text: 'Portfolios',
-        href: '#',
+        colors: '#',
       },
       {
         text: 'Lists Up',
-        href: '#',
+        colors: '#',
       },
       {
         text: 'I am',
-        href: '#',
+        colors: '#',
       },
       {
         text: 'Reviews',
-        href: '#',
+        colors: '#',
       },
     ],
   }),

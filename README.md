@@ -11,9 +11,7 @@
 
  - [Vue 2.x](https://vuejs.org/)
  - [Vue Router](https://router.vuejs.org/)
- - [Vuetify](https://vuetifyjs.com/en/)
  - [Sass](https://sass-lang.com/)
- - [Logomaster.ai](https://logomaster.ai/ko/)
   
 ## 빌드된 사이트 보기
 
@@ -28,6 +26,7 @@ https://swvuefolio.web.app/
 ## 문의사항
 
 For support, email sawa35@naver.com or apply form in this website.
+
 ## 라이센스
 
 Add badges from somewhere like: [shields.io](https://shields.io/)
