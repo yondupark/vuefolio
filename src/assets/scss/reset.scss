@@ -2,7 +2,9 @@ $bgColor : white;
 $textColor : #273849;
 $pointColor: #41b883;
 $secondaryColor: #36495e;
-$error: '#b71c1c';
+$error: #b71c1c;
+$white: #fff;
+
 :root {
     font-size: 62.5%;
 }
@@ -21,6 +23,19 @@ $error: '#b71c1c';
     max-width: 100%;
     margin: 0 auto;
 }
+@mixin texttype1 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+}
+@mixin texttype2 {
+    font-size: 2.4rem;
+    line-height: 3rem;
+}
+@mixin texttype3 {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -42,14 +57,16 @@ body {
     width: 100%;
 }
 body {
+    
     overflow-y: scroll;
-    background: $bgColor;
-    color: $textColor;
+    background: $textColor;
+    color: $white;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
 }
+
 .grid {
     @include flexbox;
     align-items: center;

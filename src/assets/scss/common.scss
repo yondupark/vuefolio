@@ -18,13 +18,13 @@ $error: '#b71c1c';
     display: flex;
     padding: 2rem;
     font-size: 1.6rem;
-    background: $bgColor;
+    background: $primarayColor;
     box-shadow: 6px 5px 10px rgb(0 0 0 / 30%);
     @include flexbox;
     a {
         display: block;
         font-weight: 500;
-        color: $primarayColor;
+        color: $white;
         text-decoration: none;
         padding: 1rem;
         margin: 0 1rem;
@@ -145,15 +145,15 @@ $error: '#b71c1c';
 .vueHome {
   @include contentsWrap;
   @include flexbox;
+  min-height: calc(100vh - 8.3rem);
   > div {
     padding: 2rem 5rem;
     h1 {
-      font-size: 3.4rem;
+      @include texttype1;
       margin-bottom: 1.6rem;
     }
     p {
-      font-size: 1.8rem;
-      line-height: 2.4rem;
+      @include texttype2;
     }
   }
 }
@@ -172,6 +172,12 @@ $error: '#b71c1c';
       height: 30rem;
       background: $pointColor;
       margin: 1%;
+      h2 {
+        @include texttype2;
+      }
+      p {
+        @include texttype3;
+      }
     }
   }
 }
@@ -194,7 +200,7 @@ $error: '#b71c1c';
       border: 0;
     }
     thead th {
-      font-size: 1.8rem;
+      @include texttype2;
       padding: 1.4rem 0;
       color: #fff;
       background: $pointColor;
@@ -206,13 +212,24 @@ $error: '#b71c1c';
       border:1px solid $primarayColor;
       border-left: none;
       font-weight: 400;
+      border-bottom: 1px solid $pointColor;
     }
     tbody td {
       border:1px solid $primarayColor;
+      @include texttype3;
       font-weight: 400;
+      border-bottom: 1px solid $pointColor;
       &:last-child {
         border-right: none;
       }
     }
   }
+}
+
+.guidewrap {
+  @include contentsWrap;
+  ul {
+    list-style: none;
+  }
+
 }

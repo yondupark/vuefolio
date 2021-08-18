@@ -1,14 +1,12 @@
 <template>
-  <div>
     <vueRouter/>
-  </div>
 </template>
 
 <script>
 import vueRouter from './views/vueRouter';
 
 export default {
-  name: 'VufolioApp',
+  name: 'S.W.Vuefolio',
   components: {
     vueRouter,
   }
