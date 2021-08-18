@@ -1,8 +1,8 @@
 <template>
-  <div class="vueHome flexbox grid -col2">
+  <div class="vueHome grid -col2">
     <div>
       <div class="tools">
-        <ul class="flexbox">
+        <ul>
           <li>
             <img src="@/assets/images/logo.png" alt="">
             Vue

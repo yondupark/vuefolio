@@ -6,11 +6,6 @@ $primarayColor : #273849;
 $secondaryColor: #36495e;
 $error: '#b71c1c';
 
-.flexbox {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .logoico {
   display: block;
   padding-left: 2rem;
@@ -25,6 +20,7 @@ $error: '#b71c1c';
     font-size: 1.6rem;
     background: $bgColor;
     box-shadow: 6px 5px 10px rgb(0 0 0 / 30%);
+    @include flexbox;
     a {
         display: block;
         font-weight: 500;
@@ -43,7 +39,12 @@ $error: '#b71c1c';
       font-weight: 700;
     }
 }
+.menus {
+  @include flexbox;
+}
+
 .pageContens {
+  font-size: 1.8rem;
     padding: 2rem 3rem;
     min-height: 50rem;
 }
@@ -111,26 +112,41 @@ $error: '#b71c1c';
 .tools {
   margin-bottom: 3.5rem;
   ul {
+    @include flexbox;
     justify-content: space-between;
     list-style: none;
     text-align: center;
     li {
+      position: relative;
       width: 33.333%;
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-weight: bold;
+      color: $primarayColor;
+    }
+    li + li:before {
+      content: '+';
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: -1rem;
+      transform: translateY(-50%);
       color: $primarayColor;
     }
   }
   img {
     display: block;
-    height: 12rem;
-    margin: 0 auto 2rem;
+    height: 14rem;
+    margin: 0 auto 2.5rem;
   }
 }
 
-
 .vueHome {
+  width: 160rem;
+  min-height: calc(100vh - 8.3rem);
+  margin: 0 auto;
+  @include flexbox;
   > div {
+    padding: 2rem 5rem;
     h1 {
       font-size: 3.4rem;
       margin-bottom: 1.6rem;

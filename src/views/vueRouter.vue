@@ -4,7 +4,7 @@
       <div class="logo">
         <router-link to="/" class="logoico">S.W__Portfolio</router-link>
       </div>
-      <div class="flexbox">
+      <div class="menus">
         <router-link to="/">Home</router-link>
         <router-link to="/Portfolios">Portfolios</router-link>
         <router-link to="/Listsup">Lists Up</router-link>
@@ -35,7 +35,7 @@
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .fade-leave-to {
