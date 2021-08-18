@@ -1,10 +1,64 @@
 <template>
-  <div class="about">
-    <h1>This is an Ptf page</h1>
-    <ul>
-      <li>리스트 형태로 보여주고</li>
-      <li>클릭 시 상세 페이지</li>
-      <li>상세페이지에서는 프로젝트명 / 프로젝트 설명 / 작업시 장단점 표출</li>
-    </ul>
-  </div>
+    <div class="portfolios">
+        <ul>
+          <li
+              v-for="(portfolios, i) in listedptf"
+              :key="i"
+              class="portfolios boxs"            
+          >
+            <h2 class="desc">{{ portfolios.title }}</h2>
+            <p class="colorDesc">{{ portfolios.subtitle }}</p>
+          </li>
+        </ul>
+    </div>
 </template>
+
+<script>
+export default {
+  name: 'portfolios',
+  data: () => ({
+    listedptf: [
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+      {
+        title: 'title',
+        subtitle: 'Paragraph',
+      },
+    ],
+  }),
+};
+</script>

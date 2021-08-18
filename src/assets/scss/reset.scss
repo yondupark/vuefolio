@@ -4,6 +4,10 @@ $pointColor: #41b883;
 $secondaryColor: #36495e;
 $error: '#b71c1c';
 
+:root {
+    font-size: 62.5%;
+}
+
 @mixin baseColors {
     display: flex;
     justify-content: space-between;
@@ -14,9 +18,10 @@ $error: '#b71c1c';
     justify-content: space-between;
     align-items: center;
 }
-
-:root {
-    font-size: 62.5%;
+@mixin contentsWrap {
+    width: 160rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 * {
     margin: 0;
