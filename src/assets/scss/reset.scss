@@ -3,11 +3,9 @@ $textColor : #273849;
 $pointColor: #41b883;
 $secondaryColor: #36495e;
 $error: '#b71c1c';
-
 :root {
     font-size: 62.5%;
 }
-
 @mixin baseColors {
     display: flex;
     justify-content: space-between;
@@ -52,8 +50,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
 }
-
-
 .grid {
     @include flexbox;
     align-items: center;
@@ -68,7 +64,7 @@ body {
             font-size: 1.8rem;
         }
     }
-  }
+}
 .grid.-col2 {
     @include flexbox;
     > div {
