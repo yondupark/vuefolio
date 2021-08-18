@@ -28,6 +28,7 @@
 </template>
 
 <style lang="scss">
+/* Router page Transition */
 .fade-enter {
   opacity: 0;
 }
