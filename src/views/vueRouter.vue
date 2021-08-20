@@ -6,17 +6,10 @@
       </div>
       <div class="menus">
         <router-link to="/">Home</router-link>
-        <router-link to="/Portfolios">Portfolios</router-link>
+        <router-link to="/Portfolio">Portfolio</router-link>
         <router-link to="/Listsup">Lists Up</router-link>
         <router-link to="/WhoamI">Whoami</router-link>
         <router-link to="/Guide">Guide</router-link>
-        <div>
-          <label class="darkmode-toggle" for="toggle-checkbox">
-              <span class="__hidden">Enable dark mode</span>
-              <input type="checkbox" id="toggle-checkbox" checked="checked" />
-              <span class="toggle-slider" aria-hidden="true"></span>
-          </label>
-        </div>
       </div>
     </nav>
     <section class="pageContens">

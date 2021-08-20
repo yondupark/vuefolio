@@ -20,6 +20,7 @@ $error: '#b71c1c';
     font-size: 1.6rem;
     background: $primarayColor;
     box-shadow: 6px 5px 10px rgb(0 0 0 / 30%);
+    z-index: 999;
     @include flexbox;
     a {
         display: block;
@@ -38,15 +39,17 @@ $error: '#b71c1c';
       padding-left: 4.8rem;
       font-weight: 700;
     }
+    .menus {
+      @include flexbox;
+    }
 }
-.menus {
-  @include flexbox;
-}
-
 .pageContens {
   font-size: 1.8rem;
   padding: 2rem 3rem;
-  min-height: 50rem;
+  min-height: 80rem;
+}
+.title_desc {
+  margin-bottom: 3rem;
 }
 .vue-container + .guidewrap {
     position: fixed;
@@ -63,120 +66,124 @@ $error: '#b71c1c';
         font-size: 1.8rem;
     }
 }
-
-.darkmode-toggle {
-  transition: .3s ease all;
-  input {
-    opacity: 0;
-    position: absolute;
-    &:checked + .toggle-slider {
-      background: #fff;
-      &:after {
-          left: 3.4rem;
-          background-image: url("../assets/images/moon.svg");
-      }
-    }
-  }
-
-  .toggle-slider {
-    cursor: pointer;
-    display: flex;
-    width: 6.7rem;
-    position: relative;
-    border-radius: 25px;
-    height: 3.2rem;
-    border: 2px solid $pointColor;
-    background: $primarayColor;
-    @media (prefers-reduced-motion: no-preference) {
-      transition: all 300ms ease-in;
-    }
-    &:after {
-      content: '';
-      display: inline-block;
-      width: 3rem;
-      height: 3rem;
-      position: absolute;
-      top: calc(50% - 1.45rem);
-      left: .3rem;
-      border-radius: 50%;
-      background-image: url("../assets/images/sun.svg");
-      background-size: 2.4rem;
-      background-repeat: no-repeat;
-      background-position: center center;
-      @media (prefers-reduced-motion: no-preference) {
-        transition: all 300ms ease-in;
-      }
-    }
-  }
-}
-
-.tools {
-  margin-bottom: 3.5rem;
-  ul {
-    @include flexbox;
-    justify-content: space-between;
-    list-style: none;
-    text-align: center;
-    li {
-      position: relative;
-      width: 33.333%;
-      font-size: 2.8rem;
-      font-weight: bold;
-      color: $primarayColor;
-    }
-    li + li:before {
-      content: '+';
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: -1rem;
-      transform: translateY(-50%);
-      color: $primarayColor;
-    }
-  }
-  img {
-    display: block;
-    height: 14rem;
-    margin: 0 auto 2.5rem;
-  }
-}
-
-
 .vueHome {
   @include contentsWrap;
   @include flexbox;
-  min-height: calc(100vh - 8.3rem);
   > div {
-    padding: 2rem 5rem;
     h1 {
       @include texttype1;
       margin-bottom: 1.6rem;
     }
     p {
-      @include texttype2;
+      @include texttype3;
+    }
+  }
+  .tools {
+    margin-bottom: 3.5rem;
+    ul {
+      @include flexbox;
+      justify-content: space-between;
+      list-style: none;
+      text-align: center;
+      li {
+        position: relative;
+        width: 33.333%;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: $primarayColor;
+      }
+      li + li:before {
+        content: '+';
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: -1rem;
+        transform: translateY(-50%);
+        color: $primarayColor;
+      }
+    }
+    img {
+      display: block;
+      height: 14rem;
+      margin: 0 auto 2.5rem;
     }
   }
 }
-
 .portfolios {
   @include contentsWrap;
+  h2 {
+    @include texttype1;
+    margin-bottom: 2rem
+  }
   > ul {
     @include flexbox;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: baseline;
-    padding: 2rem 5rem;
     list-style: none;
     li {
-      width: 18%;
-      height: 30rem;
-      background: $pointColor;
-      margin: 1%;
+      position: relative;
+      width: 19%;
+      height: 38rem;
+      background: rgba(0,0,0,0.3);
+      margin: .5%;
+      color: $primarayColor;
+      transition: 0.4s ease all;
+      overflow:hidden;
+      border-radius: .6rem;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 7px 7px #41b883;
+        background: #fff;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
       h2 {
         @include texttype2;
+        transform: translateY(2rem);
+        opacity: 0;
+        transition: 0.4s ease all;
+      }
+      &:hover h2{
+        transform: translateY(0);
+        opacity: 1;
       }
       p {
         @include texttype3;
+        transform: translateY(2rem);
+        opacity: 0;
+        transition: 0.6s ease all;
+      }
+      &:hover p{
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .hashtags {
+        @include flexbox;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: .6rem .5rem;
+        text-align: left;
+        justify-content: left;
+        font-size: 1.4rem;
+        opacity: 0;
+        transition: .3s ease all;
+        span {
+          display: block;
+          margin-right: 1rem;
+          padding: .4rem;
+          background: $pointColor;
+          color: $bgColor;
+          border-radius: .6rem;
+        }
+      }
+      &:hover .hashtags{
+        opacity: 1;
       }
     }
   }

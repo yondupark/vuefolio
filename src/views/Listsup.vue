@@ -1,6 +1,7 @@
 <template>
   <div class="listsup">
     <h1>This is an listed my works page</h1>
+    <p>pdf저장 기능 넣기 / 워드 다운로드 기능 넣기</p>
     <table>
       <caption>table</caption>
       <colgroup>

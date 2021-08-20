@@ -1,37 +1,7 @@
 <template>
   <div>
-    <div class="vueHome grid -col2">
-      <div>
-        <div class="tools">
-          <ul>
-            <li>
-              <img src="@/assets/images/logo.png" alt="">
-              Vue
-            </li>
-            <li>
-              <img src="@/assets/images/firebaselogo.svg" alt="">
-              Sass
-            </li>
-            <li>
-              <img src="@/assets/images/sasslogo.svg" alt="">
-              Firebase
-            </li>
-          </ul>
-        </div>
-        <h1>How Wonderful World!</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur quos laudantium dignissimos voluptatem
-          beatae illum, voluptatibus eos earum praesentium odit eligendi fuga omnis. Cumque, quia eligendi asperiores at
-          aliquam in.</p>
-      </div>
-      <div>
-        
-      </div>
-    </div>
     <div class="portfolios">
-      <div class="title_desc">
-        <h2>Holly Molly</h2>
-        <p>holly molly holly molly holly molly holly molly holly molly holly molly holly molly holly molly holly molly </p>
-      </div>
+      <h2>Portfolio</h2>
       <ul>
         <li v-for="(portfolios, i) in listedptf" :key="i" class="portfolios boxs">
           <a :href="portfolios.link">
@@ -45,9 +15,6 @@
           </a>
         </li>
       </ul>
-      <div>
-        <button class="viewmore">더 알아보기</button>
-      </div>
     </div>
   </div>
 </template>
@@ -90,6 +57,55 @@ export default {
         title: 'A',
         subtitle: 'Paragraph',
         hashtags: ['React', 'Javascript', 'Sass'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'B',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'C',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'D',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'A',
+        subtitle: 'Paragraph',
+        hashtags: ['React', 'Javascript', 'Sass'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'B',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'C',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
+        status: '비공개',
+        link: '#'
+      },
+      {
+        title: 'D',
+        subtitle: 'Paragraph',
+        hashtags: ['HTML5', 'CSS3', 'JQUERY'],
         status: '비공개',
         link: '#'
       },

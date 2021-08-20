@@ -8,6 +8,7 @@ $white: #fff;
 :root {
     font-size: 62.5%;
 }
+
 @mixin baseColors {
     display: flex;
     justify-content: space-between;
@@ -19,9 +20,10 @@ $white: #fff;
     align-items: center;
 }
 @mixin contentsWrap {
-    width: 160rem;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
+    padding: 2rem 5rem;
 }
 @mixin texttype1 {
     font-size: 3.4rem;
@@ -41,6 +43,7 @@ $white: #fff;
     padding: 0;
     box-sizing: border-box;
 }
+
 *[class].__hidden {
     display: block;
     height: 1px;
@@ -51,17 +54,16 @@ $white: #fff;
     clip-path: inset(1px);
     white-space: nowrap;
     position: absolute;
-  }
+}
 html,
 body {
     width: 100%;
 }
 body {
-    
     overflow-y: scroll;
     background: $textColor;
     color: $white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -72,7 +74,7 @@ body {
     align-items: center;
     > div {
         font-size: 1.8rem;
-        padding: 4rem 2rem;
+        padding: 4rem 0;
         text-align: left;
         h1 {
             font-size: 2.4rem;
@@ -86,5 +88,25 @@ body {
     @include flexbox;
     > div {
         width: 50%;
+    }
+}
+
+button.viewmore {
+    margin-top: 2rem;
+    display: inline-block;
+    width: 35rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    color: $white;
+    background: transparent;
+    color: $pointColor;
+    border: 2px solid $pointColor;
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: .4s ease all;
+    &:hover {
+        border: 2px solid $white;
+        box-shadow: 6px 6px $pointColor;
+        background: $white;
     }
 }

@@ -11,9 +11,9 @@ const routes = [
     component: Home
   },
   {
-    path: '/portfolios',
-    name: 'Portfolios',
-    component: () => import('../views/Portfolios.vue')
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: () => import('../views/Portfolio.vue')
   },
   {
     path: '/Listsup',
