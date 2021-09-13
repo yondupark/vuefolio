@@ -1,9 +1,9 @@
-$bgColor : white;
-$textColor : #273849;
-$pointColor: #41b883;
-$secondaryColor: #36495e;
+$bgColor : #fff;
+$pointColor: #000;
+$primarayColor : #333;
+$secondaryColor: #fff;
 $error: #b71c1c;
-$white: #fff;
+
 
 :root {
     font-size: 62.5%;
@@ -61,8 +61,8 @@ body {
 }
 body {
     overflow-y: scroll;
-    background: $textColor;
-    color: $white;
+    background: $bgColor;
+    color: $pointColor;
     font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -97,7 +97,7 @@ button.viewmore {
     width: 35rem;
     height: 5rem;
     font-size: 1.8rem;
-    color: $white;
+    color: $pointColor;
     background: transparent;
     color: $pointColor;
     border: 2px solid $pointColor;
@@ -105,8 +105,8 @@ button.viewmore {
     cursor: pointer;
     transition: .4s ease all;
     &:hover {
-        border: 2px solid $white;
+        border: 2px solid $pointColor;
         box-shadow: 6px 6px $pointColor;
-        background: $white;
+        background: $pointColor;
     }
 }
