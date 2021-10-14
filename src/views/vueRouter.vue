@@ -25,7 +25,7 @@
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity .75s ease-in-out;
 }
 
 .fade-leave-to {
@@ -40,7 +40,7 @@
 
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.2s ease;
+  transition: all .75s ease;
 }
 
 .slide-fade-leave-to {
