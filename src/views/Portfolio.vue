@@ -5,7 +5,7 @@
       <ul>
         <li v-for="(portfolios, i) in listedptf" :key="i" class="portfolios boxs">
           <a :href="portfolios.link">
-            <h2 class="desc">{{ portfolios.title }}</h2>
+            <p class="desc">{{ portfolios.title }}</p>
             <p class="colorDesc">{{ portfolios.subtitle }}</p>
             <div class="hashtags">
               <span>#{{ portfolios.hashtags[0] }}</span>

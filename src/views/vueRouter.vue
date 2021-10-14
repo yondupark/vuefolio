@@ -7,9 +7,6 @@
       <div class="menus">
         <router-link to="/">Home</router-link>
         <router-link to="/Portfolio">Portfolio</router-link>
-        <router-link to="/Listsup">Lists Up</router-link>
-        <router-link to="/WhoamI">Whoami</router-link>
-        <router-link to="/Guide">Guide</router-link>
       </div>
     </nav>
     <section class="pageContens">

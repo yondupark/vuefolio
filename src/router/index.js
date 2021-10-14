@@ -11,8 +11,11 @@ const routes = [
     component: Home
   },
   {
-    path: '/portfolio',
+    path: '/Portfolio',
     name: 'Portfolio',
+    meta: {
+      title: "Portfolio - S.W.Portfolio",
+    },
     component: () => import('../views/Portfolio.vue')
   },
   {
@@ -26,9 +29,9 @@ const routes = [
     component: () => import('../views/Guide.vue')
   },
   {
-    path: '/Whoami',
-    name: 'Whoami',
-    component: () => import('../views/Whoami.vue')
+    path: '/Review',
+    name: 'Review',
+    component: () => import('../views/Review.vue')
   },
 ]
 
