@@ -2,7 +2,7 @@
   <div class="vue-container">
     <nav id="nav" class="flexbox">
       <div class="logo">
-        <router-link to="/" class="logoico">PortFolio</router-link>
+        <router-link to="/" class="logoico">S.W__PortFolio</router-link>
       </div>
       <div class="menus">
         <router-link to="/">Home</router-link>
