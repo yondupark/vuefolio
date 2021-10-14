@@ -2,8 +2,6 @@
 # Portfolios by S.W Park
 
 
-
-
 ## 작성자
 
 - [@YonduPark](https://github.com/yondupark/vuefolio)
@@ -20,19 +18,15 @@
 https://swvuefolio.web.app/
 
   
-## 미리보기
+## 실행방법
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+(After clone) npm run serve
 
   
 ## 문의사항
 
-For support, email sawa35@naver.com or apply form in this website.
+For support, email parksw8218@google.com or apply form in this website.
 
 ## 라이센스
 
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
-[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
