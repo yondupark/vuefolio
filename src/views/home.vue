@@ -32,7 +32,7 @@
 
 <script>
 function calcdays() {
-  var dday = new Date("August 01, 2012").getTime();
+  var dday = new Date("08 01, 2013").getTime();
   var today = new Date().getTime();
   var gap = today - dday;
   var day = Math.ceil(gap / (1000 * 60 * 60 * 24));
