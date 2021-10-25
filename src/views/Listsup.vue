@@ -24,10 +24,8 @@
               :key="i"
               class="portfolios boxs"            
           >
-            <th>{{ tables.title }}</th>
-            <td>{{ tables.subtitle }}</td>
-            <td>{{ tables.subtitle }}</td>
-            <td>{{ tables.subtitle }}</td>
+            <th>{{ tdata.title }}</th>
+            <td>{{ tdata.subtitle }}</td>
           </tr>
       </tbody>
     </table>
@@ -40,7 +38,24 @@
 export default {
   name: 'tables',
   data: () => ({
-    tabledata: [
+    thead: [
+      {
+        title: 'title1',
+      },
+      {
+        title: 'title2',
+      },
+      {
+        title: 'title3',
+      },
+      {
+        title: 'title4',
+      },
+      {
+        title: 'title5',
+      },
+    ],
+    tdata: [
       {
         title: 'title',
         subtitle: 'Paragraph',

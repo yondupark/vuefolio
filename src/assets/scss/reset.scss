@@ -18,13 +18,13 @@ a {
 
 @mixin baseColors {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 @mixin flexbox {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 @mixin contentsWrap {
     width: 100%;
@@ -34,8 +34,8 @@ a {
 }
 @mixin texttype1 {
     font-size: 5.2rem;
-    line-height: 1.4;
     letter-spacing: .075rem;
+    line-height: 1.4;
 }
 @mixin texttype2 {
     font-size: 2.4rem;
@@ -47,21 +47,21 @@ a {
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 *[class].__hidden {
     display: block;
-    height: 1px;
-    width: 1px;
     overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(1px);
-    white-space: nowrap;
-    position: absolute;
 }
 html,
 body {
@@ -70,20 +70,20 @@ body {
 }
 body {
     overflow-y: scroll;
-    background: $bgColor;
     color: $pointColor;
-    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    text-align: center;
+    background: $bgColor;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
 }
 
 .grid {
     @include flexbox;
     align-items: center;
     > div {
-        font-size: 1.8rem;
         padding: 4rem 0;
+        font-size: 1.8rem;
         text-align: left;
         h1 {
             font-size: 2.4rem;
@@ -101,21 +101,21 @@ body {
 }
 
 button.viewmore {
-    margin-top: 2rem;
     display: inline-block;
     width: 35rem;
     height: 5rem;
-    font-size: 1.8rem;
-    color: $pointColor;
-    background: transparent;
-    color: $pointColor;
+    margin-top: 2rem;
     border: 2px solid $pointColor;
     border-radius: .6rem;
-    cursor: pointer;
+    color: $pointColor;
+    color: $pointColor;
+    font-size: 1.8rem;
+    background: transparent;
     transition: .4s ease all;
+    cursor: pointer;
     &:hover {
         border: 2px solid $pointColor;
-        box-shadow: 6px 6px $pointColor;
         background: $pointColor;
+        box-shadow: 6px 6px $pointColor;
     }
 }

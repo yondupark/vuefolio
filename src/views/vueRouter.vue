@@ -7,6 +7,7 @@
       <div class="menus">
         <router-link to="/">Home</router-link>
         <router-link to="/Portfolio">Portfolio</router-link>
+        <router-link to="/Listsup">Listsup</router-link>
       </div>
     </nav>
     <section class="pageContens">

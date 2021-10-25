@@ -9,7 +9,9 @@
     "build:delpoy": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "axios": "^0.23.0",
     "core-js": "^3.6.5",
+    "gsap": "^3.8.0",
     "smooth-scrollbar": "^8.6.3",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",

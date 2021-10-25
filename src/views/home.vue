@@ -14,9 +14,9 @@
       </div>
       <ul>
         <li v-for="(portfolios, i) in listptf" :key="i" class="boxs">
-          <a :href="portfolios.link">
+          <a :href="portfolios.link" :title="portfolios.title">
             <div class="image">
-                <img :src="portfolios.image" alt="">
+                <img :src="portfolios.image" :alt="portfolios.title">
             </div>
             <p class="desc">{{ portfolios.title }}</p>
             <p class="colorDesc">{{ portfolios.subtitle }}</p>
@@ -31,6 +31,7 @@
 </template>
 
 <script>
+
 function calcdays() {
   var dday = new Date("08 01, 2013").getTime();
   var today = new Date().getTime();
@@ -38,9 +39,6 @@ function calcdays() {
   var day = Math.ceil(gap / (1000 * 60 * 60 * 24));
   document.getElementById("count").innerHTML = "지난 " + "<span class='highlight'>" + day + "</span>" + "일" + "간";
 }
-setTimeout(function() {
-  calcdays();
-}, 500);
 
 export default {
   name: 'portfolios',
@@ -130,5 +128,11 @@ export default {
       },
     ],
   }),
+  beforeMount() {
+
+  },
+  mounted() {
+      calcdays();
+  },
 };
 </script>

@@ -12,30 +12,30 @@ $error: #b71c1c;
   background: url("../assets/images/logo.svg") no-repeat 0 0;
 }
 #nav {
+    display: flex;
     position: sticky;
     top: 0;
     left: 0;
-    display: flex;
+    z-index: 999;
     padding: 2rem;
     font-size: 1.6rem;
     background: $bgColor;
-    z-index: 999;
     @include flexbox;
     a {
         display: block;
-        font-weight: 500;
-        color: $pointColor;
-        text-decoration: none;
-        padding: 1rem;
         margin: 0 1rem;
+        padding: 1rem;
+        color: $pointColor;
+        font-weight: 500;
+        text-decoration: none;
         &.router-link-exact-active {
             color: $pointColor;
         }
     }
     a.logoico {
-      font-size: 2rem;
-      color: $pointColor;
       padding-left: 4.8rem;
+      color: $pointColor;
+      font-size: 2rem;
       font-weight: 700;
     }
     .menus {
@@ -43,9 +43,9 @@ $error: #b71c1c;
     }
 }
 .pageContens {
-  font-size: 1.8rem;
-  padding: 2rem 3rem;
   min-height: 80rem;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
 }
 .title_desc {
   margin-bottom: 3rem;
@@ -55,10 +55,10 @@ $error: #b71c1c;
     bottom: 0;
     left: 0;
     width: 10rem;
-    background: #fff;
-    box-shadow: 6px 5px 10px rgb(0 0 0 / 30%);
     padding: 1.5rem;
     border-radius: .8rem;
+    background: #fff;
+    box-shadow: 6px 5px 10px rgb(0 0 0 / 30%);
 }
 .guidewrap {
     .boxs {
@@ -70,25 +70,25 @@ $error: #b71c1c;
   margin-bottom: 14rem;
   > div {
     h2 {
-      font-size: 14rem;
-      line-height: 100%;
-      margin-bottom: 1.6rem;
-      text-align: center;
       margin: 14rem 0;
+      margin-bottom: 1.6rem;
+      font-size: 14rem;
+      text-align: center;
+      line-height: 100%;
     }
     p {
       font-size: 2.4rem;
-      line-height: 1.4;
       letter-spacing: .75px;
+      line-height: 1.4;
     }
     #count {
       margin: 2rem 0;
     }
     .highlight {
-      color: #4fc497;
-      font-weight: 700;
-      font-size: 4.5rem;
       margin: 0 1rem;
+      color: #4fc497;
+      font-size: 4.5rem;
+      font-weight: 700;
     }
   }
   .tools {
@@ -96,23 +96,23 @@ $error: #b71c1c;
     ul {
       @include flexbox;
       justify-content: space-between;
-      list-style: none;
       text-align: center;
+      list-style: none;
       li {
         position: relative;
         width: 33.333%;
+        color: $primarayColor;
         font-size: 2.8rem;
         font-weight: bold;
-        color: $primarayColor;
       }
       li + li:before {
         content: '+';
-        position: absolute;
         display: block;
+        position: absolute;
         top: 50%;
         left: -1rem;
-        transform: translateY(-50%);
         color: $primarayColor;
+        transform: translateY(-50%);
       }
     }
     img {
@@ -130,9 +130,9 @@ $error: #b71c1c;
   }
   > ul {
     @include flexbox;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     align-items: baseline;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     list-style: none;
     li {
       position: relative;
@@ -145,16 +145,16 @@ $error: #b71c1c;
         width: 100%;
         height: 100%;
         .image {
+          overflow:hidden;
           width: 100%;
           height: 350px;
           border-radius: .6rem;
-          overflow:hidden;
           transition: .2s ease all;
           img {
-            position: relative;
             display: block;
-            width: 100%;
+            position: relative;
             top: 50%;
+            width: 100%;
             transform: translateY(-50%)
           }
         }
@@ -174,27 +174,27 @@ $error: #b71c1c;
         position: absolute;
         bottom: 0;
         left: 0;
+        justify-content: left;
         width: 100%;
         padding: .6rem .5rem;
-        text-align: left;
-        justify-content: left;
         font-size: 1.4rem;
-        opacity: 0;
+        text-align: left;
         transition: .3s ease all;
+        opacity: 0;
         span {
           display: block;
           margin-right: 1rem;
           padding: .4rem;
-          background: $pointColor;
-          color: $bgColor;
           border-radius: .6rem;
+          color: $bgColor;
+          background: $pointColor;
         }
       }
       &:hover .image {
         position: relative;
+        z-index: 999;
         transform: scale(1.07);
         box-shadow: 0 0 0 3px #4fc497;
-        z-index: 999;
       }
     }
 
@@ -204,39 +204,39 @@ $error: #b71c1c;
   @include contentsWrap;
   table {
     width: 100%;
-    border-collapse: collapse;
     margin-top: 5rem;
+    border-collapse: collapse;
     caption {
       overflow: hidden;
-      white-space: nowrap;
-      clip: rect(1px,1px,1px,1px);
-      clip-path: inset(50%);
       width: 1px;
       height: 1px;
       margin: 0 0 -1px;
       padding: 0;
       border: 0;
+      white-space: nowrap;
+      clip: rect(1px,1px,1px,1px);
+      clip-path: inset(50%);
     }
     thead th {
       @include texttype2;
       padding: 1.4rem 0;
-      color: #fff;
-      background: $pointColor;
       border:1px solid $pointColor;
+      color: #fff;
       font-weight: 400;
+      background: $pointColor;
     }
     tbody th {
       padding: 1.4rem 0;
       border:1px solid $primarayColor;
+      border-bottom: 1px solid $pointColor;
       border-left: none;
       font-weight: 400;
-      border-bottom: 1px solid $pointColor;
     }
     tbody td {
       border:1px solid $primarayColor;
-      @include texttype3;
-      font-weight: 400;
       border-bottom: 1px solid $pointColor;
+      font-weight: 400;
+      @include texttype3;
       &:last-child {
         border-right: none;
       }
