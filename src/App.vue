@@ -9,6 +9,6 @@ export default {
   name: 'S.W.Vuefolio',
   components: {
     vueRouter,
-  }
+  },
 };
 </script>

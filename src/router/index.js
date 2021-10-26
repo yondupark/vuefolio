@@ -8,32 +8,35 @@ const routes = [
     path: '/',
     name: 'Home',
     component: () => import('../views/Home.vue'),
-    title: "HomeSweatHome - S.W.Portfolio",
+    title: "HomeSweatHome",
   },
   {
     path: '/ListUps',
     name: 'ListUps',
     meta: {
-      title: "ListUps - S.W.Portfolio",
+      title: "ListUps",
     },
     component: () => import('../views/ListUps.vue')
   },
   {
     path: '/Guide',
     name: 'Guide',
-    component: () => import('../views/Guide.vue')
+    component: () => import('../views/Guide.vue'),
+    title: "Guide",
   },
   {
     path: '/Review',
     name: 'Review',
-    component: () => import('../views/Review.vue')
+    component: () => import('../views/Review.vue'),
+    title: "Review",
   },
 ]
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  routes
+  routes,
+  
 })
 
 export default router

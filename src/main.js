@@ -11,3 +11,13 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+const makeTitle = (title) =>
+title ? `${title}  - S.W.Park Portfolios` : "Home Sweat Home - S.W.Park Portfolios";
+
+router.afterEach((to, from, next) => {
+  Vue.nextTick(() => {
+    document.title = makeTitle(to.meta.title);
+  });
+  next();
+});
