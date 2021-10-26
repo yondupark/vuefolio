@@ -6,8 +6,7 @@
       </div>
       <div class="menus">
         <router-link to="/">Home</router-link>
-        <router-link to="/Portfolio">Portfolio</router-link>
-        <router-link to="/Listsup">Listsup</router-link>
+        <router-link to="/ListUps">ListUps</router-link>
       </div>
     </nav>
     <section class="pageContens">
@@ -15,7 +14,7 @@
         <router-view />
       </transition>
     </section>
-</div>
+  </div>
 </template>
 
 <style lang="scss">
@@ -33,9 +32,8 @@
   opacity: 0;
 }
 
-
 .slide-fade-enter {
-  transform: translateX(10px);
+  transform: translateY(20vw);
   opacity: 0;
 }
 
@@ -45,7 +43,7 @@
 }
 
 .slide-fade-leave-to {
-  transform: translateX(-10px);
+  transform: translateX(-100vw);
   opacity: 0;
 }
 </style>

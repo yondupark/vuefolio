@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -8,20 +7,16 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('../views/Home.vue'),
+    title: "HomeSweatHome - S.W.Portfolio",
   },
   {
-    path: '/Portfolio',
-    name: 'Portfolio',
+    path: '/ListUps',
+    name: 'ListUps',
     meta: {
-      title: "Portfolio - S.W.Portfolio",
+      title: "ListUps - S.W.Portfolio",
     },
-    component: () => import('../views/Portfolio.vue')
-  },
-  {
-    path: '/Listsup',
-    name: 'Listsup',
-    component: () => import('../views/Listsup.vue')
+    component: () => import('../views/ListUps.vue')
   },
   {
     path: '/Guide',

@@ -132,7 +132,7 @@ export default {
 
   },
   mounted() {
-      calcdays();
+      calcdays(); //마운트가 완료되면 날짜를 삽입
   },
 };
 </script>
