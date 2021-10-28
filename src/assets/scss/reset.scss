@@ -1,8 +1,8 @@
 $bgColor : #fff;
-$pointColor: #000;
-$primarayColor : #333;
-$secondaryColor: #fff;
+$textColor: #000;
+$pointColor : #0EC8B9;
 $error: #b71c1c;
+$white: #fff;
 
 
 :root {
@@ -13,7 +13,8 @@ a {
     text-decoration: none;
 }
 ::selection {
-    background: #4fc497;
+    background: $pointColor;
+    color: #fff;
 }
 
 @mixin baseColors {
@@ -70,8 +71,8 @@ body {
 }
 body {
     overflow-y: scroll;
-    color: $pointColor;
-    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    color: $textColor;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", Roboto, "Helvetica Neue", sans-serif;
     text-align: center;
     background: $bgColor;
     -webkit-font-smoothing: antialiased;
@@ -99,8 +100,19 @@ body {
         width: 50%;
     }
 }
-
-button.viewmore {
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 13px;
+    border-radius: 10px;
+    color: $white;
+    background: $pointColor;
+    border: 2px solid $pointColor;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.button.viewmore {
     display: inline-block;
     width: 35rem;
     height: 5rem;
@@ -111,11 +123,32 @@ button.viewmore {
     color: $pointColor;
     font-size: 1.8rem;
     background: transparent;
-    transition: .4s ease all;
-    cursor: pointer;
-    &:hover {
-        border: 2px solid $pointColor;
-        background: $pointColor;
-        box-shadow: 6px 6px $pointColor;
-    }
+}
+.button.viewmore2 {
+    display: inline-block;
+    width: 35rem;
+    height: 5rem;
+    margin-top: 2rem;
+    border: 2px solid $pointColor;
+    border-radius: .6rem;
+    color: $pointColor;
+    color: $pointColor;
+    font-size: 1.8rem;
+    background: transparent;
+}
+.button.contact::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: url(../assets/images/ico_contact.svg) no-repeat center center;
+    margin-right: 7px;
+}
+.button.link::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    display: block;
+    background: url(../assets/images/ico_link.svg) no-repeat center center;
+    margin-right: 7px;
 }

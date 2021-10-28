@@ -11,24 +11,36 @@ const routes = [
     title: "HomeSweatHome",
   },
   {
-    path: '/ListUps',
-    name: 'ListUps',
+    path: '/Myworks',
+    name: 'myWorks',
     meta: {
-      title: "ListUps",
+      title: "My Works",
     },
-    component: () => import('../views/ListUps.vue')
+    component: () => import('../views/Myworks.vue')
   },
   {
     path: '/Guide',
     name: 'Guide',
     component: () => import('../views/Guide.vue'),
-    title: "Guide",
+    meta: {
+      title: "Guide",
+    },
   },
   {
     path: '/Review',
     name: 'Review',
     component: () => import('../views/Review.vue'),
-    title: "Review",
+    meta: {
+      title: "Review",
+    },
+  },
+  {
+    path: '/Career',
+    name: 'Career',
+    component: () => import('../views/Career.vue'),
+    meta: {
+      title: "Career",
+    },
   },
 ]
 

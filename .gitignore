@@ -23,5 +23,6 @@ pnpm-debug.log*
 *.cache
 
 # Firebase
+.firebase
 .firebaserc
 firebase.json

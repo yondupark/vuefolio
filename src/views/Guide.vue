@@ -1,9 +1,8 @@
 <template>
     <div class="guidewrap">
-        <div class="guide boxs">
-          1. 컬러팔레트
-          2. 텍스트 타입
-          3. 이미지 사용
-        </div>
+       <a href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=5%3A22" target="_blank">
+          <img src="../assets/images/sc.png" alt="">
+          <p>가이드</p>
+       </a>
     </div>
 </template>
