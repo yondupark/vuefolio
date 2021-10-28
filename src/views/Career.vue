@@ -1,5 +1,9 @@
 <template>
   <div class="container">
-    내 커리어 요 맨
+    <div class="design">
+      <div class="title_desc">
+        <h2>Career</h2>
+      </div>
+    </div>
   </div>
 </template>

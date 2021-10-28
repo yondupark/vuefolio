@@ -47,7 +47,7 @@
     </div>
 
 
-    <div class="portfolios">
+    <div class="whatihave">
       <div class="title_desc">
         <h2>
           What I have &amp;<br />
@@ -214,6 +214,7 @@ export default {
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
+  margin-bottom: 5rem;
   h2 {
     @include texttype1;
     text-align:left;
@@ -229,7 +230,7 @@ export default {
     align-items: flex-start;
     justify-content: space-between;
     list-style: none;
-    height: 36rem;
+    height: 37rem;
     overflow: hidden;
     li {
       position: relative;
@@ -240,7 +241,7 @@ export default {
       box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       overflow: hidden;
-      margin-right: 8.4rem;
+      margin-right: 1.4rem;
       margin-bottom: 5rem;
       a {
         display: block;
@@ -279,10 +280,24 @@ export default {
         }
       }
     }
-    li:nth-child(3n) {
-      margin-right: 0;
-    }
 
+  }
+}
+.whatihave {
+  @include contentsWrap;
+  @include flexbox;
+  width: 102.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  h2 {
+    @include texttype1;
+    text-align:left;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: -0.75px;
+    line-height: 1;
+    margin-bottom: 1.4rem
   }
 }
 </style>

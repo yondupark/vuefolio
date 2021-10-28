@@ -19,11 +19,11 @@ const routes = [
     component: () => import('../views/Myworks.vue')
   },
   {
-    path: '/Guide',
-    name: 'Guide',
-    component: () => import('../views/Guide.vue'),
+    path: '/Design',
+    name: 'Design',
+    component: () => import('../views/Design.vue'),
     meta: {
-      title: "Guide",
+      title: "Design",
     },
   },
   {

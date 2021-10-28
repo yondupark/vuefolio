@@ -10,7 +10,7 @@
         <router-link to="/">Home</router-link>
         <router-link to="/Myworks">ListUps</router-link>
         <router-link to="/Career">Career</router-link>
-        <router-link to="/Guide">Guide</router-link>
+        <router-link to="/Design">Design</router-link>
         <router-link to="/Review">Review</router-link>
         <button class="button contact">Contact</button>
       </div>
