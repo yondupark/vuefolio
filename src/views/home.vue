@@ -12,6 +12,11 @@
                 It’s what i’ve done from<br />
                 <span id="count" class="highlight">0</span> days ago.
               </p>
+              <p>
+                It gotta be <span class="highlight">Fun</span>.<br />
+                It gotta be  <span class="highlight">Cool</span>.<br />
+                and you gotta be <span class="highlight">Sexy</span>. too.
+              </p>
             </div>
             <router-link to="/Career"  class="button link">Career</router-link>
           </div>
@@ -220,7 +225,6 @@ export default {
       font-weight: 300;
       .highlight {
         color: $pointColor;
-        margin: 0 1rem;
         font-weight: 700;
       }
     }
