@@ -18,9 +18,14 @@
     letter-spacing: -0.75px;
   }
 }
+.container.-full{
+  > div {
+    width: 100%;
+    max-width: unset;
+  }
+
+}
 .pageContens {
-  padding-bottom: 5rem;
-  min-height: calc(100vh - 4.9rem);
   font-size: 1.8rem;
 }
 .title_desc {

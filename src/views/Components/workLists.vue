@@ -23,6 +23,7 @@
 import axios from "axios";
 
 export default {
+  name: 'axios my work list',
   data() {
     return {
       listed: null
@@ -45,3 +46,9 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.v_listup {
+  margin-top: 4rem;
+}
+</style>

@@ -1,47 +1,81 @@
 <template>
-  <div class="container">
-    <div class="design">
-      <div class="title_desc">
-        <h2>Design</h2>
+  <div class="container -full">
+    <div class="flex col-2">
+      <div class="img_wrap">
+          <img src="../assets/images/img_main.jpg" alt="">
+          <img src="../assets/images/img_boardlist.jpg" alt="">
       </div>
-      <div class="guidewrap">
-         <a href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=5%3A22" target="_blank">
-            <img src="../assets/images/sc.png" alt="">
-            <p>가이드</p>
-         </a>
+      <div class="contents_wrap">
+          <div class="title_desc">
+            <h2>Reviewing</h2>
+          </div>
+          <div class="guidewrap">
+            <a href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=5%3A22" target="_blank">
+                <img src="../assets/images/sc.png" alt="">
+            </a>
+            <div>
+                이전에 습작으로 만들었던 리액트 기반 포트폴리오 원본 소스를 날려버렸다.<br />
+                깃헙에는 빌드된 파일만 올렸기에 복구가 불가능했다..<br />
+
+
+
+                그래서 새로 만들어 볼 겸 디자인도 해보고 매번 새로운 난관에 부딪히는 리액트는 잠시 내려두고 Vue를 통해 구현해보기로 했다.<br />
+
+                자바스크립트 프레임워크 중 쉽고 간편하다는 Vue.js를 활용해서 만들어보기로 했다.<br />
+
+                Vuetify라는 스타일 프레임워크를 추가해서 만들면 레이아웃도 금방 만들겠지만 <br />
+                
+                Vue도 모르는데 Vuetify 문서까지 확인해서 옵션 조절하는것보다는 그냥 내가 스타일을 작성하는게 더 빨라 보였다.<br />
+
+                작업을 하면서 이번에는 sass도 사용해보고 firebase 기능 중 호스팅, 리얼타임 디비도 사용해보기로 했다.<br />
+                
+                물론 큰 프로젝트가 아니에 맛만 보는정도겠지만 아 이정도 맛이구나 하는 정도까지는 해보려했다.<br />
+
+                앵귤러/리액트/뷰 모두 자바스크립트 기반의 언어인지라 비슷해보이면서도 Vue는 사용하기에 간단해보였다.<br />
+                
+                firebase에 호스팅하고 리얼 디비도 사용해보니 역시 구글은 최고의 환경을 만들어주었다.<br />
+                
+                기존 퍼블리싱에서 하던 노가다 짓이 반복문을 통해 간단하게 처리되었고<br />
+                
+                각 컴포넌트들에 스타일을 삽입하게 되면서 리셋 공통영역을 제외한 <br />
+                
+                기존에 작업해왔던 전체 묶음 css 작성이 무의미해지고 작업한 파일들은 직관적으로 변경되었다.<br />
+
+                여전히 현업은 어떻게 작업을 하는지는 모르기에 우선은 내 방식(구글링)대로 만들어보았다.<br />
+                
+                단순 퍼블리싱처럼 하드코딩된 구조가 아닌 처음으로 접했던 리액트보다 뷰는 조금 더 작성하기 수월했다.(아마도 리액트 맛을 조금 봐서 그런듯하다.)<br />
+                
+                수년간 사용했던 Jquery 없이 페이지를 구축하는게 조금 이질감도 들고 뭔가 허전한 느낌이었지만 자바스크립트 자체가 발전했다는 생각도 많이 들었다.<br />
+
+                프론트엔드로 가는길이 점점 가까워지는 것을 느낀다.<br />
+              </div>
+          </div>
       </div>
+      
     </div>
-
-  <div class="container">
-    포트폴리오 웹페이지를 Vue를 통해 구현하면서...
-    이 사이트 이전에 습작으로 만들었던 리액트로 만든 포트폴리오 원본 소스를 날려버렸다 ^_______^
-    깃에는 빌드된 파일만 올렸기에 복구가 불가능했다..
-    그래서 새로 만드는 겸 디자인도 새로 변경해보고 매번 새로운 난관에 부딪히는 리액트는 잠시 내려두고
-    조금 쉽다는 Vue.js를 활용해서 만들어보기로 했다.
-    vuetify라는 디자인 프레임워크로 만들면 금방 만들겠지만 금방 만들기전에 문서보고 옵션넣고 하는것보단
-    그냥 내가 직접 스타일 짜는게 더 빨라 보였다.
-    작업을 하면서 이번에는 sass도 사용해보고 firebase 기능 중 호스팅 리얼타임 디비도 해보고 그동안 마음속에만 넣어두었던 기술들을 다 꺼내보았다
-    물론 대형 프로젝트가 아니어서 많은 기술이 나오긴 어려웠지만 아 이맛이구나 하는 정도의 맛만 보았다.
-    앵귤러 리액트 뷰 모두 자바스크립트 기반의 언어인지라 비슷해보이면서도 뷰 이놈은 좀 쉬웠다
-    파이어베이스에 호스팅하고 리얼 디비도 사용해보니 역시 인력과 자본의 힘은 엄청나구나..를 또 느끼게 된다
-
-    기존 퍼블리싱에서 하던 리셋 공통영역을 제외한 전체 묶음 css 작성이 무의미해지는 순간이 왔다
     
-    <article class="ReviewContents">
-      <span>포트폴리오를 작성하자!</span> 그리고 어떻게 만들까 고민을 해보았다.<br>그러다 번뜩 전 직장에서 테스트로 실험해 만들어보았던
-      <span>Vue.js</span>를 활용한 무한 스크롤 페이지 리스트가 떠올랐다.<br>난생 처음으로 정말 뜬금없이 <span>React.JS</span>를 활용해볼까? 라는 생각이
-      들었다.<br><span>Vue.JS</span>를 사용해서 만들땐 <span>제이쿼리</span>를 쓰던것처럼 파일 자체에 <span>JS파일을 인클루딩</span> 하는 형식으로
-      진행했었다.<br>당시엔 <span>회사 몰래몰래</span> 친한 개발자분과 함께 하느라 그 자체에 집중하여 파고들 시간이 없었다.<br>그래서 이번 기회에 포트폴리오도 새로 만들겸 <span>리액트도
-      써보고 Node도 활용</span>해보자 생각했다.<br>이 포트폴리오를 만들기 위해서는 무지했던 리액트에 대해 공부해야했다.<br>예제들을 따라해보며 조금씩 알아가기 시작했지만 여전히 현업은 어떻게
-      작업을 하는지는 모르기에 우선은 내 방식대로 마구 만들어보았다.<br><span>단순 퍼블리싱처럼 하드코딩된 구조가 아닌 Rest API를 활용</span>해보자 하여<span>Axios를
-      활용</span>해보았다.<br>결과는 상단 진행프로젝트 영역에 <span>리액트용 Masonry 라이브러리</span>를 활용하여 리스트에 호출되어지고 있다.<br>처음으로 해본 React.JS지만
-      생각보다 작성하기 어렵진 않았다. Jquery가 없이 페이지를 구축하는게 참 이질감이 들었지만 사이트가 커졌을때의<br><span>속도 체감은</span> 엄청 날 것 같다. 작업을 하면서 퍼블리셔에서
-      프론트엔드로 가는길이 점점 가까워지는 것을 느낀다.<br>짬이 난다면 <span>반응형 작업</span>도 진행해볼까 한다.<br><br>이상 작업 후기를 마친다.
-    </article>
-  </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-
+.flex.col-2 {
+  @include flexbox;
+  height: calc(100vh - 4.9rem);
+  overflow: hidden;
+  > div {
+  border-top: 1px solid #ccc;
+    height: 100%;
+    overflow: auto;
+  }
+  .img_wrap {
+    flex: 0 0 600px;
+  }
+  .contents_wrap {
+    padding: 2rem;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: .25px;
+  }
+}
 </style>
