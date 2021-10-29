@@ -66,8 +66,7 @@
               <li>Web Accessibility</li>
               <li>Javascript / JQuery</li>
               <li>Sass / Less</li>
-              <li>Git</li>
-              <li>Based On</li>
+              <li>Git / SVN</li>
             </ul>
           </li>
 

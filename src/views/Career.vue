@@ -9,7 +9,8 @@
           <li>
             <h2>대한항공 내부 사이트 운영 및 신규 사이트 구축 <span>2020.11.01 ~ 2021-08.31 (9개월)</span></h2>
             <ul>
-              <li>- 프리랜서 (이원정보기술 소속)</li>
+              <li>- 프리랜서</li>
+              <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
               <li class="subs">대한항공 내부 프로젝트 퍼블리싱</li>
               <li class="subs">대한항공 사내 홈페이지 운영 및 유지보수</li>
@@ -18,7 +19,8 @@
           <li>
             <h2>대한항공 웹사이트 웹접근성 검수 <span>2020.06.08 ~ 2020-11.01 (5개월)</span></h2>
             <ul>
-              <li>- 프리랜서 (이원정보기술 소속)</li>
+              <li>- 프리랜서</li>
+              <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
               <li class="subs">웹 접근성 검수 및 수정안 작성</li>
             </ul>
@@ -27,6 +29,7 @@
             <h2>K Shopping (KTH)<span>2020.04.01 ~ 2020.04.30 (1개월)</span></h2>
             <ul>
               <li>- 프리랜서</li>
+              <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
               <li class="subs">모바일 라이브페이지 기능 추가</li>
               <li class="subs">스크립트 디버깅</li>
@@ -142,10 +145,9 @@
                   <table>
                     <caption>업적</caption>
                     <colgroup>
-                      <col class="col1">
-                      <col class="col2">
-                      <col class="col3">
-                      <col class="col4">
+                      <col width="300">
+                      <col width="100">
+                      <col width="100">
                     </colgroup>
                     <thead>
                       <tr>
@@ -294,7 +296,6 @@ export default {
     text-align: center;
     padding-left: 10px;
     border-bottom: 1px solid #333;
-    text-align: left;
     &:first-child {
       text-align: left;
     }
