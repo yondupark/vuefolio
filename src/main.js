@@ -31,8 +31,8 @@ const i18n = new VueI18n(
 
 // 페이지별 메타 타이틀 설정
 const makeTitle = (title) =>
-title ? `${title}  - S.W.Park Portfolios` : "Home Sweat Home - S.W.Park Portfolios";
-router.afterEach((to, from, next) => {
+  title ? `${title}  - S.W.Park Portfolios` : "Home Sweat Home - S.W.Park Portfolios";
+  router.afterEach((to, next) => {
   Vue.nextTick(() => {
     document.title = makeTitle(to.meta.title);
   });

@@ -1,20 +1,6 @@
 <template>
   <div class="vue-container">
-    <nav id="nav" class="flexbox">
-      <div class="logo">
-        <router-link to="/" class="logoico">
-          <span class="__hidden">PortFolio</span>
-        </router-link>
-      </div>
-      <div class="menus">
-        <router-link to="/">Home</router-link>
-        <router-link to="/Myworks">ListUps</router-link>
-        <router-link to="/Career">Career</router-link>
-        <router-link to="/Review">Review</router-link>
-        <button class="button contact">Contact</button>
-      </div>
-    </nav>
-
+    <headerComp></headerComp>
 
     <section class="pageContens">
       <transition name="slide-fade" mode="out-in">
@@ -26,7 +12,20 @@
       @ 2021 by S.W.Park. Designed by Me.
     </footer>
   </div>
+
 </template>
+
+
+
+<script>
+import headerComp from './Components/Common/header'
+
+export default {
+  name: 'vue router',
+  components: { headerComp }
+};
+</script>
+
 
 <style lang="scss">
 #nav {
@@ -98,3 +97,4 @@
   opacity: 0;
 }
 </style>
+

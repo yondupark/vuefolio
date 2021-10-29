@@ -35,28 +35,15 @@
             works
           </h2>
           <p>Feel free to check my works out .</p>
-          <router-link to="/Career"  class="button viewmore3">
-              <span class="__hidden">
-                viewmore
-              </span>
+          <router-link to="/Myworks"  class="button viewmore3">
+            <span class="__hidden">
+              viewmore
+            </span>
           </router-link>
         </div>
 
-        <ul class="v_listup">
-          <li v-for="(user, idx) in users" :key="idx">
-            <a href="#">
-              <div class="image">
-                <img :src="`${user.Image}`" alt />
-              </div>
-              <div class="texts">
-                <p class="title">{{user.Title}}</p>
-                <p class="hashes">
-                  {{user.Hash}}
-                </p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <local-component></local-component>
+
       </div>
     </div>
 
@@ -156,7 +143,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import LocalComponent from './Components/works'
 
 function calcdays() {
   var dday = new Date("08 01, 2013").getTime();
@@ -166,35 +153,15 @@ function calcdays() {
   document.getElementById("count").innerHTML = day;
 }
 
+
 export default {
-  name: 'portfolios',
-  data() {
-    return {
-      users: null,
-      numbers: 4
-    };
-  },
-  methods: {
-    fetchData() {
-      axios
-        .get("https://swvuefolio-default-rtdb.asia-southeast1.firebasedatabase.app/data.json")
-        .then(res => {
-          this.users = res.data;
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    }
-  },
-  created() {
-    this.fetchData();
-  },
+  name: 'Home',
+  components: { LocalComponent },
   mounted() {
       calcdays(); //마운트가 완료되면 날짜를 삽입
   },
 };
 </script>
-
 
 <style lang="scss" scoped>
 .vueHome {
@@ -264,91 +231,6 @@ export default {
   }
 }
 
-.portfolios {
-  padding: 5.5rem 0;
-  >div {
-    position: relative;
-    @include contentsWrap;
-    @include flexbox;
-    width: 102.5rem;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-    margin-bottom: 5rem;
-  }
-  h2 {
-    @include texttype1;
-    text-align:left;
-    font-weight: 700;
-    font-size: 4rem;
-    letter-spacing: -0.75px;
-    line-height: 1;
-    margin-bottom: 1.4rem
-  }
-  .button.viewmore3 {
-    position: absolute;
-    top: 5rem;
-    right: 1rem;
-  }
-  ul {
-    @include flexbox;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    list-style: none;
-    li {
-      position: relative;
-      width: 28.5rem;
-      color: $pointColor;
-      background: #fff;
-      box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
-      overflow: hidden;
-      margin-right: 1.4rem;
-      margin-bottom: 5rem;
-      transition:.3s ease all;
-      &:hover {
-        transform: translateY(-5px) scale(1.1);
-      }
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        .image {
-          overflow:hidden;
-          width: 100%;
-          height: 257px;
-          border-radius: .6rem;
-          transition: .2s ease all;
-          img {
-            display: block;
-            position: relative;
-            top: 50%;
-            width: 100%;
-            transform: translateY(-50%)
-          }
-        }
-        .texts {
-          padding: 2.4rem 1rem;
-        }
-        .title {
-          width: 100%;
-          @include texttype3;
-          font-weight: 700;
-          margin-bottom: .7rem;
-          white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
-        }
-        .hashes {
-          color: $pointColor;
-          font-size: 1.2rem;
-          font-weight: 700;
-        }
-      }
-    }
-  }
-}
 .whatihave {
   padding: 5.5rem 0;
   background:#F8FEFF;

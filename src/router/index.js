@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: '/Myworks',
-    name: 'myWorks',
+    name: 'My Works',
     meta: {
       title: "My Works",
     },
