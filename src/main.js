@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'; //axios 호출
 import router from './router' //설정 라우터 호출
-import Scrollbar from 'smooth-scrollbar'; //스무스하게 스크롤
 import VueI18n from 'vue-i18n' //다국어
 
 // 다국어 설정
@@ -29,9 +28,6 @@ const i18n = new VueI18n(
     messages
   }
 )
-
-// 부드러운 스크롤바 삽입
-Scrollbar.init(document.querySelector('body'));
 
 // 페이지별 메타 타이틀 설정
 const makeTitle = (title) =>

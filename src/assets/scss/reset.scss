@@ -31,7 +31,6 @@ a {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 2rem 5rem;
 }
 @mixin texttype1 {
     font-size: 5.2rem;
@@ -124,7 +123,6 @@ body {
     border: 2px solid $pointColor;
     border-radius: .6rem;
     color: $pointColor;
-    color: $pointColor;
     font-size: 1.8rem;
     background: transparent;
 }
@@ -136,10 +134,25 @@ body {
     border: 2px solid $pointColor;
     border-radius: .6rem;
     color: $pointColor;
-    color: $pointColor;
     font-size: 1.8rem;
     background: transparent;
 }
+
+.button.viewmore3 {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border-radius: .6rem;
+    color: $pointColor;
+    font-size: 1.8rem;
+    background: $pointColor url(../assets/images/ico_viewmore3.svg) no-repeat center center;
+    transition: .3s ease all;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
 .button.contact::before {
     content: '';
     width: 15px;

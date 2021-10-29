@@ -19,14 +19,6 @@ const routes = [
     component: () => import('../views/Myworks.vue')
   },
   {
-    path: '/Design',
-    name: 'Design',
-    component: () => import('../views/Design.vue'),
-    meta: {
-      title: "Design",
-    },
-  },
-  {
     path: '/Review',
     name: 'Review',
     component: () => import('../views/Review.vue'),

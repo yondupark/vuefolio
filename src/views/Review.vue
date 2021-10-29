@@ -1,5 +1,18 @@
 <template>
   <div class="container">
+    <div class="design">
+      <div class="title_desc">
+        <h2>Design</h2>
+      </div>
+      <div class="guidewrap">
+         <a href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=5%3A22" target="_blank">
+            <img src="../assets/images/sc.png" alt="">
+            <p>가이드</p>
+         </a>
+      </div>
+    </div>
+
+  <div class="container">
     포트폴리오 웹페이지를 Vue를 통해 구현하면서...
     이 사이트 이전에 습작으로 만들었던 리액트로 만든 포트폴리오 원본 소스를 날려버렸다 ^_______^
     깃에는 빌드된 파일만 올렸기에 복구가 불가능했다..
@@ -12,7 +25,8 @@
     앵귤러 리액트 뷰 모두 자바스크립트 기반의 언어인지라 비슷해보이면서도 뷰 이놈은 좀 쉬웠다
     파이어베이스에 호스팅하고 리얼 디비도 사용해보니 역시 인력과 자본의 힘은 엄청나구나..를 또 느끼게 된다
 
-
+    기존 퍼블리싱에서 하던 리셋 공통영역을 제외한 전체 묶음 css 작성이 무의미해지는 순간이 왔다
+    
     <article class="ReviewContents">
       <span>포트폴리오를 작성하자!</span> 그리고 어떻게 만들까 고민을 해보았다.<br>그러다 번뜩 전 직장에서 테스트로 실험해 만들어보았던
       <span>Vue.js</span>를 활용한 무한 스크롤 페이지 리스트가 떠올랐다.<br>난생 처음으로 정말 뜬금없이 <span>React.JS</span>를 활용해볼까? 라는 생각이
@@ -25,4 +39,9 @@
       프론트엔드로 가는길이 점점 가까워지는 것을 느낀다.<br>짬이 난다면 <span>반응형 작업</span>도 진행해볼까 한다.<br><br>이상 작업 후기를 마친다.
     </article>
   </div>
+  </div>
 </template>
+
+<style lang="scss" scoped>
+
+</style>

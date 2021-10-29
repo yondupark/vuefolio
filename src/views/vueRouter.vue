@@ -10,7 +10,6 @@
         <router-link to="/">Home</router-link>
         <router-link to="/Myworks">ListUps</router-link>
         <router-link to="/Career">Career</router-link>
-        <router-link to="/Design">Design</router-link>
         <router-link to="/Review">Review</router-link>
         <button class="button contact">Contact</button>
       </div>
@@ -30,12 +29,10 @@
 </template>
 
 <style lang="scss">
-
 #nav {
     position: fixed;
     top: 0;
     left: 0;
-    display: flex;
     width: 100%;
     z-index: 999;
     padding: 2rem;
@@ -60,6 +57,9 @@
     }
     .menus {
       @include flexbox;
+    }
+    .button {
+      margin-left: 2rem;
     }
 }
 .logoico {

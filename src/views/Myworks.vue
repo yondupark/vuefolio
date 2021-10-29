@@ -54,19 +54,6 @@ export default {
 
 <style lang="scss" scoped>
 .portfolios {
-  @include contentsWrap;
-  @include flexbox;
-  max-width: 1025px;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  h2 {
-    @include texttype1;
-    text-align:left;
-    font-weight: 700;
-    font-size: 4rem;
-    letter-spacing: -0.75px;
-  }
   ul {
     @include flexbox;
     flex-wrap: wrap;
