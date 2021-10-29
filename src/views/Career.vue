@@ -207,7 +207,6 @@ export default {
     text-align: left;
   }
   >ul {
-    width: 690px;
     max-width: 100%;
     margin: 0 auto;
     position: relative;
