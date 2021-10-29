@@ -42,7 +42,7 @@
           </router-link>
         </div>
 
-        <local-component></local-component>
+        <MyWorks></MyWorks>
 
       </div>
     </div>
@@ -143,7 +143,7 @@
 </template>
 
 <script>
-import LocalComponent from './Components/works'
+import MyWorks from './Components/workLists'
 
 function calcdays() {
   var dday = new Date("08 01, 2013").getTime();
@@ -156,7 +156,7 @@ function calcdays() {
 
 export default {
   name: 'Home',
-  components: { LocalComponent },
+  components: { MyWorks },
   mounted() {
       calcdays(); //마운트가 완료되면 날짜를 삽입
   },

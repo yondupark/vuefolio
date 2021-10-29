@@ -4,17 +4,17 @@
       <div class="title_desc">
         <h2>My works</h2>
       </div>
-      <local-component></local-component>
+      <MyWorks></MyWorks>
     </div>  
   </div>
 </template>
 
 
 <script>
-import LocalComponent from './Components/works'
+import MyWorks from './Components/workLists'
 
 export default {
   name: 'My Works',
-  components: { LocalComponent }
+  components: { MyWorks }
 };
 </script>
