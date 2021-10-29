@@ -15,7 +15,7 @@
               <p>
                 It gotta be <span class="highlight">Fun</span>.<br />
                 It gotta be  <span class="highlight">Cool</span>.<br />
-                and you gotta be <span class="highlight">Sexy</span>. too.
+                and it gotta be <span class="highlight">Sexy</span>. too.
               </p>
             </div>
             <router-link to="/Career"  class="button link">Career</router-link>
@@ -157,10 +157,13 @@ function calcdays() {
 export default {
   name: 'Home',
   components: { MyWorks },
+  
   mounted() {
       calcdays(); //마운트가 완료되면 날짜를 삽입
   },
 };
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -290,7 +293,6 @@ export default {
     }
   }
 }
-
 
 .madeby {
   padding: 5.5rem 0;

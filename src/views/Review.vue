@@ -68,9 +68,10 @@
     overflow: auto;
   }
   .img_wrap {
-    flex: 0 0 600px;
+    flex: 0 0 35%;
   }
   .contents_wrap {
+    flex: 0 0 65%;
     padding: 2rem;
     text-align: left;
     line-height: 1.6;
