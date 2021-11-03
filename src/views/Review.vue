@@ -63,7 +63,6 @@
   height: calc(100vh - 4.9rem);
   overflow: hidden;
   > div {
-  border-top: 1px solid #ccc;
     height: 100%;
     overflow: auto;
   }
@@ -77,6 +76,11 @@
     line-height: 1.6;
     font-weight: 400;
     letter-spacing: .25px;
+  }
+}
+.container {
+  >div {
+    padding: 8.5rem 0 0;
   }
 }
 </style>

@@ -25,9 +25,8 @@
 <script>
 import axios from "axios";
 
-
 export default {
-  name: 'axios my work list',
+  name: 'restful',
   data() {
     return {
       listed: null
@@ -58,5 +57,8 @@ export default {
 <style scoped>
 .v_listup {
   margin-top: 4rem;
+}
+.portfolios {
+  min-height: 100vh;
 }
 </style>

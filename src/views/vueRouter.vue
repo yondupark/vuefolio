@@ -36,6 +36,8 @@ export default {
     z-index: 999;
     padding: 2rem;
     font-size: 1.6rem;
+    box-shadow: 0px 7px 10px #dddddd;
+    background: #fff;
     @include flexbox;
     a {
         display: block;
