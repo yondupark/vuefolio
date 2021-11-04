@@ -18,7 +18,11 @@
                 and it gotta be <span class="highlight">Sexy</span>. too.
               </p>
             </div>
-            <router-link to="/Career"  class="button link">Career</router-link>
+            <div class="main_links">
+              <router-link to="/Career"  class="button link">Career</router-link>
+              <a class="button github" href="https://github.com/yondupark/vuefolio" target="_blank">Github</a>
+              <a class="button figma" href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=0%3A1" target="_blank">Figma</a>
+            </div>
           </div>
           <div>
             <img src="../assets/images/bg_main.svg" alt="">
@@ -191,7 +195,7 @@ export default {
       letter-spacing: -.75px;
       line-height: 1.4;
       margin-bottom: 3.2rem;
-      font-weight: 300;
+      font-weight: 400;
       .highlight {
         color: $pointColor;
         font-weight: 700;
@@ -199,6 +203,13 @@ export default {
     }
     #count {
       margin: 2rem 0;
+    }
+    .main_links {
+      display: flex;
+      align-items: center;
+      a + a {
+        margin-left: 1rem;
+      }
     }
   }
   .tools {

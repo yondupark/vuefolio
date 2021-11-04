@@ -44,6 +44,7 @@ export default {
         margin: 0 1rem;
         padding: 1rem;
         color: $textColor;
+        font-size: 1.8rem;
         font-weight: 500;
         text-decoration: none;
         &.router-link-exact-active {
