@@ -8,10 +8,11 @@
 
 ## Used by
 
- - [Vue 2.x](https://vuejs.org/)
+ - [Vue 3.x](https://vuejs.org/)
  - [Vue Router](https://router.vuejs.org/)
  - [Sass](https://sass-lang.com/)
  - [Firebase](https://firebase.google.com/)
+ - [Figma](https://www.figma.com/)
   
 ## View Website
 

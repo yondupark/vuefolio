@@ -61,4 +61,16 @@ export default {
 .portfolios {
   min-height: 100vh;
 }
+.portfolios li img {
+  transition: 1.5s ease all;
+}
+.portfolios ul li a .image {
+  overflow: hidden;
+}
+.portfolios li:hover {
+  box-shadow: 0 0 30px 20px rgba(29, 117, 73, 0.35);
+}
+.portfolios li:hover img {
+  transform: translateX(-50%) translateY(-5px) scale(1.5);
+}
 </style>

@@ -165,8 +165,6 @@ export default {
       calcdays(); //마운트가 완료되면 날짜를 삽입
   },
 };
-
-
 </script>
 
 <style lang="scss" scoped>
