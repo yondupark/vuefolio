@@ -209,8 +209,9 @@ footer {
     @include flexbox;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     list-style: none;
+    
     li {
       position: relative;
       width: 31%;
@@ -219,7 +220,7 @@ footer {
       box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
       overflow: hidden;
-      margin-right: 1.4rem;
+      margin-right: 2.3rem;
       margin-bottom: 5rem;
       transition:.45s ease all;
       a {
@@ -264,6 +265,9 @@ footer {
           font-weight: 700;
         }
       }
+    }
+    li:nth-child(3n) {
+      margin-right: 0;
     }
   }
 }
