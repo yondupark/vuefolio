@@ -46,9 +46,20 @@
             </span>
           </router-link>
         </div>
-
-        <MyWorks></MyWorks>
-
+        <ul>
+          <li v-for="(board, idx) in board.slice(0,3)" :key="idx">
+            <router-link :to="{ name: 'boardDetail', params: { id: idx }}">
+                <div class="image">
+                    <img :src="`${board.Image}`" alt="">
+                </div>
+                <h3>{{board.Title}}</h3>
+                <div class="texts">
+                    <p class="title">{{ board.From }}</p>
+                    <p class="title">{{ board.Title }}</p>
+                </div>
+            </router-link>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -157,6 +168,9 @@ function calcdays() {
 
 export default {
   name: 'Home',
+  props: {
+      board : Array
+  },
   mounted() {
       calcdays(); //마운트가 완료되면 날짜를 삽입
   },
