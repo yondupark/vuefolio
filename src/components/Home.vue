@@ -6,11 +6,11 @@
           <div>
             <h2>
               Hi.<br />
-              I’m <span>SangWan Park.</span>
+              I’m <span>Sang Wan Park.</span>
             </h2>
             <div> 
               <p>
-                It’s what i’ve done from<br />
+                i’ve done since<br />
                 <span id="count" class="highlight">0</span> days ago.
               </p>
               <p>

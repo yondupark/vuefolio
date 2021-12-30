@@ -23,7 +23,8 @@ export default {
   name: 'S.W.Vuefolio',
   data() {
     return {
-      board: boardData
+      board: boardData,
+      모달창열렸니 : true,
     }
   },
   components: {
@@ -35,9 +36,7 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition-duration: 3.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+  transition: .5s ease all;
 }
 
 .fade-enter,
