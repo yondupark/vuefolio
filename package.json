@@ -1,5 +1,5 @@
 {
-  "name": "vuefolio2",
+  "name": "SWVuefolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "build:delpoy": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "@guillaumebriday/vue-scroll-progress-bar": "^1.0.0",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
     "firebase": "^9.6.1",

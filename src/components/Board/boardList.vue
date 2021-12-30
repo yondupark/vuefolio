@@ -11,10 +11,9 @@
                 <div class="image">
                     <img :src="`${board.Image}`" alt="">
                 </div>
-                <h3>{{board.Title}}</h3>
                 <div class="texts">
-                    <p class="title">{{ board.From }}</p>
-                    <p class="title">{{ board.Title }}</p>
+                    <h3 class="title">{{ board.From }}</h3>
+                    <p class="title2">{{ board.Title }}</p>
                 </div>
             </router-link>
           </li>

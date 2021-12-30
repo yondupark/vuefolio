@@ -33,16 +33,6 @@ export default [
     From: "KT",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
-      "https://images.unsplash.com/photo-1635107054704-81ec092e2adf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
-    Percentage: "10",
-    Title: "K쇼핑 모바일 라이브 프로젝트",
-    id: 4,
-    Html: "asdasd",
-  },
-  {
-    From: "KT",
-    Hash: ["반응형", "Html", "Css", "jQuery"],
-    Image:
       "https://images.unsplash.com/photo-1634657226403-dc2b4af18be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
     Percentage: "10",
     Title: "K쇼핑 모바일 라이브 프로젝트",
@@ -50,7 +40,7 @@ export default [
     Html: "asdasd",
   },
   {
-    From: "참좋은여행 개편 프로젝트",
+    From: "참좋은여행",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
       "https://images.unsplash.com/photo-1634727393143-f8766cab4233?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80",
@@ -59,7 +49,7 @@ export default [
     id: 6,
   },
   {
-    From: "참좋은여행 운영 유지보수",
+    From: "참좋은여행",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
       "https://firebasestorage.googleapis.com/v0/b/swvuefolio.appspot.com/o/portfolios%2Fimg_01.jpg?alt=media&token=d02fe349-528b-417f-8084-4a399f3ab10e",

@@ -1,4 +1,10 @@
-
+.progress-bar-container--container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
 #nav {
   position: fixed;
   top: 0;
@@ -73,6 +79,7 @@ opacity: 0;
 
 .container {
   @include contentsWrap;
+  position: relative;
   img {
     max-width: 100%;
   }
@@ -238,14 +245,18 @@ footer {
         .texts {
           padding: 2.4rem 1rem;
         }
-        .title {
+        .title, .title2 {
           width: 100%;
           @include texttype3;
-          font-weight: 700;
+          font-weight: 400;
           margin-bottom: .7rem;
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
+        }
+        .title2 {
+          @include texttype3;
+          font-weight: 700;
         }
         .hashes {
           color: $pointColor;
@@ -255,4 +266,29 @@ footer {
       }
     }
   }
+}
+.container > div.portfolios__title {
+  padding: 6.5rem 0 2rem;
+  text-align: center;
+  border-bottom: 2px solid #0ec8b9;
+  h2 {
+    text-align: center;
+  }
+}
+.container > div.portfolios__view {
+  width: 100%;
+  max-width: none;
+  display: flex;
+  align-items: flex-start;
+  padding: 00;
+}
+.portfolios__img {
+  flex:0 0 60rem;
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+.portfolios__desc {
+  padding: 2rem;
 }

@@ -46,16 +46,15 @@
             </span>
           </router-link>
         </div>
-        <ul>
+        <ul class="boardmain">
           <li v-for="(board, idx) in board.slice(0,3)" :key="idx">
             <router-link :to="{ name: 'boardDetail', params: { id: idx }}">
                 <div class="image">
                     <img :src="`${board.Image}`" alt="">
                 </div>
-                <h3>{{board.Title}}</h3>
                 <div class="texts">
-                    <p class="title">{{ board.From }}</p>
-                    <p class="title">{{ board.Title }}</p>
+                    <h3 class="title">{{ board.From }}</h3>
+                    <p>{{ board.Title }}</p>
                 </div>
             </router-link>
           </li>
@@ -350,6 +349,26 @@ export default {
       transform: translate(-50%, -50%);
       display: block;
       min-width: 70px;
+    }
+  }
+}
+.portfolios .boardmain  li {
+  &:hover {
+    position: relative;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+    transform: scale(1.1);
+    z-index: 99999;
+  }
+  .image{
+    height: 30rem;
+    img {
+      display: block;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: auto;
+      width: 100%;
     }
   }
 }
