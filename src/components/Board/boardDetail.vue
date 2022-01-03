@@ -24,6 +24,10 @@
               <span>{{ board[$route.params.id].workedat }}</span>
             </li>
             <li>
+              <span>참여율 :</span>
+              <span>{{ board[$route.params.id].Percentage }} %</span>
+            </li>
+            <li>
               <span>주요업무 : </span>
               <div>
                 {{ board[$route.params.id].Hash[0] }}

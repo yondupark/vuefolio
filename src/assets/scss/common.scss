@@ -416,4 +416,8 @@ footer {
       }
     }
   }
+  .ptf__list + div {
+    width: 100%;
+    text-align: left;
+  }
 }

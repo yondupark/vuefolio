@@ -7,7 +7,7 @@
       </div>
       <div class="contents_wrap">
           <div class="title_desc">
-            <h2>Reviewing</h2>
+            <h2>Review</h2>
           </div>
           <div class="guidewrap">
             <a href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=5%3A22" target="_blank">

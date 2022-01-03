@@ -216,6 +216,8 @@ export default {
 
 <style lang="scss" scoped>
 .career_detail {
+  width: 70rem;
+  margin: 0 auto;
   ul {
     list-style: none;
     text-align: left;

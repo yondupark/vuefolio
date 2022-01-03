@@ -48,7 +48,7 @@ export default {
   overflow: hidden;
 }
 .portfolios li:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   z-index: 999;
 }
 .portfolios li:hover {
