@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="">
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <title>전통 문양 안내 챗봇</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/js/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./assets/css/chatbot.css">
+</head>
+
+<body>
+    <div class="chatbot__wrap">
+        <!-- 상단 영역 -->
+        <div class="chatbot__head">
+            <div class="chatbot__head__logo">
+                <h1>전통 문양 안내 챗봇</h1>
+            </div>
+            <button class="chatbot__head__close">
+                <span class="_hidden">챗봇 닫기</span>
+            </button>
+        </div>
+
+        <div class="chatbot__subhead">
+            <a href="javscript:void(0);" class="-home">
+                처음으로
+            </a>
+            <button class="button -faq" type="button" onclick="openDialog('faq')">
+                자주 묻는 질문
+            </button>
+        </div> 
+        <!-- //상단 영역 -->
+
+
+        <!-- 대화 영역 -->
+        <div class="msg__wrap">
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        안녕하세요. 문화포털 챗봇 입니다.<br />
+                        전통문양에 대해 궁금한 점을 질문해 주세요! <br />
+                        첫 화면은 언제나 “홈” 버튼을 눌러주세요!
+                        <!-- 버튼 모음 -->
+                        <div class="button__wrap">
+                            <button class="button">시대 별 문양</button>
+                            <button class="button">원형 문양</button>
+                            <button class="button">활용 문양</button>
+                            <button class="button">문양활용안내</button>
+                        </div>
+                        <!-- //버튼 모음 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        시대 별 문양
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents col-3">
+                    <div class="chat__text">
+                        안녕하세요. 문화포털 챗봇 입니다.<br />
+                        전통문양에 대해 궁금한 점을 질문해 주세요! <br />
+                        첫 화면은 언제나 “홈” 버튼을 눌러주세요!
+                        <!-- 버튼 모음 -->
+                        <div class="button__wrap">
+                            <button class="button">시대 별 문양</button>
+                            <button class="button">원형 문양</button>
+                            <button class="button">활용 문양</button>
+                            <button class="button">문양활용안내</button>
+                            <button class="button">시대 별 문양</button>
+                            <button class="button">원형 문양</button>
+                            <button class="button">활용 문양</button>
+                            <button class="button">문양활용안내</button>
+                            <button class="button">문양활용안내</button>
+                        </div>
+                        <!-- //버튼 모음 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        디자인별 문양
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        시대별 문양을 안내해드리겠습니다.<br />
+                        정보가 필요한 시대를 선택해 주세요.
+
+                        <div class="slider__wrap result__box">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <!-- 버튼 모음 -->
+                                    <div class="button__wrap">
+                                        <button class="button">현대</button>
+                                        <button class="button">백제</button>
+                                        <button class="button">조선</button>
+                                        <button class="button">고려</button>
+                                        <button class="button">신라</button>
+                                        <button class="button">고구려</button>
+                                    </div>
+                                    <!-- //버튼 모음 -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- 버튼 모음 -->
+                                    <div class="button__wrap">
+                                        <button class="button">현대222</button>
+                                        <button class="button">백제222</button>
+                                        <button class="button">조선222</button>
+                                        <button class="button">고려222</button>
+                                        <button class="button">신라222</button>
+                                        <button class="button">고구려222</button>
+                                    </div>
+                                    <!-- //버튼 모음 -->
+                                </div>
+                            </div>
+                            <!-- 슬라이더 좌우 버튼 -->
+                            <div class="slider__controls">
+                                <button class="slide_l">
+                                    <span class="_hidden">이전으로</span>
+                                </button>
+                                <button class="slide_r">
+                                    <span class="_hidden">다음으로</span>
+                                </button>
+                            </div>
+                            <!-- //슬라이더 좌우 버튼 -->
+                        </div>
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        고려시대 문양
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        조선시대 문양정보가 필요하시군요.
+                        조선시대에서 정보가 필요한 문양 종류를 
+                        선택해주세요.
+                        <!-- 버튼 모음 -->
+                        <div class="button__wrap">
+                            <button class="button">디자인별 문양</button>
+                            <button class="button">용도별 문양</button>
+                            <button class="button">형태별 문양</button>
+                            <button class="button">형태별 문양</button>
+                        </div>
+                        <!-- //버튼 모음 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        디자인별 문양
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        디자인별 문양을 선택하셨습니다. 
+                        디자인별 문양중 정보가 필요한 문양 유형을 
+                        선택해 주세요.
+
+
+                        <div class="slider__wrap result__box">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <!-- 버튼 모음 -->
+                                    <div class="button__wrap">
+                                        <button class="button">인물문</button>
+                                        <button class="button">자연산수문</button>
+                                        <button class="button">동물문</button>
+                                        <button class="button">문자문</button>
+                                        <button class="button">식물문</button>
+                                        <button class="button">기하문</button>
+                                        <button class="button">인공물문</button>
+                                        <button class="button">복합문</button>
+                                    </div>
+                                    <!-- //버튼 모음 -->
+                                </div>
+                                <div class="swiper-slide">
+                                    <!-- 버튼 모음 -->
+                                    <div class="button__wrap">
+                                        <button class="button">222인물문</button>
+                                        <button class="button">222자연산수문</button>
+                                        <button class="button">222동물문</button>
+                                        <button class="button">222문자문</button>
+                                        <button class="button">222식물문</button>
+                                        <button class="button">222기하문</button>
+                                        <button class="button">222인공물문</button>
+                                        <button class="button">222복합문</button>
+                                    </div>
+                                    <!-- //버튼 모음 -->
+                                </div>
+                            </div>
+                            <!-- 슬라이더 좌우 버튼 -->
+                            <div class="slider__controls">
+                                <button class="slide_l">
+                                    <span class="_hidden">이전으로</span>
+                                </button>
+                                <button class="slide_r">
+                                    <span class="_hidden">다음으로</span>
+                                </button>
+                            </div>
+                            <!-- //슬라이더 좌우 버튼 -->
+                        </div>
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        인물문
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        정보가 필요한 문양의 특징은 무엇인가요?
+                        <!-- 질문 선택 리스트 -->
+                        <div class="chat__choice">
+                            <ul class="chat__list">
+                                <li>
+                                    <button>- 불교관련 유물에 나오는 부처 모양 얼굴</button>
+                                </li>
+                                <li>
+                                    <button>- 도깨비의 얼굴</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //질문 선택 리스트 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        불교관련 유물에 나오는
+                        부처 모양 얼굴
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        불보살문(6242)aaaa
+                        <!-- 챗봇 결과 표출 -->
+                        <div class="chat__result">
+                            <div class="slider__wrap result__box">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="result__image">
+                                            <img src="./assets/images/dummyImg01.png" alt="">
+                                        </div>
+                                        <div class="result__data">
+                                            <table class="chat__table">
+                                                <colgroup>
+                                                    <col width="30%">
+                                                    <col width="70%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">문양명</th>
+                                                        <td>불보살문(6242)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">국적/시대</th>
+                                                        <td>한국, 고려</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">원천유물명</th>
+                                                        <td>마곡사 5층 석탑</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">문양 설명</th>
+                                                        <td>
+                                                            <div class="chat__desc">
+                                                                나발이 촘촘하게...
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button class="button -full">상세보기</button>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="result__image">
+                                            <img src="./assets/images/dummyImg01.png" alt="">
+                                        </div>
+                                        <div class="result__data">
+                                            <table class="chat__table">
+                                                <colgroup>
+                                                    <col width="30%">
+                                                    <col width="70%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">문양명</th>
+                                                        <td>불보살문(6242)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">국적/시대</th>
+                                                        <td>한국, 고려</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">원천유물명</th>
+                                                        <td>마곡사 5층 석탑</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">문양 설명</th>
+                                                        <td>
+                                                            <div class="chat__desc">
+                                                                나발이 촘촘하게...
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <button class="button -full">상세보기</button>
+                                    </div>
+                                </div>
+                                <!-- 슬라이더 좌우 버튼 -->
+                                <div class="slider__controls">
+                                    <button class="slide_l">
+                                        <span class="_hidden">이전으로</span>
+                                    </button>
+                                    <button class="slide_r">
+                                        <span class="_hidden">다음으로</span>
+                                    </button>
+                                </div>
+                                <!-- //슬라이더 좌우 버튼 -->
+                            </div>
+                        </div>
+                        <!-- //챗봇 결과 표출 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        상세보기
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        불보살문(6242)
+                        <!-- 챗봇 결과 표출 -->
+                        <div class="chat__result">
+                            <div class="result__box">
+                                <div class="result__image">
+                                    <img src="./assets/images/dummyImg01.png" alt="불보살문(6242) 이미지">
+                                </div>
+                                <div class="result__data">
+                                    <table class="chat__table">
+                                        <colgroup>
+                                            <col width="30%">
+                                            <col width="70%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">문양명</th>
+                                                <td>불보살문(6242)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">국적/시대</th>
+                                                <td>한국, 고려</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">원천유물명</th>
+                                                <td>마곡사 5층 석탑</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">문양 설명</th>
+                                                <td>
+                                                    <div class="chat__desc">
+                                                        나발이 촘촘하게...<br />
+                                                        나발이 촘촘하게...<br />
+                                                        나발이 촘촘하게...
+                                                    </div>
+                                                    <a class="chat__table--link" href="javascript:void(0);">상세보기</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <a class="button -full">이미지 다운로드</a>
+                            <div class="slider__wrap result__box slide__sm">
+                                <p class="tit__slide__sm">연관문양</p>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="result__box img__wrap">
+                                            <div class="result__image">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./assets/images/dummyImg02.png" alt="원천유물 이미지">
+                                                    <p class="-desc">
+                                                        원천유물
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="result__image">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./assets/images/dummyImg03.png" alt="원시문양 이미지">
+                                                    <p class="-desc">
+                                                        원시문양
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="result__box img__wrap">
+                                            <div class="result__image">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./assets/images/dummyImg02.png" alt="원천유물 이미지">
+                                                    <p class="-desc">
+                                                        원천유물
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="result__image">
+                                                <a href="javascript:void(0);">
+                                                    <img src="./assets/images/dummyImg03.png" alt="원시문양 이미지">
+                                                    <p class="-desc">
+                                                        원시문양
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 슬라이더 좌우 버튼 -->
+                                <div class="slider__controls">
+                                    <button class="slide_l">
+                                        <span class="_hidden">이전으로</span>
+                                    </button>
+                                    <button class="slide_r">
+                                        <span class="_hidden">다음으로</span>
+                                    </button>
+                                </div>
+                                <!-- //슬라이더 좌우 버튼 -->
+                            </div>
+                        </div>
+                        <!-- //챗봇 결과 표출 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        개별문양
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        법주사 마애여래의좌상(72313)
+                        <!-- 챗봇 결과 표출 -->
+                        <div class="chat__result">
+                            <div class="result__box">
+                                <div class="result__image">
+                                    <img src="./assets/images/dummyImg04.png" alt="법주사 마애여래의좌상(72313) 이미지">
+                                </div>
+                                <div class="result__data">
+                                    문양명 : 법주사 마애여래의좌상<br />
+                                    국적/시대 : 한국, 고려<br />
+                                    원천유물명 : 법주사 마애여래의좌상<br />
+                                    문양 설명 : 불상의 머리는 작은 …
+                                </div>
+                            </div>
+                            <a class="button -full">이미지 다운로드</a>
+                            
+                            <div class="result__box img__wrap">
+                                <div class="result__image">
+                                    <a href="javascript:void(0);">
+                                        <img src="./assets/images/dummyImg02.png" alt="원천유물 이미지">
+                                        <p class="-desc">
+                                            원천유물
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="result__image">
+                                    <a href="javascript:void(0);">
+                                        <img src="./assets/images/dummyImg03.png" alt="원시문양 이미지">
+                                        <p class="-desc">
+                                            원시문양
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //챗봇 결과 표출 -->
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        이미지 다운로드
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        이미지가 저장 되었습니다.
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+
+            <!-- 유저 입력 대화 -->
+            <div class="chat__box right">
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        문양이란
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+            </div>
+            <!-- //유저 입력 대화 -->
+
+
+
+            <!-- 챗봇 대화 -->
+            <div class="chat__box left">
+                <!-- 구삐 프로필 -->
+                <div class="chatbot__profile">
+                    <div class="ico__chatbot">
+                        <span class="_hidden">
+                            구삐 아이콘
+                        </span>
+                    </div>
+                    <p>문양안내봇</p>
+                </div>
+                <!-- //구삐 프로필 -->
+                <!-- 구삐 대화 -->
+                <div class="chat__contents">
+                    <div class="chat__text">
+                        문양이란을 안내해드리겠습니다.<br />
+                        이동하기를 클릭해 주세요.
+                        <button class="button -full">이동하기</button>
+                    </div>
+                    <div class="chat__time">
+                        오전 11:28
+                    </div>
+                </div>
+                <!-- //구삐 대화 -->
+            </div>
+            <!-- //챗봇 대화 -->
+
+        </div>
+        <!-- //대화 영역 -->
+
+        <!-- 채팅 입력 영역 -->
+        <div class="chat__input__wrap">
+            <button type="button" class="chat__input__more" onclick="openDialog('dialog1')">
+                <span class="_hidden">더 많은 내용을 확인해 보세요.</span>
+            </button>
+
+            <div class="chat__input__msg">
+                <input type="text" class="input__msg" placeholder="질문을 입력하세요." autocomplete="off" />
+            </div>
+
+            <button class="chat__input__submit">
+                <span class="_hidden">
+                    전송하기
+                </span>
+            </button>
+            <div class="chat__autocomplete"><!-- 키 입력 시 style=display:block-->
+                <ul>
+                    <li><a href="javascript:void(0);">시대별 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);">원형 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);"><strong>문양</strong> 활용 안내</a></li>
+                    <li><a href="javascript:void(0);">디자인별 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);"><strong>문양</strong> 사용 방법</a></li>
+                    <li><a href="javascript:void(0);">시대별 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);">원형 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);"><strong>문양</strong> 활용 안내</a></li>
+                    <li><a href="javascript:void(0);">디자인별 <strong>문양</strong></a></li>
+                    <li><a href="javascript:void(0);"><strong>문양</strong> 사용 방법</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- //채팅 입력 영역 -->
+    </div>
+
+
+
+
+
+    <!-- 더보기 다이얼로그-->
+    <div class="dialog more__contents" id="dialog1" role="dialog">
+        <div class="dialog__detail">
+            <button class="dialong__toggler" onclick="fnHidePop('dialog1')">
+                <span class="_hidden">토글 열기/닫기</span>
+            </button>
+            <!-- 다이얼로그 타이틀 -->
+            <h2 class="_hidden">더보기</h2>
+            <!-- //다이얼로그 타이틀 -->
+
+            <!-- 다이얼로그 콘텐츠 -->
+            <div class="dialog__contents">
+                <div class="dialog__txt">
+                    혹시 이런게 궁금하신가요?
+                </div>
+                <div class="more__contents__detail">
+                    <ul class="accordian__wrap">
+                        <li class="accordian__box">
+                            <button class="active">전통문양의 이해</button>
+                            <ul class="accordian__item" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양에 대해 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양의 특징을 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 구축 과정을 알고 싶어요.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="accordian__box">
+                            <button>문양 활용 가이드</button>
+                            <ul  class="accordian__item">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양 사용방법을 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 활용 절차에 대해 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        한국전통문양 디자인 정보를 얻고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 사용 서비스 문의 하고 싶어요.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="accordian__box">
+                            <button>디자인별 문양</button>
+                            <ul  class="accordian__item">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양 사용방법을 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 활용 절차에 대해 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        한국전통문양 디자인 정보를 얻고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 사용 서비스 문의 하고 싶어요.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //다이얼로그 콘텐츠 -->
+        </div>
+    </div>
+    <!-- //다이얼로그 -->
+
+
+    <!-- 더보기 다이얼로그-->
+    <div class="dialog faq__contents" id="faq" role="dialog">
+        <div class="dialog__detail">
+            <!-- 다이얼로그 타이틀 -->
+            <h2 class="_hidden">더보기</h2>
+            <!-- //다이얼로그 타이틀 -->
+
+            <!-- 다이얼로그 콘텐츠 -->
+            <div class="dialog__contents">
+                <div class="more__contents__detail">
+                    <ul class="accordian__wrap">
+                        <li class="accordian__box">
+                            <button class="active">전통문양 이용 방법</button>
+                            <ul class="accordian__item" style="display: block;">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양을 상업적으로 이용이 가능한지?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양의 변형 및 수정이 가능한지?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        출처 표기 없이는 이용이 불가한지?
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="accordian__box">
+                            <button>전통문양 출처 표시</button>
+                            <ul  class="accordian__item">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        출처표시는 어떻게 해야하나요?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        책자, 논문 등 출판물 등에는 어떻게 해야하나요?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        라인 판매 제품(상품)의 경우는 어떻게 해야하나요?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 사용 서비스 문의 하고 싶어요.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="accordian__box">
+                            <button>전통문양 신청 및 사용</button>
+                            <ul  class="accordian__item">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        전통문양 사용방법을 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 활용 절차에 대해 알고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        한국전통문양 디자인 정보를 얻고 싶어요.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        문양 사용 서비스 문의 하고 싶어요.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //다이얼로그 콘텐츠 -->
+            <button class="dialong__toggler" onclick="fnHidePop('faq')">
+                <span class="_hidden">토글 열기/닫기</span>
+            </button>
+        </div>
+    </div>
+    <!-- //다이얼로그 -->
+
+
+
+
+    <script src="./assets/js/swiper/swiper.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+
+    // 슬라이드 (Swiper)
+    var singleSwiper = (function() {
+        var $swiperContainer = $(".slider__wrap"); //slider__wrap 클래스를 가진 모든 div에 슬라이드 적용
+        function init($this) {
+            // Swiper elements
+            var $el = $this,
+                pagination = $this.find('.swiper-pagination'),
+                navPrev = $this.find('.slide_l'),
+                navNext = $this.find('.slide_r');
+
+            var $swiper = new Swiper($el, {
+                slidesPerView: 1,
+                spaceBetween : 55,
+                autoplay: false,
+                speed : 500,
+                watchOverflow: true,
+                navigation: {
+                    nextEl: navNext,
+                    prevEl: navPrev,
+                }
+            });
+        }
+        // Events
+        if ($swiperContainer.length) {
+            $swiperContainer.each(function(i, Slider) {
+                init($(Slider));
+            })
+        }
+    })();
+
+
+    // 어코디언
+    $('.accordian__box button').on('click', function() {
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            $(this).siblings('.accordian__item').slideUp();
+
+        } else {
+            $('.accordian__box button').removeClass('active');
+            $('.accordian__item').hide('active');
+            $(this).addClass('active');
+            $(this).siblings('.accordian__item').slideDown();
+        }
+    });
+
+    // 다이얼로그 (레이어팝업)
+    function openDialog(dialogID){
+        var $layer = $("#"+ dialogID);
+        $(".dialog").removeClass("__active");
+        $layer.addClass("__active");
+    }
+
+    //다이얼로그 닫기
+    function fnHidePop(dialogID){
+        $("#"+ dialogID).removeClass("__active");
+    }
+
+    
+    // 모바일 가상 키보드 표출 시
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(document).on('focus', '.input__msg', function() {
+            $('html, body').addClass('focused');
+        });
+        $(document).on('focusout', '.input__msg', function() {
+            $('html, body').removeClass('focused');
+        });
+    }
+    var isIphone = /(iPhone)/i.test(navigator.userAgent);
+    var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+    if(isIphone && isSafari){
+        $('body').addClass('iphone');
+    }
+
+
+
+
+
+    //test용 스크립트 키보드 엔터 시
+    $('.input__msg').on('keyup',function(key){
+        $('.chat__autocomplete').show();
+        chatTxt = $('.input__msg').val();
+        if(key.keyCode==13) {
+            var html ="<div class='chat__box right'>";
+            html += "<div class='chat__contents'>";
+            html += "<div class='chat__text'>";
+            html += chatTxt ;
+            html += "</div>";
+            html += "<div class='chat__time'>";
+            html += "오전 11:28";
+            html += "</div>";
+            html += "</div>";
+            html += "</div>";
+
+            $(html).appendTo('.msg__wrap'); 
+            // 전송 버튼 클릭 시 스크롤 하단으로 
+            var scrollEnd = $(".msg__wrap")[0].scrollHeight;
+            $('.msg__wrap').animate({scrollTop: scrollEnd}, 500);
+            $('.input__msg').val('');
+            $('.input__msg').focus();
+            $('.chat__autocomplete').hide();
+        }
+    });
+
+    $('.chat__input__submit').on('click', function() {
+        chatTxt2 = $('.input__msg').val();
+        var scrollEnd = $(".msg__wrap")[0].scrollHeight;
+        var html ="<div class='chat__box right'>";
+        html += "<div class='chat__contents'>";
+        html += "<div class='chat__text'>";
+        html += chatTxt2 ;
+        html += "</div>";
+        html += "<div class='chat__time'>";
+        html += "오전 11:28";
+        html += "</div>";
+        html += "</div>";
+        html += "</div>";
+
+        $(html).appendTo('.msg__wrap'); 
+        // 전송 버튼 클릭 시 스크롤 하단으로 
+        $('.msg__wrap').animate({scrollTop: scrollEnd}, 500);
+        $('.input__msg').val('');
+        $('.input__msg').focus();
+        $('.chat__autocomplete').hide();
+    });
+
+    </script>
+</body>
+
+</html>

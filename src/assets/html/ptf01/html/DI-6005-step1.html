@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화공공데이터광장 - 문화예술 리스트</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+    <link rel="stylesheet" href="assets/js/swaggerui/swagger-ui.css" />
+</head>
+
+<body>
+    <!-- 헤더 include 영역 -->
+    <div class="header__wrap" ></div>
+    <!-- //헤더 include 영역 -->
+
+    <!-- 컨텐츠 -->
+    <section class="container">
+        <div class="inner__wrap">
+            <!-- 브레드크럼 -->
+            <div class="breadcrumb">
+                <ul id="skipmain" class="location">
+                    <li><a href="javascript:void(0);">홈</a></li>
+                    <li><a href="javascript:void(0);">알림소통</a></li>
+                    <li><a href="javascript:void(0);" class="__current">목록형 게시판</a></li> <!-- 현재 메뉴 __current 클래스 추가-->
+                </ul>
+            </div>
+            <!-- //브레드크럼 -->
+
+            <!-- 컨텐츠 영역 -->
+            <div class="contents__wrap">
+                <!-- 레프트 메뉴 -->
+                <aside class="sub__menus">
+                    <h2 class="__title">오픈API</h2>
+                    <ul class="menulist" role="menubar">
+                        <li><a href="javascript:void(0);">데이터소개</a></li> <!-- 현재 메뉴 __current 클래스 추가-->
+                        <li><a href="javascript:void(0);" class="__current">문화예술</a></li>
+                        <li><a href="javascript:void(0);">공공데이터포털 API</a></li>
+                        <li><a href="javascript:void(0);">국가통계포털 API</a></li>
+                        <li><a href="javascript:void(0);">활용신청 안내</a></li>
+                    </ul>
+                </aside>
+                <!-- //레프트 메뉴 -->
+                
+                <!-- 컨텐츠 영역 -->
+                <section class="contents__box">
+                    <!-- 타이틀 영역 -->
+                    <div class="title grid">
+                        <h1 class="h1">문화예술</h1>
+                    </div>
+                    <!-- //타이틀 영역 -->
+
+
+                    <!-- 게시판 상세 영역 -->
+                    <div class="board__wrap">
+                        <div class="board__detail -api">
+                            <!-- api 정보 -->
+                            <div class="api__info">
+                                <div class="detail__title grid -jcsb">
+                                    <h2>한국문학도서해외소개리뷰</h2>
+                                    <div>
+                                        <button class="button -submit -lg" type="button" onclick="openDialog('dialog1')">활용신청</button>
+                                        <button class="button -cancel -lg" type="button" onclick="openDialog('dialog2')">오류신고</button>
+                                    </div>
+                                </div>
+
+                                <ul class="api__list">
+                                    <li>
+                                        <p class="__title">URL</p>
+                                        <p class="__desc">http://api.kcisa.kr/openapi/service/rest/meta2020/getKAFAculture</p>
+                                    </li>
+                                    <li>
+                                        <p class="__title">설명</p>
+                                        <p class="__desc">한국문학번역원 KLN(Korean Literature Now)에서 제공하는 한국문학도서 해외소개 리뷰 정보를 외부 개발자 및 사용자가 이를 활용 할 수 있도록 전달하는 API 서비스입니다. 제목, 등록일, 분류, 상세내용, URL 등 다양한 정보를 제공합니다.</p>
+                                    </li>
+                                    <li class="list__col2">
+                                        <div class="grid">
+                                            <p class="__title">기관명</p>
+                                            <p class="__desc">한국문화정보원</p>
+                                        </div>
+                                        <div class="grid">
+                                            <p class="__title">갱신주기</p>
+                                            <p class="__desc">연간</p>
+                                        </div>
+                                    </li>
+                                    <li class="list__col2">
+                                        <div class="grid">
+                                            <p class="__title">서비스 분야/주체</p>
+                                            <div class="__desc breadcrumb">
+                                                <ul class="location">
+                                                    <li>문화예술</li>
+                                                    <li>공지및통계</li>
+                                                    <li>공지</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="grid">
+                                            <p class="__title">API유형</p>
+                                            <p class="__desc">REST</p>
+                                        </div>
+                                    </li>
+                                    <li class="list__col2">
+                                        <div class="grid">
+                                            <p class="__title">등록일</p>
+                                            <p class="__desc">2020.2.7</p>
+                                        </div>
+                                        <div class="grid">
+                                            <p class="__title">활용도</p>
+                                            <p class="__desc">3,100</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //api 정보 -->
+
+                            <!-- 오픈 API -->
+                            <div class="api__detail">
+                                <h2>오픈 API</h2>
+                                <!-- 요청인자 -->
+                                <div>
+                                    <h3>요청인자</h3>
+                                    <table class="table">
+                                        <caption>요청인자 상세표</caption>
+                                        <colgroup>
+                                            <col style="width: 25%;">
+                                            <col style="width: 25%;">
+                                            <col style="width: 25%;">
+                                            <col style="width: 25%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>변수명</th>
+                                                <th>타입</th>
+                                                <th>변수설명</th>
+                                                <th>필수여부</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>serviceKey</td>
+                                                <td>string</td>
+                                                <td>서비스키</td>
+                                                <td>true</td>
+                                            </tr>
+                                            <tr>
+                                                <td>numOfRows</td>
+                                                <td>string</td>
+                                                <td>세션당 요청레코드수</td>
+                                                <td>false</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //요청인자 -->
+
+                                <!-- 출력 값 -->
+                                <div>
+                                    <h3>출력 값</h3>
+                                    <table class="table">
+                                        <caption>출력 값 상세표</caption>
+                                        <colgroup>
+                                            <col style="width: 15%;">
+                                            <col style="width: 25%;">
+                                            <col style="width: 60%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>No</th>
+                                                <th>변수명</th>
+                                                <th>출력설명</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>subjectCategory</td>
+                                                <td>기관별주제분류체계</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>description</td>
+                                                <td>내용 (기존 = description(내용) + ' ' + abstract(자원의 대한 요약))</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- 출력 값 -->
+
+                                <!-- -->
+                                <div>
+                                    <h3>메시지 설명</h3>
+                                    <table class="table">
+                                        <caption>메시지 설명 상세표</caption>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 80%;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>0000</th>
+                                                <td>정상 처리</td>
+                                            </tr>
+                                            <tr>
+                                                <th>F2013</th>
+                                                <td>서비스 주소 호출 실패</td>
+                                            </tr>
+                                            <tr>
+                                                <th>9999</th>
+                                                <td>서비스 점검중(내부 서비스 호출 장애)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- -->
+
+                                <!-- Swagger UI -->
+                                <div>
+                                    <!-- ie 접속일때 -->
+                                    <div id="iemsg" class="caption -grey">
+                                        웹 기반 오픈 API 활용 명세서인 <strong>Swagger UI</strong>는 마이크로소프트 엣지, 크롬, 사파리, 네이버 웨일 등에서 확인 할 수 있습니다.
+                                    </div>
+                                    <!-- //ie 접속일때 -->
+
+                                    <!-- 기본상태 -->
+                                    <div class="swagger__wrap">
+                                        <div id="swagger"></div>
+                                    </div>
+                                    <!-- //기본상태 -->
+                                </div>
+                                <!-- //Swagger UI -->
+
+                                <!-- >샘플 데이터 -->
+                                <div>
+                                    <h3>샘플 데이터</h3>
+                                    <table class="table">
+                                        <caption>>샘플 데이터 상세</caption>
+                                        <colgroup>
+                                            <col style="width: 10%;">
+                                            <col style="width: 12%;">
+                                            <col style="width: 20%;">
+                                            <col style="width: 18%;">
+                                            <col style="width: 18%;">
+                                            <col style="width: 25%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>발행기관</th>
+                                                <th>소속(통제)DB</th>
+                                                <th>주된 책임을 진 개체</th>
+                                                <th>지식정보자원위치정보</th>
+                                                <th>자원의명칭</th>
+                                                <th>내용</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>발행기관</td>
+                                                <td>소속(통제)DB</td>
+                                                <td>주된 책임을 진 개체</td>
+                                                <td>지식정보자원위치정보</td>
+                                                <td>자원의명칭</td>
+                                                <td>내용</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- //>샘플 데이터 -->
+
+                                <!-- 샘플코드 -->
+                                <div class="api__samples">
+                                    <h3>샘플코드</h3>
+                                    <div class="tabs">
+                                        <!-- 탭 버튼 -->
+                                        <div class="tabs__group grid">
+                                            <button class="tab__button __current">
+                                                공공데이터포털
+                                            </button>
+                                            <button class="tab__button">
+                                                공공데이터포털/국가통계포털
+                                            </button>
+                                        </div>
+                                        <!-- //탭 버튼 -->
+                
+                                        <!-- 탭 컨텐츠 -->
+                                        <div class="tab__contents">
+                                            <div class="__current">
+                                                <div>
+                                                    /* Java 샘플 코드 */1111<br />
+                                                    import java.io.InputStreamReader;<br />
+                                                    import java.net.HttpURLConnection;<br />
+                                                    import java.net.URL;<br />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    /* Java 샘플 코드 */2222<br />
+                                                    import java.io.InputStreamReader;<br />
+                                                    import java.net.HttpURLConnection;<br />
+                                                    import java.net.URL;<br />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //샘플코드 -->
+
+                                <!-- 연관 오픈API -->
+                                <div>
+                                    <div class="related__api">
+                                        <div class="grid -jcsb">
+                                            <h3>연관 오픈API</h3>
+                                            <div class="swiper-navigation">
+                                                <button class="button_l">
+                                                    <span class="_hidden">
+                                                        좌로 이동
+                                                    </span>
+                                                </button>
+                                                <button class="button_r">
+                                                    <span class="_hidden">
+                                                        우로 이동
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <ul class="swiper-wrapper">
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div>
+                                                        <p class="cate">문화예술</p>
+                                                        <h4>한국고전문학해외소...</h4>
+                                                        <div class="breadcrumb">
+                                                            <ul class="location">
+                                                                <li>문화예술정보</li>
+                                                                <li>전문자료</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="desc">
+                                                            한국문학번역원 KLN(Korean Literature Now)에서 제공하는 한국고전문학 해외소개 칼럼 정보를 외부 개발자 및 사용자가 이를 활용 할 수 있도록 전달하는 API 서비스입니다. 제목, 등록일, 분류, 상세내용, URL 등 다양한 정보를 제공합니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="related__from">
+                                                        <p class="count">300건</p>
+                                                        <p>
+                                                            <img src="./assets/images/dummy_logo.png" alt="로고명">
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div>
+                                                        <p class="cate">문화예술</p>
+                                                        <h4>한국고전문학해외소...</h4>
+                                                        <div class="breadcrumb">
+                                                            <ul class="location">
+                                                                <li>문화예술정보</li>
+                                                                <li>전문자료</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="desc">
+                                                            한국문학번역원 KLN(Korean Literature Now)에서 제공하는 한국고전문학 해외소개 칼럼 정보를 외부 개발자 및 사용자가 이를 활용 할 수 있도록 전달하는 API 서비스입니다. 제목, 등록일, 분류, 상세내용, URL 등 다양한 정보를 제공합니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="related__from">
+                                                        <p class="count">300건</p>
+                                                        <p>
+                                                            <img src="./assets/images/dummy_logo.png" alt="로고명">
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div>
+                                                        <p class="cate">문화예술</p>
+                                                        <h4>한국고전문학해외소...</h4>
+                                                        <div class="breadcrumb">
+                                                            <ul class="location">
+                                                                <li>문화예술정보</li>
+                                                                <li>전문자료</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="desc">
+                                                            한국문학번역원 KLN(Korean Literature Now)에서 제공하는 한국고전문학 해외소개 칼럼 정보를 외부 개발자 및 사용자가 이를 활용 할 수 있도록 전달하는 API 서비스입니다. 제목, 등록일, 분류, 상세내용, URL 등 다양한 정보를 제공합니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="related__from">
+                                                        <p class="count">300건</p>
+                                                        <p>
+                                                            <img src="./assets/images/dummy_logo.png" alt="로고명">
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="swiper-slide">
+                                                <a href="javascript:void(0);">
+                                                    <div>
+                                                        <p class="cate">문화예술</p>
+                                                        <h4>한국고전문학해외소...</h4>
+                                                        <div class="breadcrumb">
+                                                            <ul class="location">
+                                                                <li>문화예술정보</li>
+                                                                <li>전문자료</li>
+                                                            </ul>
+                                                        </div>
+                                                        <p class="desc">
+                                                            한국문학번역원 KLN(Korean Literature Now)에서 제공하는 한국고전문학 해외소개 칼럼 정보를 외부 개발자 및 사용자가 이를 활용 할 수 있도록 전달하는 API 서비스입니다. 제목, 등록일, 분류, 상세내용, URL 등 다양한 정보를 제공합니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="related__from">
+                                                        <p class="count">300건</p>
+                                                        <p>
+                                                            <img src="./assets/images/dummy_logo.png" alt="로고명">
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- 연관 오픈API -->
+                            </div>
+                            <!-- //오픈 API -->
+                        </div>
+
+                    </div>
+                    <!-- //게시판 상세 영역 -->
+                </section>
+                <!-- //컨텐츠 영역 -->
+
+            </div>
+            <!-- //컨텐츠 영역 -->
+        </div>
+    </section>
+    <!-- 컨텐츠-->
+
+
+    <!-- footer include 영역 -->
+    <div class="footer__wrap"></div>
+    <!-- //footer include 영역 -->
+
+
+    <!-- 다이얼로그 -->
+    <div class="dialog -sm -active" id="dialog1" role="dialog">
+        <div class="dialog__detail">
+            <!-- 다이얼로그 타이틀 -->
+            <h2 class="dialog__title" id="title_01">오픈 API 활용 신청</h2>
+            <!-- //다이얼로그 타이틀 -->
+
+            <!-- 다이얼로그 콘텐츠 -->
+            <div class="dialog__contents">
+                <div class="api__apply">
+                    <div class="steps">
+                        <ul class="steps__box">
+                            <li class="steps__item __current">
+                                <span>Step 1</span>
+                                <p>제공동의</p>
+                            </li>
+                            <li class="steps__item">
+                                <span>Step 2</span>
+                                <p>신청자정보</p>
+                            </li>
+                            <li class="steps__item">
+                                <span>Step 3</span>
+                                <p>활용정보</p>
+                            </li>
+                            <li class="steps__item">
+                                <span>Step 4</span>
+                                <p>서비스키</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inputbox">
+                        <input type="checkbox" name="" id="chkapply">
+                        <label for="chkapply">문화<em class="spacehalf"></em>공공데이터광장 개인정보 수집 이용에 동의합니다.</label>
+                    </div>
+
+                    <div class="api__privacy">
+                        <span>개인정보 수집 이용에 대한 동의</span>
+                        한국문화정보원은 오픈API 서비스제공을 위해 아래와 같이 개인 정보를 <br>
+                        수집 이용하고자 합니다.<br>
+                        내용을 자세히 읽으신 후 동의 여부를 결정하여 주시기 바랍니다.
+                    </div>
+
+                    <div class="board__wrap">
+
+                        <table class="table">
+                            <caption>&gt;샘플 데이터 상세</caption>
+                            <colgroup>
+                                <col style="width: 33%;">
+                                <col style="width: 33%;">
+                                <col style="width: 33%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>항목</th>
+                                    <th>수집목적</th>
+                                    <th>보유기간</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>성명, 이메일</strong>
+                                    </td>
+                                    <td>
+                                        <strong>오픈 API 서비스 제공</strong>
+                                    </td>
+                                    <td>
+                                        <strong>2년</strong>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <p class="caption -grey">위의 개인정보 수집 이용에 대한 동의를 거부할 권리가 있습니다.<br>그러나 동의를 거부할 경우 오픈 API를 사용하실수 없습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //다이얼로그 콘텐츠 -->
+
+
+            <!-- 다이얼로그 버튼 -->
+            <div class="grid -center">
+                <!-- <button class="button -link" type="button">이전</button> -->
+                <button class="button" type="button">다음</button>
+            </div>
+            <!-- // 다이얼로그 버튼 -->
+
+            <!-- 다이얼로그 닫기 버튼 -->
+            <button class="dialog__close" type="button" onclick="fnHidePop('dialog1');">닫기</button>
+            <!-- //다이얼로그 닫기 버튼 -->
+        </div>
+
+
+
+
+
+
+    <div class="dialog -sm" id="dialog2" role="dialog">
+        <div class="dialog__detail">
+            <!-- 다이얼로그 타이틀 -->
+            <h2 class="dialog__title" id="title_01">오픈 API 활용 신청</h2>
+            <!-- //다이얼로그 타이틀 -->
+
+            <!-- 다이얼로그 콘텐츠 -->
+            <div class="dialog__contents">
+                <div class="api__apply">
+                    <div class="apply__form">
+                        <div class="inputbox">
+                            <p class="label">오류데이터명</p>
+                            <p class="dialog__title">한국고전문학해외소개칼럼</p>
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="url">작성자</label>
+                            <input type="text" name="" id="url">
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="url">비밀번호</label>
+                            <input type="text" name="" id="url">
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="url">이메일</label>
+                            <input type="text" name="" id="url">
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="usefor">공개여부</label>
+                            <select name="" id="usefor">
+                                <option value="">공개</option>
+                                <option value="">비공개</option>
+                                <option value="">Value</option>
+                            </select>
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="url">제목</label>
+                            <input type="text" name="" id="url">
+                        </div>
+                        <div class="inputbox">
+                            <label class="label" for="textarea">내용</label>
+                            <textarea name="" id="textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="caption -grey">신고한 내용은 데어터(API)문의 게시판을 통해 확인 할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //다이얼로그 콘텐츠 -->
+
+
+            <!-- 다이얼로그 버튼 -->
+            <div class="grid -center">
+                <button class="button -link" type="button" onclick="fnHidePop('dialog2');">취소</button>
+                <button class="button" type="submit">저장</button>
+            </div>
+            <!-- // 다이얼로그 버튼 -->
+
+            <!-- 다이얼로그 닫기 버튼 -->
+            <button class="dialog__close" type="button" onclick="fnHidePop('dialog2');">닫기</button>
+            <!-- //다이얼로그 닫기 버튼 -->
+        </div>
+    </div>
+    </div>
+    <!-- //다이얼로그 -->
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/swaggerui/swagger-ui-bundle.js" charset="UTF-8"> </script>
+    <script src="./assets/js/swaggerui/swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
+    <script src="./assets/js/swiper.min.js"></script> <!-- swiper (캐러셀) -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script> <!-- jQuery 코어 -->
+    <script src="./assets/js/common.js"></script> <!-- 공통 스크립트-->
+    <script>
+    //Swagger Default Set
+    window.onload = function() {
+      const ui = SwaggerUIBundle({
+        url: "https://petstore.swagger.io/v2/swagger.json",
+        dom_id: '#swagger',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout"
+      });
+      window.ui = ui;
+    };
+
+    // 탭 메뉴
+    var tabsGroup = $('.tabs__group');
+    var tabButtons = tabsGroup.children('button');
+    var tabContents = $('.tab__contents>div');
+    tabButtons.on('click', function(){
+        var idx = tabButtons.index($(this));
+        tabButtons.removeClass('__current');
+        $(this).addClass('__current');
+        tabContents.removeClass('__current');
+        tabContents.eq(idx).addClass('__current');
+    });
+
+    //알림판 배너
+    var related__api = new Swiper(".related__api", {
+        slidesPerView: 3.4,
+        loop: true,
+        pagination: false,
+        observer: true,
+        spaceBetween: 15,
+        autoplay: {
+            delay: 2500,
+        },
+        navigation: {
+            nextEl: ".swiper-navigation .button_r",
+            prevEl: ".swiper-navigation .button_l",
+        },
+        pagination: {
+            el: ".banner__paging",
+            type: "fraction",
+        },
+    });
+  </script>
+
+
+
+</body>
+
+</html>

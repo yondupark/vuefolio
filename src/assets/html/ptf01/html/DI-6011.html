@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화공공데이터광장 - 정책브리핑 데이터 분석</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/js/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/js/mscrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+</head>
+<body>
+    <!-- 헤더 include 영역 -->
+    <div class="header__wrap" ></div>
+    <!-- //헤더 include 영역 -->
+
+    <!-- 컨텐츠 -->
+    <section class="container">
+        <div class="inner__wrap">
+            <!-- 브레드크럼 -->
+            <div class="breadcrumb">
+                <ul id="skipmain" class="location">
+                    <li><a href="javascript:void(0);">홈</a></li>
+                    <li><a href="javascript:void(0);">분석 시각화 서비스</a></li>
+                    <li><a href="javascript:void(0);" class="__current">정책브리핑 데이터 분석</a></li> <!-- 현재 메뉴 __current 클래스 추가-->
+            </div>
+            <!-- //브레드크럼 -->
+
+            <!-- 컨텐츠 영역 -->
+            <div class="contents__wrap">
+                <!-- 레프트 메뉴 -->
+                <aside class="sub__menus">
+                    <h2 class="__title">오픈API</h2>
+                    <ul class="menulist" role="menubar">
+                        <li><a href="javascript:void(0);">데이터소개</a></li> <!-- 현재 메뉴 __current 클래스 추가-->
+                        <li><a href="javascript:void(0);">문화예술</a></li>
+                        <li><a href="javascript:void(0);">공공데이터포털 API</a></li>
+                        <li><a href="javascript:void(0);">국가통계포털 API</a></li>
+                        <li><a href="javascript:void(0);" class="__current">활용신청 안내</a></li>
+                    </ul>
+                </aside>
+                <!-- //레프트 메뉴 -->
+
+                <!-- 컨텐츠 영역 -->
+                <section class="contents__box">
+                    <!-- 타이틀 영역 -->
+                    <div class="title grid brd_n">
+                        <h1 class="h1">정책브리핑 데이터 분석</h1>
+                    </div>
+                    <!-- //타이틀 영역 -->
+
+                    <div class="charts">
+                        <div class="grid">
+                            <!-- 데이터 현황 -->
+                            <div class="loading">
+                                <div class="title">
+                                    <h2 class="h3">데이터 현황</h2>
+                                </div>
+                                <div class="graph__box">
+                                    <div class="infodata__title">
+                                        <h4>문화 미디어정보 수집 데이터 수</h4>
+                                        <p class="total"><span>4,905,306</span>건</p>
+                                    </div>
+                                    <div class="infodata__graph">
+                                        <div class="row">
+                                            <div class="progress-label">문화정책</div>
+                                            <div class="progress-count">1,477,152</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 66%" class="progress-bar"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">예술정책</div>
+                                            <div class="progress-count">636,290</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 28%" class="progress-bar progress-bar-success"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">체육정책</div>
+                                            <div class="progress-count">1,329,178</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 59%" class="progress-bar progress-bar-info"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">관광정책</div>
+                                            <div class="progress-count">204,276</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 9%" class="progress-bar progress-bar-warning"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">문화콘텐츠정책</div>
+                                            <div class="progress-count">628,576</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 28%" class="progress-bar progress-bar-danger"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">경제/사회정책</div>
+                                            <div class="progress-count">195,755</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 8%" class="progress-bar progress-bar-brown"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row ">
+                                            <div class="progress-label">기타</div>
+                                            <div class="progress-count">432,023</div>
+                                            <div class="progress-div">
+                                                <div class="progress progress-bar-default">
+                                                    <div style="width: 19%" class="progress-bar progress-bar-darkgray">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 로딩 -->
+                                    <div class="spinner">
+                                        <span class="_hidden">데이터 불러오는 중</span>
+                                    </div>
+                                    <!-- //로딩 -->
+                                </div>
+                            </div>
+                            <!-- //데이터 현황 -->
+    
+                            <!-- 토픽 TOP-N분석 -->
+                            <div>
+                                <div class="topn__box grid jcbt title">
+                                    <h2 class="h3">토픽 TOP-N 분석</h2>
+                                    <div class="topn__select">
+                                        <label for="selecttopicn" class="_hidden">토픽 TOP-N 분석 옵션 설정</label>
+                                        <select name="" id="selecttopicn">
+                                            <option value="일별">일별</option>
+                                            <option value="Value">Value</option>
+                                            <option value="Value">Value</option>
+                                            <option value="Value">Value</option>
+                                            <option value="Value">Value</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="topic__wrap">
+                                    <div class="topic__buttons">
+                                        <h3 class="_hidden">토픽 카테고리</h3>
+                                        <ul class="grid">
+                                            <li><button class="ico active">문화정책</button></li>
+                                            <li><button class="ico col-blue">예술정책</button></li>
+                                            <li><button class="ico col-aqua">체육정책</button></li>
+                                            <li><button class="ico col-orange">관광정책</button></li>
+                                            <li><button class="ico col-dahong">문화콘텐츠정책</button></li>
+                                            <li><button class="ico col-brown">경제/사회정책</spbuttonan></li>
+                                            <li><button class="ico col-etc">기타</button></li>
+                                        </ul>
+                                    </div>
+                                    <div class="grid col-2 loading">
+                                        <div class="custom__scrollbox">
+                                            <h4>2021년 08월 03일</h4>
+
+                                            <ul class="ranks__lists">
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">1위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">2위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">3위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">4위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">5위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">6위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">7위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">8위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">9위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">10위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">11위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">12위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">13위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">14위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">15위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="button -link -full">더보기 +</button>
+                                            <!-- <div class="noresults">
+                                                <p>검색 결과가 없습니다.</p>
+                                            </div> -->
+                                        </div>
+                                        <div class="custom__scrollbox">
+                                            <h4>2021년 09월 03일</h4>
+                                            <ul class="ranks__lists">
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">1위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">2위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li class="__highranks">
+                                                    <div>
+                                                        <span class="_hidden">3위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">4위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">5위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">6위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">7위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">8위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">9위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">10위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">11위</span> 겅규 앨범
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">12위</span> 1넬 주식
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">13위</span> 특별기획 인간실격
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">14위</span> 남자 강재
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <span class="_hidden">15위</span> 여자 부정
+                                                    </div>
+                                                    <p>25</p>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="button -link -full">더보기 +</button>
+                                        </div>
+    
+                                        <!-- 로딩 -->
+                                        <div class="spinner">
+                                            <span class="_hidden">데이터 불러오는 중</span>
+                                        </div>
+                                        <!-- //로딩 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //토픽 TOP-N분석 -->
+                        </div>
+
+                        <div class="analyze__wrap">
+
+                            <div class="title -brd_n">
+                                <h2 class="h3">분석조건</h2>
+                            </div>
+                            <div class="analyze__box">
+                                <div class="inputbox grid radiogroup">
+                                    <p class="label">국내/해외</p>
+                                    <div class="grid">
+                                        <div class="radiobox">
+                                            <input type="radio" id="radio2_1" name="group1">
+                                            <label for="radio2_1">국내</label>
+                                        </div>
+                                        <div class="radiobox">
+                                            <input type="radio" id="radio2_2" name="group1">
+                                            <label for="radio2_2">해외</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inputbox grid radiogroup -col2">
+                                    <div>
+                                        <div class="inputbox">
+                                            <label for="start" class="label">시작일</label>
+                                            <input class="datepicker" type="text" id="start" placeholder="20200101">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="inputbox">
+                                            <label for="fin" class="label">종료일</label>
+                                            <input class="datepicker" type="text" id="fin" placeholder="20210101">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="inputbox grid radiogroup">
+                                    <div class="inputbox">
+                                        <label for="name" class="label">검색어</label>
+                                        <input type="text" id="name" placeholder="20200101">
+                                        <button class="button">분석하기</button>
+                                    </div>
+                                </div>
+
+                                <div class="inputbox grid radiogroup">
+                                    <div class="inputbox">
+                                        <label for="andsearch" class="label">상세검색</label>
+                                        <div>
+                                            <input type="text" id="andsearch" placeholder="AND 검색 - 다음 단어는 반드시 포함">
+                                            <label for="orsearch" class="_hidden">상세검색</label>
+                                            <input type="text" id="orsearch" placeholder="OR 검색 - 다음 단어는 반드시 포함">
+                                            <p class="-help">* 여러 개의 단어는 쉼표(,)로 구분해서 입력하세요.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="line__graph" style="width: 100%; height: 205px;"></div>
+                        </div>
+
+                        <div class="grid">
+                            <div class="topic__chart__wrap">
+                                <div class="title">
+                                    <h2 class="h3 brd_n">토픽 연관성 분석</h2>
+                                </div>
+                                <div>
+                                    <div id="forcedirected" style="width: 100%; height: 36.5rem;"></div>
+                                    <div class="grid">
+                                        <p class="mr20 -md">키워드 동시 출현 %</p>
+                                        <div class="legend">
+                                            <span class="ico col-dahong">5% 미만</span>
+                                            <span class="ico col-mint">5% ~ 9%</span>
+                                            <span class="ico col-orange">10% ~ 19%</span>
+                                            <span class="ico col-purple3">20% 이상</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="topic__ranks__wrap">
+                                <div class="title">
+                                    <h2 class="h3 brd_n">연관 토픽 문화 미디어정보 데이터 건수</h2>
+                                </div>
+                                <div class="loading">
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 군무이탈
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 넷플릭스 드라마
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> DP출신 연예 DP출신 연예 DP출신 연예 DP출신 연예 DP출신 연예 DP출신 연예 DP출신 연예 DP출신 연예
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> EBC 736기
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 이탈 체포조
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">6위</span> 출연료출연료출연료출연료출연료출연료 출연료출연료출연료출연료출연료
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">7위</span> 체육인
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">8위</span> 위자료
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">9위</span> 정의연
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">10위</span> 음악저작물 사용료음악저작물 사용료음악저작물 사용료음악저작물 사용료음악저작물 사용료음악저작물 사용료
+                                            </div>
+                                            <p>25 건</p>
+                                        </li>
+                                    </ul>
+                                    <!-- 로딩 -->
+                                    <div class="spinner">
+                                        <span class="_hidden">데이터 불러오는 중</span>
+                                    </div>
+                                    <!-- //로딩 -->
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        <div class="word__clouds">
+                            <div class="title -brd_n">
+                                <h2 class="h3">토픽 클라우드</h2>
+                            </div>
+                            <div class="border">
+                                <div>
+                                    <p class="caption">검색어 검색 결과를 분석하여 주요 토픽을 보여줍니다.<br />
+                                    각각의 키워드에 마우스 오른쪽 버튼 클릭시 ‘토픽추이에 추가’, ‘이 키워드로 검색’ 기능을 제공합니다.</p>
+                                    <div class="legend">
+                                        <span class="ico">문화정책</span>
+                                        <span class="ico col-blue">예술정책</span>
+                                        <span class="ico col-aqua">체육정책</span>
+                                        <span class="ico col-orange">관광정책</span>
+                                        <span class="ico col-dahong">문화콘텐츠정책</span>
+                                        <span class="ico col-brown">경제/사회정책</span>
+                                        <span class="ico col-etc">기타</span>
+                                    </div>
+                                </div>
+                                <div class="graph__select">
+                                    <label for="selectCloudYear" class="_hidden">연도선택</label>
+                                    <select name="" id="selectCloudYear">
+                                        <option value="">2021년</option>
+                                        <option value="">2020년</option>
+                                        <option value="">2019년</option>
+                                        <option value="">2018년</option>
+                                    </select>
+                                    <button class="select__apply">적용</button>
+                                </div>
+                                <div id="word__clouds"></div>
+                            </div>
+                        </div>
+
+                        <div class="topic__trends">
+                            <div class="title">
+                                <h2 class="h3 brd_n">토픽 트랜드 분석</h2>
+                            </div>
+                            <div class="grid -jcsb -vcenter">
+                                <p class="caption">최고 12개 기간까지 보여집니다.</p>
+                                <div class="grid">
+                                    <label for="analy01" class="_hidden">토픽트랜드분석 옵션 1</label>
+                                    <select class="ml10" name="" id="analy01">
+                                        <option value="">text</option>
+                                        <option value="">text</option>
+                                        <option value="">text</option>
+                                    </select>
+                                    <label for="analy02" class="_hidden">토픽트랜드분석 옵션 2</label>
+                                    <select class="ml10" name="" id="analy02">
+                                        <option value="">text</option>
+                                        <option value="">text</option>
+                                        <option value="">text</option>
+                                    </select>
+                                    <button class="button ml10">적용</button>
+                                </div>
+                            </div>
+                            <div class="topic__analy__wrap grid -jcsb loading">
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="title -brd_n">
+                                        <h3 class="h3 -md color05">021년 09월 03일</h3>
+                                    </div>
+                                    <ul class="ranks__lists">
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">1위</span> 겅규 앨범
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">2위</span> 1넬 주식
+                                            </div>
+                                        </li>
+                                        <li class="__highranks">
+                                            <div>
+                                                <span class="_hidden">3위</span> 특별기획 인간실격
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">4위</span> 남자 강재
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <span class="_hidden">5위</span> 여자 부정
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                                <!-- 로딩 -->
+                                <div class="spinner">
+                                    <span class="_hidden">데이터 불러오는 중</span>
+                                </div>
+                                <!-- //로딩 -->
+                            </div>
+                        </div>
+
+
+                        <div class="analyze__searched">
+                            <div class="title">
+                                <h2 class="h3 brd_n">토픽 시계열 분석</h2>
+                            </div>
+                            <div class="topic__tags">
+                                <ul class="grid">
+                                    <li class="grid">
+                                        <p>texttext</p>
+                                        <button class="-del">
+                                            <span class="_hidden">항목 제거</span>
+                                        </button>
+                                    </li>
+                                    <li class="grid">
+                                        <p>texttext</p>
+                                        <button class="-del">
+                                            <span class="_hidden">항목 제거</span>
+                                        </button>
+                                    </li>
+                                    <li class="grid">
+                                        <p>texttext</p>
+                                        <button class="-del">
+                                            <span class="_hidden">항목 제거</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="grid -jcsb">
+                                <div class="text__searched">
+                                    <p>
+                                        “<span>
+                                            구체적지급
+                                        </span>
+                                        AND
+                                        <span>
+                                            병원
+                                        </span>
+                                        AND
+                                        <span>
+                                            구체적지급
+                                        </span><span>
+                                            구체적지급
+                                        </span>
+                                        AND
+                                        <span>
+                                            병원
+                                        </span>
+                                        AND
+                                        <span>
+                                            구체적지급
+                                        </span><span>
+                                            구체적지급
+                                        </span>
+                                        AND
+                                        <span>
+                                            병원
+                                        </span>
+                                        AND
+                                        <span>
+                                            구체적지급
+                                        </span><span>
+                                            구체적지급
+                                        </span>
+                                        AND
+                                        <span>
+                                            병원
+                                        </span>
+                                        AND
+                                        <span>
+                                            구체적지급
+                                        </span><span>
+                                            구체적지급
+                                        </span>
+                                        AND
+                                        <span>
+                                            병원
+                                        </span>
+                                        AND
+                                        <span>
+                                            구체적지급
+                                        </span>
+                                        ”
+                                        에 대한 <span>2,109</span>건의 문화 미디어정보 데이터 검색결과가 있습니다. 
+                                    </p>
+                                    <p>(검색기간 : <span>20200101~20210908)</span></p>
+                                </div>
+                                <button class="button -lg -link">초기화</button>
+                            </div>
+                            <div>
+                                <div id="line__graph2" style="width: 100%; height: 350px;"></div>
+                            </div>
+                        </div>
+
+                        <div class="topic__list__wrap">
+                            <h2 class="_hidden">토픽별 검색</h2>
+                            <div class="grid -vcenter">
+                                <div class="grid -vcenter">
+                                    <p class="color02">
+                                        총 2,109건 조회
+                                    </p>
+                                    <div class="grid ml10">
+                                        <label for="topicinnersearch" class="_hidden"></label>
+                                        <input type="text" id="topicinnersearch" placeholder="Search">
+                                        <button class="button ml10">찾기</button>
+                                    </div>
+                                </div>
+                                <div class="grid -vcenter">
+                                    <label for="listlength" class="_hidden">검색 게시물 표출 개수 설정</label>
+                                    <select name="" id="listlength">
+                                        <option value="text">6건씩 조회</option>
+                                        <option value="text">1건씩 조회</option>
+                                        <option value="text">2건씩 조회</option>
+                                    </select>
+                                    <button class="button ml10">적용</button>
+                                </div>
+                            </div>
+
+                            <div class="topic_srch_wrap loading">
+                                <div class="topic__buttons">
+                                    <h3 class="_hidden">토픽 카테고리</h3>
+                                    <!--
+                                        .board__tag.-cate1 /*문화*/
+                                        .board__tag.-cate2 /*예술*/
+                                        .board__tag.-cate3 /*체육*/
+                                        .board__tag.-cate4 /*관광*/
+                                        .board__tag.-cate5 /*문화콘텐츠*/
+                                        .board__tag.-cate6 /*경제/사회*/
+                                        .board__tag.-cate7 /*기타*/
+                                    -->
+                                    <ul class="grid">
+                                        <li><button class="active">전체<span class="-numb">(31212222)</span></button></li>
+                                        <li><button>문화정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>예술정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>체육정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>관광정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>문화콘텐츠정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>경제/사회정책<span class="-numb">(12)</span></button></li>
+                                        <li><button>기타<span class="-numb">(111122212)</span></button></li>
+                                    </ul>
+                                </div>
+                                <ul class="topic_srch_box">
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate1">문화</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate2">예술</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate3">체육</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate4">관광</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate5">문화콘텐츠</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                    <li class="topic_item">
+                                        <span class="board__tag -cate6">경제/사회</span>
+                                        <span class="dates">2021.09.18</span>
+                                        <p class="tit">‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서 ‘코로나 전담병원’ 그만하겠다 정부 “10일 만나서</p>
+                                        <ul class="hash">
+                                            <li>#인건비</li>
+                                            <li>#파견인력</li>
+                                            <li>#파견인력 인건비</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="pagination">
+                                    <ul class="grid">
+                                        <li class="__first">
+                                            <a href="javascript:void(0);">
+                                                <span class="_hidden">처음으로</span>
+                                            </a>
+                                        </li>
+                                        <li class="__prev">
+                                            <a href="javascript:void(0);">
+                                                <span class="_hidden">이전으로</span>
+                                            </a>
+                                        </li>
+                                        <li class="__current">
+                                            <a href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">5</a>
+                                        </li>
+                                        <li class="__next">
+                                            <a href="javascript:void(0);">
+                                                <span class="_hidden">다음으로</span>
+                                            </a>
+                                        </li>
+                                        <li class="__last">
+                                            <a href="javascript:void(0);">
+                                                <span class="_hidden">마지막으로</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- 로딩 -->
+                                <div class="spinner">
+                                    <span class="_hidden">데이터 불러오는 중</span>
+                                </div>
+                                <!-- //로딩 -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- //컨텐츠 영역 -->
+            </div>
+            <!-- //컨텐츠 영역 -->
+        </div>
+    </section>
+    <!-- 컨텐츠-->
+
+    <!-- footer include 영역 -->
+    <div class="footer__wrap"></div>
+    <!-- //footer include 영역 -->
+
+    <!-- to top -->
+    <div class="to_top">
+        <button class="top_trigger">
+            <span class="_hidden">최상위로</span>
+        </button>
+    </div>
+    <!-- //to top -->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./assets/js/mscrollbar/jquery.mCustomScrollbar.js"></script> <!-- malihu scrollbar -->
+    <script src="./assets/js/echarts.min.js"></script> <!-- https://echarts.apache.org/en/index.html -->
+    <script src="./assets/js/echarts-wordclouds.min.js"></script> <!-- https://github.com/ecomfe/echarts-wordcloud -->
+    <script src="./assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+
+                    //M scrollbar (custom scroll)
+        (function($){
+            $(window).resize(function(){
+                if($(this).width()>640){
+                    $('.custom__scrollbox .ranks__lists').mCustomScrollbar({
+                        //option (현재는 기본형)
+                    });
+                }else{
+                    $('.custom__scrollbox .ranks__lists').mCustomScrollbar("destroy"); //destroy scrollbar 
+                }
+            }).trigger("resize");
+        })(jQuery);
+        //DatePicker
+
+        //더보기 클릭 시 업데이트
+        $(document).on('click', '.custom__scrollbox .button.-link', function() {
+            $(this).siblings('.ranks__lists').mCustomScrollbar('update');
+        });
+        
+        
+        $(function() {
+            //input을 datepicker로 선언
+            $(".datepicker").datepicker({
+                dateFormat: 'yy-mm-dd'
+                ,showOtherMonths: true
+                ,showMonthAfterYear:true
+                ,changeYear: true
+                ,changeMonth: true           
+                ,showOn: "both"
+                ,buttonImageOnl: true 
+                ,buttonText: "선택"              
+                ,yearSuffix: "년"
+                ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12']
+                ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+                ,dayNamesMin: ['일','월','화','수','목','금','토']
+                ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+                ,minDate: "-1M"
+                ,maxDate: "+1M"
+            });                    
+        
+            //초기값을 오늘 날짜로 설정
+            $('.datepicker').datepicker('setDate', 'today');           
+        });
+
+        //G1
+        var chartDom = document.getElementById('line__graph');
+        var myChart = echarts.init(chartDom);
+        var option;
+
+        option = {
+            xAxis: {
+                type: 'category',
+                data: [2150, 2130, 2124, 2118, 2135, 2147, 2160],
+            },
+            yAxis: {
+                type: 'value'
+            },
+            grid: {
+                left: 40,
+                top: 20,
+                right: 0,
+                bottom:20
+            },
+            series: [
+                {
+                    data: [150, 230, 224, 218, 135, 147, 260],
+                    type: 'line',
+                    height: 200,
+                }
+            ]
+        };
+
+        option && myChart.setOption(option);
+
+
+
+        //G2
+        var chartDom2 = document.getElementById('line__graph2');
+        var myChart2 = echarts.init(chartDom2);
+        var option3;
+
+        option3 = {
+            xAxis: {
+                type: 'category',
+                data: [2150, 2130, 2124, 2118, 2135, 2147, 2160],
+            },
+            yAxis: {
+                type: 'value'
+            },
+            grid: {
+                left: 40,
+                top: 20,
+                right: 0,
+                bottom:20
+            },
+            series: [
+                {
+                    data: [150, 230, 224, 218, 135, 147, 260],
+                    type: 'line',
+                    height: 200,
+                }
+            ]
+        };
+        option3 && myChart2.setOption(option3);
+
+
+        //G3
+        var wordClouds = echarts.init(document.getElementById('word__clouds'));
+        var option2 = {
+            tooltip: {},
+            series: [ {
+                type: 'wordCloud',
+                rotationStep: 90, // 글자의 회전 각
+                gridSize:   10, //각 데이터별 영역 벌림
+                sizeRange: [18, 40], //[폰트의 최소크기, 최대크기]
+                drawOutOfBound: false, //영역을 넘쳐서 표현 가능할지 안할지
+                shape: 'default',
+                width: '100%',
+                height: 400,
+                textStyle: {
+                    fontFamily: 'Noto Sans KR', //서체
+                    fontWeight: '700', //서체 굵기 300 400 500 700
+                    // 텍스트 렌더링시 컬러 랜덤화
+                    color: function () {
+                        return 'rgb(' + [
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160),
+                            Math.round(Math.random() * 160)
+                        ].join(',') + ')';
+                    }
+                },
+                // 마우스 오버 효과
+                emphasis: {
+                    focus: 'self',
+                    textStyle: {
+                        textShadowBlur: 1,
+                    }
+                },
+                data: [
+                     {name:'Sammy',value:1000,textStyle:{normal:{color:'black'}}} //특정 텍스트 스타일 원할시 추가 삽입
+                    ,{name:'Macys',value:6181}
+                    ,{name:'Amy Schumer',value:4386}
+                    ,{name:'Jurassic World',value:405}
+                    ,{name:'Charter Communications',value:2467}
+                    ,{name:'Chick Fil A',value:2244}
+                    ,{name:'Planet Fitness',value:1898}
+                    ,{name:'Pitch Perfect',value:1484}
+                    ,{name:'Express',value:1112}
+                    ,{name:'Home',value:965}
+                    ,{name:'Johnny Depp',value:847}
+                    ,{name:'Lena Dunham',value:582}
+                    ,{name:'Lewis Hamilton',value:55}
+                    ,{name:'KXAN',value:50}
+                    ,{name:'Mary Ellen Mark',value:462}
+                    ,{name:'Farrah Abraham',value:366}
+                    ,{name:'Rita Ora',value:360}
+                    ,{name:'Serena Williams',value:282}
+                    ,{name:'NCAA baseball tournament',value:273}
+                    ,{name:'Point Break',value:265}
+                    ,{name:'Macys',value:6181}
+                    ,{name:'Amy Schumer',value:4386}
+                    ,{name:'Jurassic World',value:405}
+                    ,{name:'Charter Communications',value:2467}
+                    ,{name:'Chick Fil A',value:2244}
+                    ,{name:'Planet Fitness',value:1898}
+                    ,{name:'Pitch Perfect',value:1484}
+                    ,{name:'Express',value:1112}
+                    ,{name:'Home',value:965}
+                    ,{name:'Johnny Depp',value:847}
+                    ,{name:'Lena Dunham',value:582}
+                    ,{name:'Lewis Hamilton',value:55}
+                    ,{name:'KXAN',value:50}
+                    ,{name:'Mary Ellen Mark',value:462}
+                    ,{name:'Farrah Abraham',value:366}
+                    ,{name:'Rita Ora',value:360}
+                    ,{name:'Serena Williams',value:282}
+                    ,{name:'NCAA baseball tournament',value:273}
+                    ,{name:'Point Break',value:265}
+
+                ]
+            } ]
+        };
+        wordClouds.setOption(option2);
+
+        //G4
+        var chartDom5 = document.getElementById('forcedirected');
+        var myChart5 = echarts.init(chartDom5);
+        var option5;
+
+        myChart5.showLoading();
+        $.getJSON('./assets/js/dummy.json', function (graph) {
+        myChart5.hideLoading();
+        option5 = {
+            tooltip: {},
+            series: [
+            {
+                type: 'graph',
+                layout: 'none',
+                data: graph.nodes,
+                links: graph.links,
+                categories: graph.categories,
+                roam: true,
+                grid: {
+                    left: 40,
+                    top: 20,
+                    right: 0,
+                    bottom:20
+                },
+                label: {
+                show: true,
+                position: 'center',
+                },
+                labelLayout: {
+                hideOverlap: true
+                },
+                scaleLimit: {
+                min: 3,
+                max: 4
+                },
+                lineStyle: {
+                color: 'source',
+                curveness: 0
+                }
+            }
+            ]
+        };
+        myChart5.setOption(option5);
+        });
+
+        option5 && myChart5.setOption(option5);
+    </script>
+</body>
+
+</html>

@@ -18,13 +18,11 @@
 import headerComp from './components/Common/header'
 import boardData from './components/Board/boarddata.js';
 
-
 export default {
   name: 'S.W.Vuefolio',
   data() {
     return {
       board: boardData,
-      모달창열렸니 : true,
     }
   },
   components: {

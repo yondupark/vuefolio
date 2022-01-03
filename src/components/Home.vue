@@ -5,13 +5,13 @@
         <div>
           <div>
             <h2>
-              Hi.<br />
+              Hello World!<br />
               I’m <span>Sang Wan Park.</span>
             </h2>
             <div> 
               <p>
-                i’ve done since<br />
-                <span id="count" class="highlight">0</span> days ago.
+                I worked since<br />
+                <span id="count" class="highlight">0</span> days.
               </p>
               <p>
                 It gotta be <span class="highlight">Fun</span>.<br />
@@ -357,16 +357,15 @@ export default {
     position: relative;
     box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
     transform: scale(1.1);
-    z-index: 99999;
+    z-index: 999;
   }
   .image{
-    height: 30rem;
+    height: 20rem;
     img {
       display: block;
       position: relative;
-      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       height: auto;
       width: 100%;
     }

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문화공공데이터광장 - 통합검색</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/contents.css">
+</head>
+
+<body class="main">
+    <!-- 헤더 include 영역 -->
+    <div class="header__wrap"></div>
+    <!-- //헤더 include 영역 -->
+
+    <!-- 컨텐츠 -->
+    <section class="container">
+        <div class="inner__wrap">
+            <!-- 브레드크럼 -->
+            <div class="breadcrumb">
+                <ul id="skipmain" class="location">
+                    <li><a href="javascript:void(0);">홈</a></li>
+                    <li><a href="javascript:void(0);" class="__current">통합검색</a></li> <!-- 현재 메뉴 __current 클래스 추가-->
+                </ul>
+            </div>
+            <!-- //브레드크럼 -->
+
+            <!-- 컨텐츠 영역 -->
+            <div class="contents__wrap">
+                <!-- 컨텐츠 영역 -->
+                <section class="contents__box -full">
+                    <!-- 풀 화면일 때 -full 클래스 추가 -->
+                    <!-- 타이틀 영역 -->
+                    <div class="title grid">
+                        <h1 class="h1">통합검색</h1>
+                    </div>
+                    <!-- //타이틀 영역 -->
+
+
+                    <!-- 통합검색 검색창 -->
+
+                    <div class="total__search">
+                        <h2 class="_hidden">통합검색 입력</h2>
+                        <form action="">
+                            <div class="search__wrap">
+                                <label for="sch__main" class="_hidden">검색어를 입력하세요.</label>
+                                <input id="sch__main" class="input__autocomplete" type="text" value="" placeholder="검색어를 입력하세요.">
+                                <button class="btn__search"><span class="_hidden">검색</span></button>
+                                <!-- 자동 완성 박스 -->
+                                <div class="custom__autocomplete">
+                                    <div class="custom__scrollbar">
+                                        <!-- JqueryUI Autocomplete Append -->                                        
+                                    </div>
+                                    <div class="autocomplete__off">
+                                        <button class="button -button__off">자동완성 끄기</button>
+                                    </div>
+                                </div>
+                                <!-- 자동 완성 박스 -->
+                            </div>
+                            
+
+                            <div class="popular__data">
+                                <p class="popular__title">연관</p>
+                                <div class="popular__lists">
+                                    <a href="javascript:void(0);">문화적</a>
+                                    <a href="javascript:void(0);">전통문화</a>
+                                    <a href="javascript:void(0);">창달</a>
+                                    <a href="javascript:void(0);">식생활</a>
+                                    <a href="javascript:void(0);">예술</a>
+                                    <a href="javascript:void(0);">문화적</a>
+                                    <a href="javascript:void(0);">전통문화</a>
+                                    <a href="javascript:void(0);">창달</a>
+                                    <a href="javascript:void(0);">식생활</a>
+                                    <a href="javascript:void(0);">예술</a>
+                                    <a href="javascript:void(0);">문화적</a>
+                                    <a href="javascript:void(0);">전통문화</a>
+                                    <a href="javascript:void(0);">창달</a>
+                                </div>
+                            </div>
+
+                            <div class="search__selects grid">
+                                <div class="search__option">
+                                    <div class="grid__item grid">
+                                        <!-- 셀렉트 옵션 1 -->
+                                        <div>
+                                            <label for="select__option1" class="_hidden">검색 조건 1. 분류체계</label>
+                                            <select name="" id="select__option1">
+                                                <option value="">제목순</option>
+                                                <option value="" selected>최신순</option>
+                                                <option value="">조회순</option>
+                                            </select>
+                                        </div>
+                                        <!-- //셀렉트 옵션 1 -->
+
+                                        <!-- 상세검색 -->
+                                        <button class="button -toggleoption" type="button" onclick="openDialog('dialog1')">
+                                            <span>상세검색</span>
+                                        </button>
+                                        <!-- //상세검색 -->
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <!-- 상세조건 -->
+                            <div class="search__condition">
+                                <h3>상세조건</h3>
+                                <ul class="grid">
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                    <li>선택된 조건값</li>
+                                </ul>
+                                <button class="btn__reset" type="button">조건 초기화</button>
+                            </div>
+                            <!-- //상세조건 -->
+                        </form>
+                    </div>
+                    <!-- //통합검색 검색창 -->
+
+
+                    <!-- 검색 결과 없을 시 -->
+                    <!-- 검색 결과 카테고리 -->
+
+                    <div class="total__search__tabs tabs">
+                        <!-- 탭 버튼 -->
+                        <div class="tabs__group grid -jcsb">
+                            <button class="tab__button -all __current">
+                                전체<span>0</span>
+                            </button>
+                            <button class="tab__button">
+                                오픈API<span>0</span>
+                            </button>
+                            <button class="tab__button">
+                                공공데이터포털/국가통계포털<span>0</span>
+                            </button>
+                            <button class="tab__button">
+                                문화<em class="spacehalf"></em>공공데이터광장<span>0</span>
+                            </button>
+                            <button class="tab__button">
+                                경진대회/메타버스<span>0</span>
+                            </button>
+                        </div>
+                        <!-- //탭 버튼 -->
+
+                        <!-- 탭 컨텐츠 -->
+                        <div class="tab__contents">
+                            <div class="noresults">
+                                <p>검색 결과가 없습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //검색 결과 카테고리 -->
+                    <!-- //검색 결과 없을 시 -->
+
+
+
+                    <!-- 검색 결과 카테고리 -->
+                    <div class="total__search__tabs tabs">
+                        <!-- 탭 버튼 -->
+                        <div class="tabs__group grid -jcsb">
+                            <button class="tab__button -all __current">
+                                전체<span>274</span>
+                            </button>
+                            <button class="tab__button">
+                                오픈API<span>40</span>
+                            </button>
+                            <button class="tab__button">
+                                공공데이터포털/국가통계포털<span>144</span>
+                            </button>
+                            <button class="tab__button">
+                                문화<em class="spacehalf"></em>공공데이터광장<span>144</span>
+                            </button>
+                            <button class="tab__button">
+                                경진대회/메타버스<span>144</span>
+                            </button>
+                        </div>
+                        <!-- //탭 버튼 -->
+
+                        <!-- 탭 컨텐츠 -->
+                        <div class="tab__contents">
+                            <div id="tab01">
+                                <!-- 검색결과 리스트 영역 -->
+                                <div class="board__wrap">
+                                    <!-- 통합검색 타이틀 -->
+                                    <div class="result__title grid -jcsb">
+                                        <h2>오픈 API <span class="__count">144</span></h2>
+                                        <a href="javascript:void(0);" class="btn__more"><span class="_hidden">더보기</span></a>
+                                    </div>
+                                    <!-- //통합검색 타이틀 -->
+                                    <!-- 게시판 리스트 -->
+                                    <div class="board__wrap -type01">
+                                        <ul class="board">
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">활용도</span>
+                                                            <span>250건</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">데이터</span>
+                                                            <span>367건</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>홈</li>
+                                                        <li>오픈API</li>
+                                                        <li>문화예술</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li class="author">
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li class="date">
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>문화예술</li>
+                                                        <li>공지및통계</li>
+                                                        <li>공지</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li class="author">
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li class="date">
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>문화예술</li>
+                                                        <li>공지및통계</li>
+                                                        <li>공지</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //게시판 리스트 -->
+                                </div>
+                                <!-- //검색결과 리스트 영역 -->
+                            </div>
+                            <div id="tab02">
+                                <!-- 검색결과 리스트 영역 -->
+                                <div class="board__wrap">
+                                    <!-- 통합검색 타이틀 -->
+                                    <div class="result__title grid -jcsb">
+                                        <h2>국가통계포털<span class="__count">144</span></h2>
+                                        <a href="javascript:void(0);" class="btn__more"><span class="_hidden">더보기</span></a>
+                                    </div>
+                                    <!-- //통합검색 타이틀 -->
+                                    <!-- 게시판 리스트 -->
+                                    <div class="board__wrap -type01">
+                                        <ul class="board">
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">활용도</span>
+                                                            <span>250건</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">데이터</span>
+                                                            <span>367건</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>홈</li>
+                                                        <li>오픈API</li>
+                                                        <li>문화예술</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li class="author">
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li class="date">
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>문화예술</li>
+                                                        <li>공지및통계</li>
+                                                        <li>공지</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">REST</span>
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학번역원_한국문학도서 해외소개 리뷰</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li class="author">
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li class="date">
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="board__breadcrum">
+                                                        <li>문화예술</li>
+                                                        <li>공지및통계</li>
+                                                        <li>공지</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //게시판 리스트 -->
+                                </div>
+                                <!-- //검색결과 리스트 영역 -->
+                            </div>
+                            <div id="tab03">
+                                <!-- 검색결과 리스트 영역 -->
+                                <div class="board__wrap">
+                                    <!-- 통합검색 타이틀 -->
+                                    <div class="result__title grid -jcsb">
+                                        <h2>공공데이터포털 <span class="__count">144</span></h2>
+                                        <a href="javascript:void(0);" class="btn__more"><span class="_hidden">더보기</span></a>
+                                    </div>
+                                    <!-- //통합검색 타이틀 -->
+                                    <!-- 게시판 리스트 -->
+                                    <div class="board__wrap -type01">
+                                        <ul class="board">
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type2">JSON/XML</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__desc">
+                                                    <a href="javascript:void(0);">
+                                                        <p>한국문학과 작가를 소개하는 영문 계간지인 Korean Literature Now 에 수록된 해외에 출간된 한국문학
+                                                            도서의 영문 리뷰 기사. 전 세계에 번역출간되고 있는 한국 문학서의 리뷰를 해당 언어권의 필자들이 쓰는 코너입니다.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //게시판 리스트 -->
+                                </div>
+                                <!-- //검색결과 리스트 영역 -->
+                            </div>
+                            <div id="tab04">
+                                <!-- 검색결과 리스트 영역 -->
+                                <div class="board__wrap">
+                                    <!-- 통합검색 타이틀 -->
+                                    <div class="result__title grid -jcsb">
+                                        <h2>문화<em class="spacehalf"></em>공공데이터광장 <span class="__count">144</span></h2>
+                                        <a href="javascript:void(0);" class="btn__more"><span class="_hidden">더보기</span></a>
+                                    </div>
+                                    <!-- //통합검색 타이틀 -->
+                                    <!-- 게시판 리스트 -->
+                                    <div class="board__wrap -type02">
+                                        <ul class="board">
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">공연예술조사</span>
+                                                    <span class="__cate">공연단체 운영현황</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">공연예술조사111</span>
+                                                    <span class="__cate">2015년 이후 – 예술활동 분야</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="board__title grid">
+                                                    <span class="tag __type1">공연예술조사11111</span>
+                                                    <span class="__cate">2015년 이후 – 예술활동 분야1111</span>
+                                                    <a href="javascript:void(0);">
+                                                        <p>공연단체 : 항목별 평균 수입내역</p>
+                                                    </a>
+                                                </div>
+                                                <div class="board__info">
+                                                    <ul class="board__data">
+                                                        <li>
+                                                            <span class="list__item">제공기관</span>
+                                                            <span>문화체육관광부</span>
+                                                        </li>
+                                                        <li>
+                                                            <span class="list__item">등록일</span>
+                                                            <span>2020.5.8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="javascript:void(0);" class="button -link"
+                                                        target="_blank">바로가기</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- //게시판 리스트 -->
+                                </div>
+                                <!-- //검색결과 리스트 영역 -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //검색 결과 카테고리 -->
+
+                </section>
+                <!-- //컨텐츠 영역 -->
+
+            </div>
+            <!-- //컨텐츠 영역 -->
+        </div>
+    </section>
+    <!-- 컨텐츠-->
+
+    <!-- footer include 영역 -->
+    <div class="footer__wrap"></div>
+    <!-- //footer include 영역 -->
+
+
+    <!-- 다이얼로그 -->
+    <div class="dialog -transparent" id="dialog1" role="dialog">
+        <div class="dialog__detail">
+            <!-- 다이얼로그 타이틀 -->
+            <h2 class="dialog__title" id="title_01" >상세검색</h2>
+            <!-- //다이얼로그 타이틀 -->
+
+            <!-- 다이얼로그 콘텐츠 -->
+            <div class="dialog__contents">
+                <div class="search__select__option grid -jcsb">
+                    <div class="search__select__box">
+                        <h3>
+                            <input type="checkbox" name="gr02" id="chkall2">
+                            <label for="chkall2" class="chkall">분류체계</label>
+                        </h3>
+                        <ul class="-lists">
+                            <li>
+                                <input type="checkbox" name="gr02" id="id04">
+                                <label for="id04">문화예술</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr02" id="id05">
+                                <label for="id05">문화유산</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr02" id="id06">
+                                <label for="id06">문화산업</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr02" id="id07">
+                                <label for="id07">문화예술</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr02" id="id08">
+                                <label for="id08">문화유산</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr02" id="id09">
+                                <label for="id09">문화산업</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search__select__box">
+                        <h3>
+                            <input type="checkbox" name="gr03" id="chkall3">
+                            <label for="chkall3" class="chkall">기관</label>
+                        </h3>
+                        <ul class="-lists">
+                            <li>
+                                <input type="checkbox" name="gr03" id="id10">
+                                <label for="id10">기관1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr03" id="id11">
+                                <label for="id11">기관2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr03" id="id12">
+                                <label for="id12">기관3</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr03" id="id13">
+                                <label for="id13">기관1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr03" id="id14">
+                                <label for="id14">기관2</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr03" id="id15">
+                                <label for="id15">기관3</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search__select__box">
+                        <h3>
+                            <input type="checkbox" name="gr04" id="chkall4">
+                            <label for="chkall4" class="chkall">데이터유형</label>
+                        </h3>
+                        <ul class="-lists">
+                            <li>
+                                <input type="checkbox" name="gr04" id="id16">
+                                <label for="id16">JASON</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr04" id="id17">
+                                <label for="id17">XML</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr04" id="id18">
+                                <label for="id18">FILE</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr04" id="id19">
+                                <label for="id19">JASON</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr04" id="id20">
+                                <label for="id20">XML</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="gr04" id="id21">
+                                <label for="id21">FILE</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search__words__wrap">
+                    <h3 class="h4">검색어 설정 (여러 단어 입력 시 콤마 &#39; &#44; &#8217; 로 구분)</h3>
+                    <ul class="search__words__box">
+                        <li class="grid">
+                            <label for="text01">다음 단어 모두 포함</label>
+                            <input type="text" name="" id="text01">
+                        </li>
+                        <li class="grid">
+                            <label for="text02">다음 단어 중 하나 이상 포함</label>
+                            <input type="text" name="" id="text02">
+                        </li>
+                        <li class="grid">
+                            <label for="text03">다음 단어 제외</label>
+                            <input type="text" name="" id="text03">
+                        </li>
+                        <li class="words__checkbox grid">
+                            <div>
+                                <input type="checkbox" name="" id="word01">
+                                <label for="word01">결과 내 재검색</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="word02">
+                                <label for="word02">질의어 확장 검색</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="word03">
+                                <label for="word03">연관 검색어 포함</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- //다이얼로그 콘텐츠 -->
+
+
+            <!-- 다이얼로그 버튼 -->
+            <div class="grid -center">
+                <button class="button -submit" type="button">적용</button>
+                <button class="button -cancel ml10" type="button" onclick="fnHidePop('dialog1');">취소</button>
+            </div>
+            <!-- // 다이얼로그 버튼 -->
+
+            <!-- 다이얼로그 닫기 버튼 -->
+            <button class="dialog__close" type="button" onclick="fnHidePop('dialog1');">닫기</button>
+            <!-- //다이얼로그 닫기 버튼 -->
+        </div>
+    </div>
+    <!-- 다이얼로그 -->
+
+
+
+    <!-- to top -->
+    <div class="to_top">
+        <button class="top_trigger">
+            <span class="_hidden">최상위로</span>
+        </button>
+    </div>
+    <!-- //to top -->
+    
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/common.js"></script>
+    <script>
+        // 탭 메뉴
+        var tabsGroup = $('.tabs__group');
+        var tabButtons = tabsGroup.children('button');
+        var tabContents = $('.tab__contents>div');
+        tabButtons.on('click', function(){
+            var idx = tabButtons.index($(this))
+            if ($(this).hasClass('-all')) {
+                tabButtons.removeClass('__current');
+                tabContents.show();
+                $(this).addClass('__current');
+            } else {
+                tabButtons.removeClass('__current');
+                $(this).addClass('__current');
+                tabContents.hide();
+                tabContents.eq(idx - 1).show();
+            }
+        });
+        $('.tab__button.-all').click();
+
+
+    </script>
+</body>
+
+</html>

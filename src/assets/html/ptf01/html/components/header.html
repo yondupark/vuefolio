@@ -1,0 +1,158 @@
+
+    <!-- 헤더 영역 -->
+    <header class="">
+        <!-- 컨텐츠 바로가기 -->
+        <div class="skip">
+            <a href="#skipmain" class="skip__link">본문 바로가기</a>
+        </div>
+        <!-- //컨텐츠 바로가기 -->
+
+        <!-- 메뉴바 -->
+        <div class="gnb grid" role="menubar">
+            <div class="logo">
+                <a href="/"><span class="_hidden">문화<em class="spacehalf"></em>공공데이터광장</span></a>
+            </div>
+            <nav class="gnb__aligner" aria-label="전체메뉴">
+                <div>
+                    <ul class="gnb__groups grid">
+                        <!-- 메뉴 그룹 1 -->
+                        <li>
+                            <button type="button" id="menu__01" class="menu__button">개방데이터</button>
+                            <div id="menu__contents__01" class="menu__panel">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">데이터소개</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">활용신청 안내</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">오픈 API</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //메뉴 그룹 1 -->
+
+                        <!-- 메뉴 그룹 2 -->
+                        <li>
+                            <button type="button" id="menu__02" class="menu__button __current">분석시각화</button>
+                            <div id="menu__contents__02" class="menu__panel">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">정책브리핑</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">문화경제정보</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">이슈인포그래픽</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">테마분석리포트</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //메뉴 그룹 2 -->
+
+                        <!-- 메뉴 그룹 3 -->
+                        <li>
+                            <button type="button" id="menu__03" class="menu__button">활용지원</button>
+                            <div id="menu__contents__03" class="menu__panel">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">문화미디어정보 분석</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">이슈인포그래픽/테마분석리포트</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //메뉴 그룹 3 -->
+
+                        <!-- 메뉴 그룹 4 -->
+                        <li>
+                            <button type="button" id="menu__04" class="menu__button">알림소통</button>
+                            <div id="menu__contents__04" class="menu__panel">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">공지사항</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">Q&A</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">개발자 정보공유</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">포럼</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">발전협의회/포럼</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //메뉴 그룹 4 -->
+
+                        <!-- 메뉴 그룹 5 -->
+                        <li>
+                            <button type="button" id="menu__05" class="menu__button">이용안내</button>
+                            <div id="menu__contents__05" class="menu__panel">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">문화<em class="spacehalf"></em>공공데이터광장 소개</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">서비스이용약관</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="javascript:void(0);" target="_self" class="__link">연계기관</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- //메뉴 그룹 5 -->
+                    </ul>
+
+                    <button type="button" class="gnb__close"><span class="_hidden">닫기</span></button>
+                </div>
+            </nav>
+        </div>
+        <!-- //메뉴바 -->
+
+        <!-- 통합 검색 -->
+
+        <!-- 검색 트리거 -->
+        <button type="button" class="search__trigger"><span class="_hidden">통합검색창 열기</span></button>
+        <!-- //검색 트리거 -->
+        <!-- 통합 검색 다이얼로그 -->
+        <div class="dialog -search" id="total_search" role="dialog">
+            <div class="search__wrap">
+                <label for="sch__total" class="_hidden">검색어를 입력하세요.</label>
+                <input id="sch__total" class="input__autocomplete" type="text" value="" placeholder="검색어를 입력하세요." autocomplete="off">
+                <button class="btn__search"><span class="_hidden">검색</span></button>
+                <!-- 자동 완성 박스 -->
+                <div class="custom__autocomplete">
+                    <div class="custom__scrollbar">
+                        <!-- JqueryUI Autocomplete Append -->                                        
+                    </div>
+                    <div class="autocomplete__off">
+                        <button class="button -button__off">자동완성 끄기</button>
+                    </div>
+                </div>
+                <!-- 자동 완성 박스 -->
+            </div>
+        </div>
+        <!-- //통합 검색 다이얼로그 -->
+        
+        <!-- 통합 검색  -->
+
+
+        <!-- 모바일 트리거 -->
+        <button class="mo__trigger"><span class="_hidden">메뉴 열기</span></button>
+        <!-- 모바일 트리거 -->
+    </header>
+    <!-- // 헤더 영역 -->

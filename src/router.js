@@ -1,4 +1,4 @@
-import { createWebHashHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 import Home from './components/Home';
 import boardList from './components/Board/boardList';
 import boardDetail from './components/Board/boardDetail';
@@ -16,7 +16,14 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  scrollBehavior() {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({ left: 0, top: 0 })
+      }, 200)
+    })
+  },
+  history: createWebHistory(),
   mode: 'history',
   base: process.env.BASE_URL,
   routes,

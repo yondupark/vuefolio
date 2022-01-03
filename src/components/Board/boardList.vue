@@ -12,8 +12,8 @@
                     <img :src="`${board.Image}`" alt="">
                 </div>
                 <div class="texts">
-                    <h3 class="title">{{ board.From }}</h3>
                     <p class="title2">{{ board.Title }}</p>
+                    <h3 class="title">{{ board.From }}</h3>
                 </div>
             </router-link>
           </li>
@@ -38,6 +38,9 @@ export default {
 .portfolios {
   min-height: 100vh;
 }
+.portfolios li {
+  transition: 1s ease all;
+}
 .portfolios li img {
   transition: 1.5s ease all;
 }
@@ -45,9 +48,14 @@ export default {
   overflow: hidden;
 }
 .portfolios li:hover {
-  box-shadow: 0 0 30px 20px rgba(29, 117, 73, 0.35);
+  transform: scale(1.25);
+  z-index: 999;
+}
+.portfolios li:hover {
+  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.35);
 }
 .portfolios li:hover img {
-  transform: translateX(-50%) translateY(-5px) scale(1.5);
+  transform: translateX(-50%) translateY(-5px) scale(1.15);
+  transform-origin: center top;
 }
 </style>
