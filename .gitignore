@@ -28,3 +28,4 @@ pnpm-debug.log*
 firebase.json
 *.txt
 *.cache
+yarn.lock
