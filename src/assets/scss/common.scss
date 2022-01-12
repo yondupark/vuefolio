@@ -22,7 +22,7 @@
       padding: 1rem;
       color: $textColor;
       font-size: 1.8rem;
-      font-weight: 500;
+      font-weight: 600;
       text-decoration: none;
       &.router-link-exact-active {
           color: $pointColor;
@@ -282,19 +282,29 @@ footer {
 }
 .container > div.portfolios__view {
   width: 100%;
-  max-width: none;
+  max-width: 128rem;
   display: flex;
   align-items: flex-start;
-  padding: 00;
+  padding: 0;
 }
 .portfolios__img {
-  flex:0 0 60rem;
+  width: 50%;
   img {
     display: block;
     max-width: 100%;
   }
 }
-
+.portfolios__desc {
+  width: 50%;
+  position: sticky;
+  top: 9rem;
+  right: 0;
+}
+.ptf__list {
+  li {
+    margin: .8rem 0;
+  }
+}
 
 
 
@@ -399,10 +409,6 @@ footer {
   }
 }
 
-
-.portfolios__desc {
-  width: 100%;
-}
 .portfolios__contents {
   padding: 2rem;
   .ptf__list {
@@ -410,14 +416,24 @@ footer {
     text-align: left;
     li {
       display: flex;
+      font-weight: 600;
       span:first-child {
         flex: 0 0 8rem;
-        
       }
     }
   }
   .ptf__list + div {
     width: 100%;
     text-align: left;
+    font-weight: 600;
+    > div {
+      margin-top: 1rem;
+    }
   }
+}
+.title_desc.mb10 {
+  margin-bottom: 1rem;
+}
+.reviewtxt {
+  line-height: 2.1;
 }

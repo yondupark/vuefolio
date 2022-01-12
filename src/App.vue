@@ -3,7 +3,7 @@
     <headerComp />
 
     <section class="pageContens">
-      <transition :name="fade" mode="out-in">
+      <transition name="fade">
         <router-view :board="board"></router-view>
       </transition>
     </section>
@@ -34,11 +34,11 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: .5s ease all;
+  transition: 2s ease all;
 }
 
-.fade-enter,
-.fade-leave-active {
-  opacity: 0
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

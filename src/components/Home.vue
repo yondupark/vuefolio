@@ -360,7 +360,7 @@ export default {
     z-index: 999;
   }
   .image{
-    height: 20rem;
+    height: 25rem;
     img {
       display: block;
       position: relative;
@@ -368,6 +368,17 @@ export default {
       transform: translateX(-50%);
       height: auto;
       width: 100%;
+    }
+  }
+  .texts {
+    h3 {
+      font-weight: 700;
+    }
+    p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

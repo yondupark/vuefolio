@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 $bgColor : #fff;
 $textColor: #000;
 $pointColor : #0EC8B9;
@@ -70,13 +72,12 @@ body {
 }
 body {
     color: $textColor;
-    font-family: "Zen Kaku Gothic New", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: -apple-system, 'Nanum Gothic', BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     text-align: center;
     background: $bgColor;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 .grid {
     @include flexbox;
     align-items: center;
