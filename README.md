@@ -8,7 +8,6 @@
 ## Used by
 
  - [Vue 2.x](https://vuejs.org/)
- - [Nuxt.JS 2.15.8](https://nuxtjs.org/)
  - [Vue Router](https://router.vuejs.org/)
  - [Scss](https://sass-lang.com/)
  - [Firebase](https://firebase.google.com/)
@@ -16,10 +15,9 @@
   
 ## Visit Website
 
-- Nuxt.js로 개발 - https://nuxtvuefolio.web.app/
 - Vue3.X로 개발 - https://swvuefolio.web.app/
+- Nuxt.js로 개발 - https://nuxtvuefolio.web.app/
 
-  
   
 ## Run it
 

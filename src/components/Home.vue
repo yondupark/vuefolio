@@ -1,6 +1,8 @@
 <template>
   
   <div class="main">
+    <intro />
+
       <div class="vueHome">
         <div>
           <div>
