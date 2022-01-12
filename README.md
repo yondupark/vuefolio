@@ -7,15 +7,17 @@
 
 ## Used by
 
- - [Vue 3.x](https://vuejs.org/)
+ - [Vue 2.x](https://vuejs.org/)
+ - [Nuxt.JS 2.15.8](https://nuxtjs.org/)
  - [Vue Router](https://router.vuejs.org/)
- - [Sass](https://sass-lang.com/)
+ - [Scss](https://sass-lang.com/)
  - [Firebase](https://firebase.google.com/)
  - [Figma](https://www.figma.com/)
   
-## View Website
+## Visit Website
 
-https://swvuefolio.web.app/
+- Nuxt.js로 개발 - https://nuxtvuefolio.web.app/
+- Vue3.X로 개발 - https://swvuefolio.web.app/
 
   
 ## Run it
