@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import VueAnime from 'vue-animejs';
+import anime from 'animejs/lib/anime.es.js'
 
-
-createApp(App).use(router, VueAnime).mount('#app')
+createApp(App).use(router, anime).mount('#app')
