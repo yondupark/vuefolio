@@ -7,18 +7,26 @@
       <div class="career_detail">
         <ul>
           <li>
-            <h2>다부처 문화공공데이터광장 구축 <span>2020.10.01 ~ 2021-12.31 (2개월)</span></h2>
+            <h2>
+              다부처 문화공공데이터광장 구축
+              <span>2020.10.01 ~ 2021-12.31 (2개월)</span>
+            </h2>
             <ul>
               <li>- 직급 : 과장</li>
               <li>- 담당업무 :</li>
               <li class="subs">문화공공데이터광장 구축 퍼블리싱</li>
               <li class="subs">문화공공데이터광장 챗봇 서비스 퍼블리싱</li>
               <li class="subs">통합활용시스템 추가 퍼블리싱</li>
-              <li class="subs">문화공공데이터광장/통합활용시스템 접근성 검수</li>
+              <li class="subs">
+                문화공공데이터광장/통합활용시스템 접근성 검수
+              </li>
             </ul>
           </li>
           <li>
-            <h2>한화리조트 로컬라이브 구축 <span>2020.08.09 ~ 2021-09.31 (2개월)</span></h2>
+            <h2>
+              한화리조트 로컬라이브 구축
+              <span>2020.08.09 ~ 2021-09.31 (2개월)</span>
+            </h2>
             <ul>
               <li>- 직급 : 과장</li>
               <li>- 담당업무 :</li>
@@ -26,7 +34,10 @@
             </ul>
           </li>
           <li>
-            <h2>대한항공 내부 사이트 운영 및 신규 사이트 구축 <span>2020.11.01 ~ 2021-08.31 (9개월)</span></h2>
+            <h2>
+              대한항공 내부 사이트 운영 및 신규 사이트 구축
+              <span>2020.11.01 ~ 2021-08.31 (9개월)</span>
+            </h2>
             <ul>
               <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
@@ -35,7 +46,10 @@
             </ul>
           </li>
           <li>
-            <h2>대한항공 웹사이트 웹접근성 검수 <span>2020.06.08 ~ 2020-11.01 (5개월)</span></h2>
+            <h2>
+              대한항공 웹사이트 웹접근성 검수
+              <span>2020.06.08 ~ 2020-11.01 (5개월)</span>
+            </h2>
             <ul>
               <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
@@ -43,7 +57,9 @@
             </ul>
           </li>
           <li>
-            <h2>K Shopping (KTH)<span>2020.04.01 ~ 2020.04.30 (1개월)</span></h2>
+            <h2>
+              K Shopping (KTH)<span>2020.04.01 ~ 2020.04.30 (1개월)</span>
+            </h2>
             <ul>
               <li>- 직급 : 대리</li>
               <li>- 담당업무 :</li>
@@ -57,7 +73,10 @@
             <ul>
               <li>- 직급 : 계장</li>
               <li>- 담당업무 :</li>
-              <li class="subs">사내 사이트 (웹사이트/ERP/사외업무관리시스템/회사소개사이트/제휴사이트)</li>
+              <li class="subs">
+                사내 사이트
+                (웹사이트/ERP/사외업무관리시스템/회사소개사이트/제휴사이트)
+              </li>
               <li class="subs">인터렉션 기획전 기획 및 애니메이션 효과 적용</li>
               <li class="subs">웹사이트 개편 프로젝트 퍼블리싱 관리</li>
               <li class="subs">UI/UX 디자인</li>
@@ -76,12 +95,14 @@
               <li class="viewmore">
                 <div class="toggleDiv">
                   <table>
-                    <caption>업적</caption>
+                    <caption>
+                      업적
+                    </caption>
                     <colgroup>
-                      <col class="col1">
-                      <col class="col2">
-                      <col class="col3">
-                      <col class="col4">
+                      <col class="col1" />
+                      <col class="col2" />
+                      <col class="col3" />
+                      <col class="col4" />
                     </colgroup>
                     <thead>
                       <tr>
@@ -92,9 +113,16 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>원조쌈밥(더본) <span class="linkbuttton"></span></td>
-                        <td rowspan="16">워드프레스 기반<br> (PHP)</td>
-                        <td rowspan="16">HTML5<br>CSS3<br>웹반응형<br>Javascript<br>JQUERY</td>
+                        <td>
+                          원조쌈밥(더본) <span class="linkbuttton"></span>
+                        </td>
+                        <td rowspan="16">
+                          워드프레스 기반<br />
+                          (PHP)
+                        </td>
+                        <td rowspan="16">
+                          HTML5<br />CSS3<br />웹반응형<br />Javascript<br />JQUERY
+                        </td>
                       </tr>
                       <tr>
                         <td>본가(더본) 영문</td>
@@ -156,11 +184,13 @@
               <li class="viewmore">
                 <div class="toggleDiv">
                   <table>
-                    <caption>업적</caption>
+                    <caption>
+                      업적
+                    </caption>
                     <colgroup>
-                      <col width="300">
-                      <col width="100">
-                      <col width="100">
+                      <col width="300" />
+                      <col width="100" />
+                      <col width="100" />
                     </colgroup>
                     <thead>
                       <tr>
@@ -172,8 +202,10 @@
                     <tbody>
                       <tr>
                         <td>CM코리아 웹사이트 구축</td>
-                        <td rowspan="16">PHP기반<br>CMS 솔루션</td>
-                        <td rowspan="16">HTML5<br>CSS3<br>웹반응형<br>적응형<br>JQUERY</td>
+                        <td rowspan="16">PHP기반<br />CMS 솔루션</td>
+                        <td rowspan="16">
+                          HTML5<br />CSS3<br />웹반응형<br />적응형<br />JQUERY
+                        </td>
                       </tr>
                       <tr>
                         <td>CNO 컨설팅 웹사이트 구축</td>
@@ -210,7 +242,7 @@
 
 <script>
 export default {
-  name: 'Career'
+  name: "Career",
 };
 </script>
 
@@ -222,12 +254,12 @@ export default {
     list-style: none;
     text-align: left;
   }
-  >ul {
+  > ul {
     max-width: 100%;
     margin: 0 auto;
     position: relative;
   }
-  >ul:before {
+  > ul:before {
     content: "";
     width: 2rem;
     height: 100%;
@@ -241,19 +273,19 @@ export default {
   li {
     margin-bottom: 1.2rem;
   }
-  >ul>li {
+  > ul > li {
     position: relative;
     padding-left: 5rem;
     margin-bottom: 5rem;
   }
-  >ul>li:before {
+  > ul > li:before {
     content: "";
     width: 10px;
     height: 10px;
     display: block;
     position: absolute;
     top: 0.9rem;
-    left: .5rem;
+    left: 0.5rem;
     background: $white;
     border-radius: 20px;
   }
@@ -269,7 +301,7 @@ export default {
     height: 2px;
     border-radius: 50%;
     position: absolute;
-    top: .9rem;
+    top: 0.9rem;
     left: 0;
     background: #000;
     display: block;
@@ -287,14 +319,15 @@ export default {
 }
 .toggleDiv {
   table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
   }
   caption {
     display: none;
   }
-  th, td {
+  th,
+  td {
     padding: 9px 0;
     color: $textColor;
   }
@@ -306,7 +339,7 @@ export default {
     text-align: center;
     padding: 1rem 0;
   }
-   td {
+  td {
     text-align: center;
     padding-left: 10px;
     border-bottom: 1px solid #333;
@@ -314,7 +347,7 @@ export default {
       text-align: left;
     }
   }
-  ul>li>ul>li {
+  ul > li > ul > li {
     margin-bottom: 1rem;
   }
 }

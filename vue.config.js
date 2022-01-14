@@ -3,18 +3,16 @@
 module.exports = {
   css : {
       loaderOptions : {
-        sass : {
-          additionalData: `
-            @import "@/assets/scss/reset.scss";
-            @import "@/assets/scss/common.scss";
-          `
-        },
         scss : {
           additionalData: `
-            @import "@/assets/scss/reset.scss";
-            @import "@/assets/scss/common.scss";
+            @import "@/assets/scss/_variables.scss";
+            @import "@/assets/scss/_reset.scss";
+            @import "@/assets/scss/_common.scss";
           `
         }
       }
+  },
+  devServer: {
+    overlay: false
   }
 }

@@ -1,34 +1,35 @@
 <template>
-
   <div class="container">
     <div class="portfolios">
       <div class="title_desc">
         <h2>My works</h2>
       </div>
       <ul class="v_listup">
-          <li v-for="(board, idx) in board" :key="idx">
-            <router-link :to="{ name: 'boardDetail', params: { id: idx }}">
-                <div class="image">
-                    <img :src="`${board.Image}`" alt="">
-                </div>
-                <div class="texts">
-                    <p class="title2">{{ board.Title }}</p>
-                    <h3 class="title">{{ board.From }}</h3>
-                </div>
-            </router-link>
-          </li>
+        <li v-for="(board, idx) in board" :key="idx">
+          <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
+            <div class="image">
+              <img :src="`${board.Image}`" alt="" />
+            </div>
+            <div class="texts">
+              <p class="title2">{{ board.Title }}</p>
+              <h3 class="title">{{ board.From }}</h3>
+            </div>
+          </router-link>
+        </li>
       </ul>
-    </div>  
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'list',
-    props: {
-        board : Array
-    }
-}
+  name: "list",
+  props: {
+    board: Object,
+  },
+  methods: {
+  },
+};
 </script>
 
 <style scoped>
@@ -40,6 +41,7 @@ export default {
 }
 .portfolios li {
   transition: 1s ease all;
+  border: none;
 }
 .portfolios li img {
   transition: 1.5s ease all;
@@ -48,14 +50,29 @@ export default {
   overflow: hidden;
 }
 .portfolios li:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
   z-index: 999;
+  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
 }
-.portfolios li:hover {
-  box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.35);
+.portfolios ul li a .texts {
+  opacity: 0;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: 0.75s ease all;
+  width: 100%;
+  background: #0ec8b9;
+  padding: 0.7rem 2rem;
 }
-.portfolios li:hover img {
-  transform: translateX(-50%) translateY(-5px) scale(1.15);
-  transform-origin: center top;
+.portfolios ul li:hover .texts {
+  opacity: 1;
+  bottom: 0;
+}
+.portfolios ul li h3,
+.portfolios ul li p {
+  color: #fff;
+}
+.portfolios ul li p {
+  font-weight: 700;
 }
 </style>

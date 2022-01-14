@@ -5,7 +5,7 @@ import boardDetail from './components/Board/boardDetail';
 import Career from './components/Career';
 import Review from './components/Review';
 import error from './components/e404';
-// import intro from './components/Common/intro';
+import intro from './components/Common/intro';
 
 const routes = [
     // {path: "/",component: intro},
@@ -14,7 +14,8 @@ const routes = [
     {path: "/Career",component: Career},
     {path: "/Review",component: Review},
     {path: "/detail/:id(\\d+)",component: boardDetail,name: 'boardDetail'},
-    {path: "/:anything(.*)",component: error}
+    {path: "/:anything(.*)",component: error},
+    {path: "/intro",component: intro}
 ];
 
 const router = createRouter({

@@ -1,38 +1,46 @@
 <template>
-  
   <div class="main">
     <intro />
 
-      <div class="vueHome">
+    <div class="vueHome">
+      <div>
         <div>
+          <h2>
+            Hello World!<br />
+            I’m <span>Sang Wan Park.</span>
+          </h2>
           <div>
-            <h2>
-              Hello World!<br />
-              I’m <span>Sang Wan Park.</span>
-            </h2>
-            <div> 
-              <p>
-                I worked since<br />
-                <span id="count" class="highlight">0</span> days.
-              </p>
-              <p>
-                It gotta be <span class="highlight">Fun</span>.<br />
-                It gotta be  <span class="highlight">Cool</span>.<br />
-                and it gotta be <span class="highlight">Sexy</span>. too.
-              </p>
-            </div>
-            <div class="main_links">
-              <router-link to="/Career"  class="button link">Career</router-link>
-              <a class="button github" href="https://github.com/yondupark/vuefolio" target="_blank">Github</a>
-              <a class="button figma" href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=0%3A1" target="_blank">Figma</a>
-            </div>
+            <p>
+              I worked since<br />
+              <span id="count" class="highlight">0</span> days.
+            </p>
+            <p>
+              It gotta be <span class="highlight">Fun</span>.<br />
+              It gotta be <span class="highlight">Cool</span>.<br />
+              and it gotta be <span class="highlight">Sexy</span>. too.
+            </p>
           </div>
-          <div>
-            <img src="../assets/images/bg_main.svg" alt="">
+          <div class="main_links">
+            <router-link to="/Career" class="button link">Career</router-link>
+            <a
+              class="button github"
+              href="https://github.com/yondupark/vuefolio"
+              target="_blank"
+              >Github</a
+            >
+            <a
+              class="button figma"
+              href="https://www.figma.com/file/7aZxc1H1u0QAb4Vu4jyScP/My-Porfolios?node-id=0%3A1"
+              target="_blank"
+              >Figma</a
+            >
           </div>
         </div>
+        <div>
+          <img src="../assets/images/bg_main.svg" alt="" />
+        </div>
+      </div>
     </div>
-
 
     <div class="portfolios">
       <div>
@@ -42,28 +50,25 @@
             works
           </h2>
           <p>Feel free to check my works out .</p>
-          <router-link to="/Myworks"  class="button viewmore3">
-            <span class="__hidden">
-              viewmore
-            </span>
+          <router-link to="/Myworks" class="button viewmore3">
+            <span class="__hidden"> viewmore </span>
           </router-link>
         </div>
         <ul class="boardmain">
-          <li v-for="(board, idx) in board.slice(0,3)" :key="idx">
-            <router-link :to="{ name: 'boardDetail', params: { id: idx }}">
-                <div class="image">
-                    <img :src="`${board.Image}`" alt="">
-                </div>
-                <div class="texts">
-                    <h3 class="title">{{ board.From }}</h3>
-                    <p>{{ board.Title }}</p>
-                </div>
+          <li v-for="(board, idx) in board.slice(0, 3)" :key="idx">
+            <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
+              <div class="image">
+                <img :src="`${board.Image}`" alt="" />
+              </div>
+              <div class="texts">
+                <h3 class="title">{{ board.From }}</h3>
+                <p>{{ board.Title }}</p>
+              </div>
             </router-link>
           </li>
         </ul>
       </div>
     </div>
-
 
     <div class="whatihave">
       <div>
@@ -87,7 +92,6 @@
             </ul>
           </li>
 
-
           <li>
             <h3>Tools</h3>
             <ul>
@@ -98,7 +102,6 @@
               <li>Adobe XD</li>
             </ul>
           </li>
-
 
           <li>
             <h3>Interests</h3>
@@ -113,7 +116,6 @@
       </div>
     </div>
 
-
     <div class="madeby">
       <div>
         <div class="title_desc">
@@ -123,38 +125,37 @@
         <ul class="list">
           <li>
             <div>
-              <img src="../assets/images/ico_follow01.png" alt="">
+              <img src="../assets/images/ico_follow01.png" alt="" />
             </div>
             Vue-CLI
           </li>
           <li>
             <div>
-              <img src="../assets/images/ico_follow02.png" alt="">
+              <img src="../assets/images/ico_follow02.png" alt="" />
             </div>
             Node.js
           </li>
           <li>
             <div>
-              <img src="../assets/images/ico_follow03.svg" alt="">
+              <img src="../assets/images/ico_follow03.svg" alt="" />
             </div>
             Scss / Sass
           </li>
           <li>
             <div>
-              <img src="../assets/images/ico_follow04.svg" alt="">
+              <img src="../assets/images/ico_follow04.svg" alt="" />
             </div>
             Firebase
           </li>
           <li>
             <div>
-              <img src="../assets/images/ico_follow05.svg" alt="">
+              <img src="../assets/images/ico_follow05.svg" alt="" />
             </div>
             Github
           </li>
         </ul>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -168,20 +169,22 @@ function calcdays() {
 }
 
 export default {
-  name: 'Home',
+  name: "Home",
   props: {
-      board : Array
+    board: Array,
+  },
+  methods: {
+
   },
   mounted() {
-      calcdays(); //마운트가 완료되면 날짜를 삽입
+    calcdays(); //마운트가 완료되면 날짜를 삽입
   },
-}
+};
 </script>
 
 
 <style lang="scss">
 .vueHome {
-  background:#F8FEFF;
   padding: 15.8rem 0 9.2rem;
   > div {
     @include flexbox;
@@ -202,7 +205,7 @@ export default {
     }
     p {
       font-size: 2.4rem;
-      letter-spacing: -.75px;
+      letter-spacing: -0.75px;
       line-height: 1.4;
       margin-bottom: 3.2rem;
       font-weight: 400;
@@ -237,7 +240,7 @@ export default {
         font-weight: bold;
       }
       li + li:before {
-        content: '+';
+        content: "+";
         display: block;
         position: absolute;
         top: 50%;
@@ -256,8 +259,7 @@ export default {
 
 .whatihave {
   padding: 5.5rem 0;
-  background:#F8FEFF;
-  >div {
+  > div {
     @include contentsWrap;
     @include flexbox;
     width: 102.5rem;
@@ -267,7 +269,7 @@ export default {
   }
   h2 {
     @include texttype1;
-    text-align:left;
+    text-align: left;
     font-weight: 700;
     font-size: 4rem;
     letter-spacing: -0.75px;
@@ -282,26 +284,26 @@ export default {
       letter-spacing: -0.75px;
       margin-bottom: 1.5rem;
     }
-    >li {
+    > li {
       color: $textColor;
       text-align: left;
       width: 300px;
     }
-    >li + li {
+    > li + li {
       margin-left: 65px;
     }
     ul {
       list-style: none;
     }
-    ul li{
+    ul li {
       position: relative;
       padding-left: 2rem;
     }
     ul li + li {
-      margin-top: .7rem;
+      margin-top: 0.7rem;
     }
     ul li:before {
-      content: '';
+      content: "";
       position: absolute;
       top: 8px;
       left: 0;
@@ -316,7 +318,7 @@ export default {
 
 .madeby {
   padding: 5.5rem 0;
-  >div {
+  > div {
     @include contentsWrap;
     @include flexbox;
     width: 102.5rem;
@@ -326,7 +328,7 @@ export default {
   }
   h2 {
     @include texttype2;
-    text-align:left;
+    text-align: left;
     font-weight: 700;
     letter-spacing: -0.75px;
     line-height: 1;
@@ -344,24 +346,24 @@ export default {
       height: 12rem;
       margin-bottom: 1.4rem;
     }
-    li img{
+    li img {
       position: absolute;
       top: 50%;
-      left:50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       display: block;
       min-width: 70px;
     }
   }
 }
-.portfolios .boardmain  li {
+.portfolios .boardmain li {
   &:hover {
     position: relative;
-    box-shadow: 0 0 10px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
     z-index: 999;
   }
-  .image{
+  .image {
     height: 25rem;
     img {
       display: block;
