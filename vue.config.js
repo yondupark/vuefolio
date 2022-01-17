@@ -14,5 +14,8 @@ module.exports = {
   },
   devServer: {
     overlay: false
+  },
+  configureWebpack: {
+    entry: ["babel-polyfill", "./src/main.js"]
   }
 }
