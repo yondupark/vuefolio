@@ -69,6 +69,17 @@
         </ul>
       </div>
     </div>
+    
+    <div>
+      <amp-ad width="100vw" height="320"
+          type="adsense"
+          data-ad-client="ca-pub-4955380824727986"
+          data-ad-slot="4287636356"
+          data-auto-format="rspv"
+          data-full-width="">
+        <div overflow=""></div>
+      </amp-ad>
+    </div>
 
     <div class="whatihave">
       <div>

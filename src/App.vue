@@ -1,7 +1,6 @@
 <template>
   <div class="vue-container">
     <headerComp />
-
     <section class="pageContens">
       <transition name="fade">
         <router-view :board="board"></router-view>

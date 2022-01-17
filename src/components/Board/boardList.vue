@@ -5,6 +5,16 @@
         <h2>My works</h2>
       </div>
       <ul class="v_listup">
+        <li>
+          <amp-ad width="100%" height="320"
+              type="adsense"
+              data-ad-client="ca-pub-4955380824727986"
+              data-ad-slot="7677244696"
+              data-auto-format="rspv"
+              data-full-width="">
+            <div overflow=""></div>
+          </amp-ad>
+        </li>
         <li v-for="(board, idx) in board" :key="idx">
           <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
             <div class="image">
