@@ -4,9 +4,10 @@
       <div class="title_desc">
         <h2>My works</h2>
       </div>
-      <Skeleton v-if="skull" />
 
-      <ul class="v_listup" v-show="!skull">
+      <Skeleton v-if="loading == true" :loading="loading" />
+
+      <ul class="v_listup" v-show="loaded">
         <li v-for="(board, idx) in board" :key="idx">
           <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
             <div class="image">
@@ -31,29 +32,34 @@ export default {
   name: "list",
   data() {
     return {
-      skull: true,
+      loading: true,
+      loaded: false,
     };
   },
   props: {
     board: Object,
   },
   methods: {},
-  mounted() {
-    console.log("스켈레톤 보여지는중");
-    document.onreadystatechange = () => {
+  created() {
+    const readyHandler = () => {
       if (document.readyState == "complete") {
-        console.log("이미지까지 로딩 완료되었습니다.");
-        this.skull = !this.skull;
-        console.log("스켈레톤 삭제 처리");
+        this.loading = false;
+        this.loaded = true;
+        setTimeout(function() {
+          document.removeEventListener("readystatechange", readyHandler);
+        }, 11000)
       }
     };
+
+    document.addEventListener("readystatechange", readyHandler);
+    readyHandler();
   },
 };
 </script>
 
 <style scoped>
-.v_listup {
-  margin-top: 4rem;
+.title_desc {
+  margin-bottom: 4rem;
 }
 .portfolios {
   min-height: 100vh;
@@ -62,6 +68,33 @@ export default {
   transition: 1s ease all;
   border: none;
 }
+
+.portfolios li a:before, .portfolios li a:after {
+  content: '';
+  width:100%;
+  height: 35rem;
+  display: block;
+  opacity: 0.2;
+  background:#ffce2e;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 1;
+  transform: translate(100%, 100%);
+  transition: .3s ease all;
+}
+.portfolios li a:after {
+  background:#ff8cc5;
+  transition: .6s ease all;
+}
+.portfolios li:hover a:before, .portfolios li:hover a:after {
+  transform: translate(0, 0);
+}
+.portfolios ul li a {
+  position: relative;
+  z-index: 1000;
+}
+
 .portfolios li img {
   transition: 1.5s ease all;
 }
@@ -81,7 +114,8 @@ export default {
   transition: 0.75s ease all;
   width: 100%;
   background: #0ec8b9;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 2rem 0.2rem;
+  z-index: 999;
 }
 .portfolios ul li:hover .texts {
   opacity: 1;
@@ -91,7 +125,12 @@ export default {
 .portfolios ul li p {
   color: #fff;
 }
+.portfolios ul li h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
 .portfolios ul li p {
+  font-size: 1.6rem;
   font-weight: 700;
 }
 </style>

@@ -48,7 +48,7 @@ export default {
   align-items: flex-start;
   flex-direction: row !important;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 5rem;
 }
 
 .card {
