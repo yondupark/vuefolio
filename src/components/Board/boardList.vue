@@ -4,7 +4,11 @@
       <div class="title_desc">
         <h2>My works</h2>
       </div>
-      <ul class="v_listup">
+
+
+      <Skeleton v-if="skull" />
+
+      <ul class="v_listup" v-show="!skull">
         <li v-for="(board, idx) in board" :key="idx">
           <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
             <div class="image">
@@ -22,13 +26,32 @@
 </template>
 
 <script>
+import Skeleton from '../Skeleton.vue';
+
 export default {
+  components: { Skeleton },
   name: "list",
+  data() {
+    return {
+      skull: true
+    }
+  },
   props: {
     board: Object,
   },
   methods: {
+
   },
+  mounted() {
+    console.log('스켈레톤 보여지는중');
+    document.onreadystatechange = () => {
+      if (document.readyState == "complete") {
+        console.log('이미지까지 로딩 완료되었습니다.');
+        this.skull = !this.skull
+        console.log('스켈레톤 삭제 처리');
+      }
+    }
+  }
 };
 </script>
 
@@ -52,7 +75,7 @@ export default {
 .portfolios li:hover {
   transform: scale(1.1);
   z-index: 999;
-  box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 .portfolios ul li a .texts {
   opacity: 0;
@@ -75,4 +98,5 @@ export default {
 .portfolios ul li p {
   font-weight: 700;
 }
+
 </style>

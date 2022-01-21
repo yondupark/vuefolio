@@ -2,6 +2,8 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from './components/Home';
 import boardList from './components/Board/boardList';
 import boardDetail from './components/Board/boardDetail';
+import boardWrite from './components/Board/boardWrite';
+import tiptap from './components/Board/tiptap';
 import Career from './components/Career';
 import Review from './components/Review';
 import error from './components/e404';
@@ -15,7 +17,9 @@ const routes = [
     {path: "/Review",component: Review},
     {path: "/detail/:id(\\d+)",component: boardDetail,name: 'boardDetail'},
     {path: "/:anything(.*)",component: error},
-    {path: "/intro",component: intro}
+    {path: "/intro",component: intro},
+    {path: "/Write",component: boardWrite},
+    {path: "/tiptap",component: tiptap}
 ];
 
 const router = createRouter({

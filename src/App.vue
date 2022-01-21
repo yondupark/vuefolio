@@ -25,7 +25,7 @@ export default {
     };
   },
   components: {
-    headerComp,
+    headerComp
   },
   mounted() {
     // 클릭 시 팡팡
@@ -189,4 +189,5 @@ export default {
   left: 0;
   z-index: 1;
 }
+
 </style>
