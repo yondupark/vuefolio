@@ -4,8 +4,6 @@
       <div class="title_desc">
         <h2>My works</h2>
       </div>
-
-
       <Skeleton v-if="skull" />
 
       <ul class="v_listup" v-show="!skull">
@@ -26,32 +24,30 @@
 </template>
 
 <script>
-import Skeleton from '../Skeleton.vue';
+import Skeleton from "../Skeleton.vue";
 
 export default {
   components: { Skeleton },
   name: "list",
   data() {
     return {
-      skull: true
-    }
+      skull: true,
+    };
   },
   props: {
     board: Object,
   },
-  methods: {
-
-  },
+  methods: {},
   mounted() {
-    console.log('스켈레톤 보여지는중');
+    console.log("스켈레톤 보여지는중");
     document.onreadystatechange = () => {
       if (document.readyState == "complete") {
-        console.log('이미지까지 로딩 완료되었습니다.');
-        this.skull = !this.skull
-        console.log('스켈레톤 삭제 처리');
+        console.log("이미지까지 로딩 완료되었습니다.");
+        this.skull = !this.skull;
+        console.log("스켈레톤 삭제 처리");
       }
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -98,5 +94,4 @@ export default {
 .portfolios ul li p {
   font-weight: 700;
 }
-
 </style>
