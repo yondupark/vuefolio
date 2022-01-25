@@ -1,11 +1,11 @@
 <template>
-  <div id="app">
+  <div id="writer">
     <Tiptap />
   </div>
 </template>
 
 <script>
-import Tiptap from '@/components/Board/tiptap'
+import Tiptap from "./tiptap.vue";
 
 export default {
   name: 'Writer',
@@ -14,3 +14,10 @@ export default {
   }
 }
 </script>
+
+<style>
+#writer {
+  min-height: 95vh;
+  padding: 20rem 0;
+}
+</style>
