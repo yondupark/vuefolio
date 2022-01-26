@@ -1,4 +1,0 @@
-@media print {
-    * {-webkit-print-color-adjust:exact;} /* print 시 백그라운드 컬러/이미지 표출*/
-    .header__wrap, .container, .footer__wrap, button.-print,.dialog__title, .dialog__close {display: none;}
-}

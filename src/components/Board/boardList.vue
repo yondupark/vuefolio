@@ -47,11 +47,12 @@ export default {
         this.loaded = true;
         setTimeout(function () {
           document.removeEventListener("readystatechange", readyHandler);
-        }, 11000);
+        }, 2000);
       }
     };
 
     document.addEventListener("readystatechange", readyHandler);
+    
     readyHandler();
     document.title = "포트폴리오 소개";
   },
