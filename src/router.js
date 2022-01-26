@@ -11,8 +11,8 @@ import intro from './components/Common/intro';
 
 const routes = [
     // {path: "/",component: intro},
-    {path: "/",component: Home},
-    {path: "/Myworks",component: boardList},
+    {path: "/",component: Home, meta: {title: 'Home'}},
+    {path: "/Myworks",component: boardList, meta: {title: 'Myworks'}},
     {path: "/Career",component: Career},
     {path: "/Review",component: Review},
     {path: "/detail/:id(\\d+)",component: boardDetail,name: 'boardDetail'},

@@ -45,14 +45,15 @@ export default {
       if (document.readyState == "complete") {
         this.loading = false;
         this.loaded = true;
-        setTimeout(function() {
+        setTimeout(function () {
           document.removeEventListener("readystatechange", readyHandler);
-        }, 11000)
+        }, 11000);
       }
     };
 
     document.addEventListener("readystatechange", readyHandler);
     readyHandler();
+    document.title = "포트폴리오 소개";
   },
 };
 </script>
@@ -70,25 +71,27 @@ export default {
   border: none;
 }
 
-.portfolios li a:before, .portfolios li a:after {
-  content: '';
-  width:100%;
+.portfolios li a:before,
+.portfolios li a:after {
+  content: "";
+  width: 100%;
   height: 35rem;
   display: block;
   opacity: 0.2;
-  background:#ffce2e;
+  background: #ffce2e;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   z-index: 1;
   transform: translate(100%, 100%);
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 .portfolios li a:after {
-  background:#ff8cc5;
-  transition: .6s ease all;
+  background: #ff8cc5;
+  transition: 0.6s ease all;
 }
-.portfolios li:hover a:before, .portfolios li:hover a:after {
+.portfolios li:hover a:before,
+.portfolios li:hover a:after {
   transform: translate(0, 0);
 }
 .portfolios ul li a {
@@ -108,7 +111,7 @@ export default {
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 .portfolios li .image img {
-    transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 .portfolios li:hover .image img {
   animation: viewall 5s ease both;
@@ -120,7 +123,6 @@ export default {
   to {
     transform: translate(-50%, -50%);
   }
-  
 }
 .portfolios ul li a .texts {
   opacity: 0;

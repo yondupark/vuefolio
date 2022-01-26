@@ -1,192 +1,217 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+
 :root {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
+
 a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
+
 ::selection {
-    background: $pointColor;
-    color: #fff;
+  background: $pointColor;
+  color: #fff;
 }
 
 @mixin baseColors {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 @mixin flexbox {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 @mixin contentsWrap {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 @mixin texttype1 {
-    font-size: 5.2rem;
-    letter-spacing: .075rem;
-    line-height: 1.4;
+  font-size: 5.2rem;
+  letter-spacing: .075rem;
+  line-height: 1.4;
 }
+
 @mixin texttype2 {
-    font-size: 2.4rem;
-    line-height: 1.4;
+  font-size: 2.4rem;
+  line-height: 1.4;
 }
+
 @mixin texttype3 {
-    font-size: 1.8rem;
-    line-height: 1.4;
+  font-size: 1.8rem;
+  line-height: 1.4;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 *[class].__hidden {
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    white-space: nowrap;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(1px);
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
 }
+
 html,
 body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
 body {
-    color: $textColor;
-    font-family: "Poppins", -apple-system, 'IBM Plex Sans KR', BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-    text-align: center;
-    background: $bgColor;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  color: $textColor;
+  font-family: "Poppins", -apple-system, 'IBM Plex Sans KR', BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+  text-align: center;
+  background: $bgColor;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 .grid {
-    @include flexbox;
-    align-items: center;
-    > div {
-        padding: 4rem 0;
-        font-size: 1.8rem;
-        text-align: left;
-        h1 {
-            font-size: 2.4rem;
-        }
-        p {
-            font-size: 1.8rem;
-        }
+  @include flexbox;
+  align-items: center;
+
+  >div {
+    padding: 4rem 0;
+    font-size: 1.8rem;
+    text-align: left;
+
+    h1 {
+      font-size: 2.4rem;
     }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
 }
+
 .grid.-col2 {
-    @include flexbox;
-    > div {
-        width: 50%;
-    }
+  @include flexbox;
+
+  >div {
+    width: 50%;
+  }
 }
-.scrollbar-track{
-    transition: .3s ease all;
+
+.scrollbar-track {
+  transition: .3s ease all;
 }
 
 .button {
-    display: inline-flex;
-    align-items: center;
-    padding: 7px 13px;
-    border-radius: 10px;
-    color: $white;
-    background: $pointColor;
-    border: 2px solid $pointColor;
-    cursor: pointer;
-    font-size: 1.6rem;
-    font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 13px;
+  border-radius: 10px;
+  color: $white;
+  background: $pointColor;
+  border: 2px solid $pointColor;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
+
 .button.viewmore {
-    display: inline-block;
-    width: 35rem;
-    height: 5rem;
-    margin-top: 2rem;
-    border: 2px solid $pointColor;
-    border-radius: .6rem;
-    color: $pointColor;
-    font-size: 1.8rem;
-    background: transparent;
+  display: inline-block;
+  width: 35rem;
+  height: 5rem;
+  margin-top: 2rem;
+  border: 2px solid $pointColor;
+  border-radius: .6rem;
+  color: $pointColor;
+  font-size: 1.8rem;
+  background: transparent;
 }
+
 .button.viewmore2 {
-    display: inline-block;
-    width: 35rem;
-    height: 5rem;
-    margin-top: 2rem;
-    border: 2px solid $pointColor;
-    border-radius: .6rem;
-    color: $pointColor;
-    font-size: 1.8rem;
-    background: transparent;
+  display: inline-block;
+  width: 35rem;
+  height: 5rem;
+  margin-top: 2rem;
+  border: 2px solid $pointColor;
+  border-radius: .6rem;
+  color: $pointColor;
+  font-size: 1.8rem;
+  background: transparent;
 }
 
 .button.viewmore3 {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 1rem;
-    border-radius: .6rem;
-    color: $pointColor;
-    font-size: 1.8rem;
-    background: $pointColor url(../assets/images/ico_viewmore3.svg) no-repeat center center;
-    transition: .3s ease all;
-    &:hover {
-        transform: scale(1.2);
-    }
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  border-radius: .6rem;
+  color: $pointColor;
+  font-size: 1.8rem;
+  background: $pointColor url(../assets/images/ico_viewmore3.svg) no-repeat center center;
+  transition: .3s ease all;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .button.contact::before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    display: block;
-    background: url(../assets/images/ico_contact.svg) no-repeat center center;
-    margin-right: 7px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: url(../assets/images/ico_contact.svg) no-repeat center center;
+  margin-right: 7px;
 }
+
 .button.link::before {
-    content: '';
-    width: 15px;
-    height: 15px;
-    display: block;
-    background: url(../assets/images/ico_link.svg) no-repeat center center;
-    margin-right: 7px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  display: block;
+  background: url(../assets/images/ico_link.svg) no-repeat center center;
+  margin-right: 7px;
 }
 
 .button.github {
-    background: #6e40bb;
-    border-color: #6e40bb;
+  background: #6e40bb;
+  border-color: #6e40bb;
 }
+
 .button.github::before {
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    background: url(../assets/images/ico_github.svg) no-repeat center center / 2rem;
-    margin-right: 7px;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background: url(../assets/images/ico_github.svg) no-repeat center center / 2rem;
+  margin-right: 7px;
 }
+
 .button.figma {
-    background: #000;
-    border-color: #000;
+  background: #000;
+  border-color: #000;
 }
+
 .button.figma::before {
-    content: '';
-    width: 2rem;
-    height: 2rem;
-    display: block;
-    background: url(../assets/images/ico_figma.svg) no-repeat center center / 1.5rem;
-    margin-right: 7px;
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background: url(../assets/images/ico_figma.svg) no-repeat center center / 1.5rem;
+  margin-right: 7px;
 }
+
 .button.goback {
   width: 5rem;
   height: 5rem;

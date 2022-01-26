@@ -2,10 +2,10 @@
   <div class="container -full">
     <div class="flex col-2">
       <div class="img_wrap">
-      <perfect-scrollbar>
-              <img src="../assets/images/img_main.jpg" alt="" />
-              <img src="../assets/images/img_boardlist.jpg" alt="" />
-      </perfect-scrollbar>
+        <perfect-scrollbar>
+          <img src="../assets/images/img_main.jpg" alt="" />
+          <img src="../assets/images/img_boardlist.jpg" alt="" />
+        </perfect-scrollbar>
       </div>
       <div class="contents_wrap">
         <div class="title_desc mb10">
@@ -56,15 +56,18 @@
 <style src="vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css"/>
 <style>
 .container > div {
-    padding: 9.5rem 0 0;
-  }
+  padding: 9.5rem 0 0;
+}
 </style>
 <script>
-import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
+import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 
-export default ({
+export default {
   components: {
-        PerfectScrollbar
-    }
-})
+    PerfectScrollbar,
+  },
+  created() {
+    document.title = "이 웹사이트를 만들면서";
+  },
+};
 </script>

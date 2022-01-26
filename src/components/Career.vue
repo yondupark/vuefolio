@@ -243,6 +243,9 @@
 <script>
 export default {
   name: "Career",
+  created() {
+    document.title = "그동안 해온 이력";
+  },
 };
 </script>
 

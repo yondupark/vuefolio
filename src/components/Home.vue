@@ -170,14 +170,16 @@ function calcdays() {
 
 export default {
   name: "Home",
+  title: "Welcome!",
   props: {
     board: Array,
   },
-  methods: {
-
-  },
+  methods: {},
   mounted() {
     calcdays(); //마운트가 완료되면 날짜를 삽입
+  },
+  created() {
+    document.title = "Welcome! 어서오세요!";
   },
 };
 </script>

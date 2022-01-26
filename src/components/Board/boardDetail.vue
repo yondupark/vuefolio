@@ -39,8 +39,8 @@
             </li>
           </ul>
           <div>
-              <span>작업내용 : </span>
-              <div v-html="board[$route.params.id].Html"></div>
+            <span>작업내용 : </span>
+            <div v-html="board[$route.params.id].Html"></div>
           </div>
         </div>
       </div>
@@ -49,11 +49,13 @@
 </template>
 
 <script>
-
 export default {
   name: "boardDetail",
   props: {
     board: Array,
+  },
+  created() {
+    document.title = "포트폴리오 소개";
   },
 };
 </script>
