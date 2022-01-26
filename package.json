@@ -21,7 +21,8 @@
     "vue": "^3.0.0",
     "vue-animejs": "^2.1.1",
     "vue-router": "^4.0.12",
-    "vue-skeletor": "^1.0.6"
+    "vue-skeletor": "^1.0.6",
+    "vue3-perfect-scrollbar": "^1.5.5"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.8",

@@ -359,7 +359,7 @@ export default {
 .portfolios .boardmain li {
   &:hover {
     position: relative;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);
     z-index: 999;
   }
@@ -376,7 +376,7 @@ export default {
   }
   .texts {
     h3 {
-      font-weight: 700;
+      font-weight: 500;
     }
     p {
       width: 100%;

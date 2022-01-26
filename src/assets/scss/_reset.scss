@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 :root {
     font-size: 62.5%;
 }
@@ -66,7 +65,7 @@ body {
 }
 body {
     color: $textColor;
-    font-family: -apple-system, 'Nanum Gothic', BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Poppins", -apple-system, 'IBM Plex Sans KR', BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
     text-align: center;
     background: $bgColor;
     -webkit-font-smoothing: antialiased;

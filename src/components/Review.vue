@@ -2,8 +2,10 @@
   <div class="container -full">
     <div class="flex col-2">
       <div class="img_wrap">
-        <img src="../assets/images/img_main.jpg" alt="" />
-        <img src="../assets/images/img_boardlist.jpg" alt="" />
+      <perfect-scrollbar>
+              <img src="../assets/images/img_main.jpg" alt="" />
+              <img src="../assets/images/img_boardlist.jpg" alt="" />
+      </perfect-scrollbar>
       </div>
       <div class="contents_wrap">
         <div class="title_desc mb10">
@@ -51,30 +53,18 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.flex.col-2 {
-  @include flexbox;
-  height: calc(100vh - 4.9rem);
-  overflow: hidden;
-  > div {
-    height: 100%;
-    overflow: auto;
+<style src="vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css"/>
+<style>
+.container > div {
+    padding: 9.5rem 0 0;
   }
-  .img_wrap {
-    flex: 0 0 35%;
-  }
-  .contents_wrap {
-    flex: 0 0 65%;
-    padding: 2rem;
-    text-align: left;
-    line-height: 1.6;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-  }
-}
-.container {
-  > div {
-    padding: 8.5rem 0 0;
-  }
-}
 </style>
+<script>
+import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
+
+export default ({
+  components: {
+        PerfectScrollbar
+    }
+})
+</script>

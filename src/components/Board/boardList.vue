@@ -64,6 +64,7 @@ export default {
 }
 .portfolios {
   min-height: 100vh;
+  padding-top: 13.5rem;
 }
 .portfolios li {
   transition: 1s ease all;

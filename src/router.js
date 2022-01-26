@@ -16,10 +16,10 @@ const routes = [
     {path: "/Career",component: Career},
     {path: "/Review",component: Review},
     {path: "/detail/:id(\\d+)",component: boardDetail,name: 'boardDetail'},
-    {path: "/:anything(.*)",component: error},
     {path: "/intro",component: intro},
     {path: "/Write",component: boardWrite},
-    {path: "/tiptap",component: tiptap}
+    {path: "/tiptap",component: tiptap},
+    {path: "/:anything(.*)",component: error}
 ];
 
 const router = createRouter({
