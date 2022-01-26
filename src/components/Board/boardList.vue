@@ -5,7 +5,6 @@
         <h2>My works</h2>
       </div>
 
-
       <Skeleton v-if="loading == true" :loading="loading" />
 
       <ul class="v_listup" v-show="loaded">
@@ -107,6 +106,21 @@ export default {
   transform: scale(1.1);
   z-index: 999;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+.portfolios li .image img {
+    transform: translate(-50%, 0);
+}
+.portfolios li:hover .image img {
+  animation: viewall 5s ease both;
+}
+@keyframes viewall {
+  from {
+    transform: translate(-50%, 0);
+  }
+  to {
+    transform: translate(-50%, -50%);
+  }
+  
 }
 .portfolios ul li a .texts {
   opacity: 0;
