@@ -71,7 +71,6 @@
     }
   }
 
-
   .menus {
     @include flexbox;
   }
@@ -83,9 +82,9 @@
 
 .logoico {
   display: block;
-  width: 6rem;
-  height: 3.5rem;
-  background: url(../assets/images/logo.svg) no-repeat center center / 100%;
+  width: 7.9rem;
+  height: 4.5rem;
+  background: url(../assets/images/logo.svg) no-repeat center center;
 }
 
 /* Router page Transition */
@@ -378,7 +377,7 @@ footer {
     align-items: flex-start;
     padding: 0;
   }
-} 
+}
 
 .portfolios__img {
   width: 50%;
@@ -667,6 +666,13 @@ footer {
     }
   }
 
+  .logoico {
+    display: block;
+    width: 6rem;
+    height: 3.5rem;
+    background: url(../assets/images/logo.svg) no-repeat center center / 100%;
+  }
+
   .portfolios {
     .button.viewmore3 {
       position: absolute;
@@ -684,18 +690,14 @@ footer {
       }
     }
   }
-  
 
-
-
-  
-.container {
-  & > div.portfolios__view {
-    width: 100%;
-    display: block;
-    padding: 0;
+  .container {
+    & > div.portfolios__view {
+      width: 100%;
+      display: block;
+      padding: 0;
+    }
   }
-} 
 
   .container > div.portfolios__title {
     padding: 5rem 0 2rem;
@@ -709,4 +711,3 @@ footer {
     width: 100%;
   }
 }
-
