@@ -53,12 +53,14 @@
   </div>
 </template>
 
-<style src="vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css"/>
+<style src="vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css" />
+
 <style>
 .container > div {
   padding: 9.5rem 0 0;
 }
 </style>
+
 <script>
 import { PerfectScrollbar } from "vue3-perfect-scrollbar";
 

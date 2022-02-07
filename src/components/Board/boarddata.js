@@ -105,6 +105,7 @@ export default [
   },
   {
     From: "한컴GMD",
+    workedat: "제이브릭스",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
       "https://firebasestorage.googleapis.com/v0/b/swvuefolio.appspot.com/o/portfolios%2Ferror.svg?alt=media&token=f65bad2a-db23-498a-bd4a-0e674ba82416",
@@ -114,6 +115,7 @@ export default [
   },
   {
     From: "지니언스",
+    workedat: "제이브릭스",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
       "https://firebasestorage.googleapis.com/v0/b/swvuefolio.appspot.com/o/portfolios%2Ferror.svg?alt=media&token=f65bad2a-db23-498a-bd4a-0e674ba82416",
@@ -123,6 +125,7 @@ export default [
   },
   {
     From: "KINX",
+    workedat: "제이브릭스",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image: "https://firebasestorage.googleapis.com/v0/b/swvuefolio.appspot.com/o/portfolios%2Fscreenshot11.png?alt=media&token=e90edc5b-7cf4-448d-ae47-f456328b801d",
     Percentage: "100",
@@ -131,6 +134,7 @@ export default [
   },
   {
     From: "서울대학교",
+    workedat: "제이브릭스",
     Hash: ["반응형", "Html", "Css", "jQuery"],
     Image:
       "https://firebasestorage.googleapis.com/v0/b/swvuefolio.appspot.com/o/portfolios%2Ferror.svg?alt=media&token=f65bad2a-db23-498a-bd4a-0e674ba82416",

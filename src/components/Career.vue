@@ -253,6 +253,10 @@ export default {
 .career_detail {
   width: 70rem;
   margin: 0 auto;
+  animation: titleAnim2 1s ease forwards;
+  opacity: 0;
+  animation-delay: .5s;
+  transform: translateY(5rem);
   ul {
     list-style: none;
     text-align: left;

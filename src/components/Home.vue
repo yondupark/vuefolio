@@ -388,4 +388,64 @@ export default {
     }
   }
 }
+
+
+
+
+
+@media screen and (max-width:480px) {
+  .vueHome {
+    padding: 4rem 0 0;
+    & > div{
+       & > div:last-child {
+        display: none;
+      }
+       .main_links {
+          display: block;
+          .button {
+            display: flex;
+            width: 100%;
+            margin: .5rem 0;
+          }
+       }
+    }
+    
+  }
+  .portfolios {
+    padding-bottom: 0;
+    .boardmain {
+      display: block;
+      li {
+        width: 100%;
+      }
+    }
+
+  }
+  .whatihave {
+    
+    padding: 0;
+    .list {
+      display: block;
+      li {
+        margin: 1.5rem 0;
+      }
+      li + li {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .madeby {
+     ul {
+       display: block;
+       li {
+         width: 100%;
+         img {
+           
+         }
+       }
+     }
+  }
+  
+}
 </style>

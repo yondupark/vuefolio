@@ -4,9 +4,11 @@
       <div class="title_desc">
         <h2>My works</h2>
       </div>
-
+      <!-- 로딩 전 표시 -->
       <Skeleton v-if="loading == true" :loading="loading" />
+      <!-- // 로딩 전 표시 -->
 
+      <!-- 렌더될 페이지 -->
       <ul class="v_listup" v-show="loaded">
         <li v-for="(board, idx) in board" :key="idx">
           <router-link :to="{ name: 'boardDetail', params: { id: idx } }">
@@ -20,6 +22,7 @@
           </router-link>
         </li>
       </ul>
+      <!-- // 렌더될 페이지 -->
     </div>
   </div>
 </template>
@@ -41,6 +44,9 @@ export default {
   },
   methods: {},
   created() {
+    document.title = "포트폴리오 소개";
+  },
+  mounted() {
     const readyHandler = () => {
       if (document.readyState == "complete") {
         this.loading = false;
@@ -54,8 +60,8 @@ export default {
     document.addEventListener("readystatechange", readyHandler);
     
     readyHandler();
-    document.title = "포트폴리오 소개";
   },
+  
 };
 </script>
 
@@ -70,26 +76,6 @@ export default {
 .portfolios li {
   transition: 1s ease all;
   border: none;
-}
-
-.portfolios li a:before,
-.portfolios li a:after {
-  content: "";
-  width: 100%;
-  height: 35rem;
-  display: block;
-  opacity: 0.2;
-  background: #ffce2e;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transform: translate(100%, 100%);
-  transition: 0.3s ease all;
-}
-.portfolios li a:after {
-  background: #ff8cc5;
-  transition: 0.6s ease all;
 }
 .portfolios li:hover a:before,
 .portfolios li:hover a:after {
@@ -115,14 +101,14 @@ export default {
   transform: translate(-50%, 0);
 }
 .portfolios li:hover .image img {
-  animation: viewall 5s ease both;
+  animation: viewall 3s ease both;
 }
 @keyframes viewall {
   from {
     transform: translate(-50%, 0);
   }
   to {
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
   }
 }
 .portfolios ul li a .texts {
@@ -133,7 +119,7 @@ export default {
   transition: 0.75s ease all;
   width: 100%;
   background: #0ec8b9;
-  padding: 0.7rem 2rem 0.2rem;
+  padding: 1.7rem 1.3rem 1.2rem;
   z-index: 999;
 }
 .portfolios ul li:hover .texts {
@@ -151,5 +137,17 @@ export default {
 .portfolios ul li p {
   font-size: 1.6rem;
   font-weight: 700;
+}
+
+@media screen and (max-width:480px) {
+  .portfolios {
+    padding-top: 3rem;
+  }
+  .portfolios ul {
+    display: block;
+  }
+  .portfolios li {
+    width: 100%;
+  }
 }
 </style>
