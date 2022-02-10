@@ -9,6 +9,7 @@
     "build:delpoy": "vue-cli-service build && firebase deploy"
   },
   "dependencies": {
+    "@tiptap/extension-image": "^2.0.0-beta.26",
     "@tiptap/starter-kit": "^2.0.0-beta.174",
     "@tiptap/vue-3": "^2.0.0-beta.89",
     "axios": "^0.24.0",
@@ -16,8 +17,6 @@
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
     "firebase": "^9.6.1",
-    "tiptap": "^1.32.2",
-    "tiptap-extensions": "^1.35.2",
     "vue": "^3.0.0",
     "vue-animejs": "^2.1.1",
     "vue-router": "^4.0.12",
