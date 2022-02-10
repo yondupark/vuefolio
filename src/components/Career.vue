@@ -318,7 +318,7 @@ export default {
     height: 2px;
     border-radius: 50%;
     position: absolute;
-    top: 0.9rem;
+    top: 1.65rem;
     left: 0;
     background: #000;
     display: block;

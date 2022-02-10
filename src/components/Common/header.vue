@@ -11,7 +11,8 @@
         <router-link to="/Myworks">My Works</router-link>
         <router-link to="/Career">Career</router-link>
         <router-link to="/Review">Review</router-link>
-        <button class="button contact" @click="modal = true">Contact</button>
+        <!-- <button class="button contact" @click="modal = true">Contact</button> -->
+        <button class="button contact" onclick="javascript:alert('로그인해주세요😎')">Contact</button>
       </div>
     </div>
   </nav>
