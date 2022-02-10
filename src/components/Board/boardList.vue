@@ -28,6 +28,7 @@
 </template>
 
 <script>
+//import "./js/index";
 import Skeleton from "../Skeleton.vue";
 
 export default {
@@ -60,8 +61,9 @@ export default {
     document.addEventListener("readystatechange", readyHandler);
     
     readyHandler();
+    
+    console.log(this.$firebase);
   },
-  
 };
 </script>
 

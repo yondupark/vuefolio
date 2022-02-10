@@ -172,7 +172,7 @@ export default {
 <style>
 .fade-enter-active,
 .fade-leave-active {
-  transition: 2s ease all;
+  transition: 5s ease all;
 }
 
 .fade-enter-from,

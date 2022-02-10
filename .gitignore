@@ -26,6 +26,9 @@ pnpm-debug.log*
 .firebase
 .firebaserc
 firebase.json
+firebaseConfig.js
+
+
 *.txt
 *.cache
 yarn.lock

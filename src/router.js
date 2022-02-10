@@ -15,7 +15,7 @@ const routes = [
     {path: "/Myworks",component: boardList, meta: {title: 'Myworks'}},
     {path: "/Career",component: Career},
     {path: "/Review",component: Review},
-    {path: "/detail/:id(\\d+)",component: boardDetail,name: 'boardDetail'},
+    {path: "/detail/:id(\\d+)",component: boardDetail, name: 'boardDetail'},
     {path: "/intro",component: intro},
     {path: "/Write",component: boardWrite},
     {path: "/tiptap",component: tiptap},

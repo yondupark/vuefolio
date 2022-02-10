@@ -20,28 +20,31 @@
               <span>{{ board[$route.params.id].From }}</span>
             </li>
             <li>
-              <span>소속사 :</span>
-              <span>{{ board[$route.params.id].workedat }}</span>
-            </li>
-            <li>
               <span>참여율 :</span>
               <span>{{ board[$route.params.id].Percentage }} %</span>
             </li>
             <li>
               <span>주요업무 : </span>
-              <div>
-                {{ board[$route.params.id].Hash[0] }}
-                {{ board[$route.params.id].Hash[1] }}
-                {{ board[$route.params.id].Hash[2] }}
-                {{ board[$route.params.id].Hash[3] }}
-                {{ board[$route.params.id].Hash[4] }}
+              <div class="flexbox">
+                <span v-for="(Hashesh, idx) in board[$route.params.id].Hash" :key="idx" class="hash">
+                  {{ Hashesh }}
+                </span>
               </div>
             </li>
+            <li>
+              <span class="descriptiontitle">작업내용 : </span>
+              <div v-html="board[$route.params.id].Html" class="description"></div>
+            </li>
+            <li>
+              <span>파일링크</span>
+              <ul class="flexbox links">
+                <li v-for="(links, idx) in board[$route.params.id].links" :key="idx" class="links">
+                  <!-- <a :href="links" target="_blank">Link #{{ idx }}</a> -->
+                  <a href="javascript:alert('준비중입니다🥰')" >Link #{{ idx }}</a>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <div>
-            <span>작업내용 : </span>
-            <div v-html="board[$route.params.id].Html"></div>
-          </div>
         </div>
       </div>
     </div>
