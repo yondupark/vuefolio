@@ -16,7 +16,6 @@
 ## Visit Website
 
 - Vue3.X로 개발 - https://swvuefolio.web.app/
-- Nuxt.js로 개발 - https://nuxtvuefolio.web.app/
 
   
 ## Run it

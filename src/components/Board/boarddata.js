@@ -18,7 +18,7 @@ export default [
       기술의 발전에 감사하며 작업한 프로젝트였다.
     `,
     links: ["javascript:alert('준비중입니다🥰')", "javascript:alert('준비중입니다🥰')", "javascript:alert('준비중입니다🥰')", "javascript:alert('준비중입니다🥰')"],
-    curruntLinks: ["javascript:alert('준비중입니다🥰')"],
+    curruntLinks: ["https://www.culture.go.kr/"],
     id: 0,
   },
   {
@@ -36,7 +36,7 @@ export default [
       최근 챗봇 서비스를 제공하는 사이트들이 많아 해당 부분들을 참고하며 작업했다.
     `,
     links: ["javascript:alert('준비중입니다🥰')"],
-    curruntLinks: ["https://www.culture.go.kr/data/main/main.do"],
+    curruntLinks: ["https://www.culture.go.kr/"],
     id: 1,
   },
   {
