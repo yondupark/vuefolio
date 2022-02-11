@@ -1223,6 +1223,18 @@ a:focus-visible {
     }
   }
 }
+
+  
+.links2 {
+  a {
+    background: $textColor;
+    &:focus,
+    &:hover {
+      background: $error;
+    }
+
+  }
+}
 @keyframes ddoing {
   30% {
     transform: scale(1.2);

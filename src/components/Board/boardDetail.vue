@@ -40,7 +40,15 @@
               <ul class="flexbox links">
                 <li v-for="(links, idx) in board[$route.params.id].links" :key="idx" class="links">
                   <!-- <a :href="links" target="_blank">Link #{{ idx }}</a> -->
-                  <a href="javascript:alert('준비중입니다🥰')" >Link #{{ idx }}</a>
+                  <a :href="links">Link #{{ idx + 1 }}</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span>실주소</span>
+              <ul class="flexbox links">
+                <li v-for="(links2, idx) in board[$route.params.id].curruntLinks" :key="idx" class="links2">
+                  <a :href="links2" target="_blank">Link To</a>
                 </li>
               </ul>
             </li>
