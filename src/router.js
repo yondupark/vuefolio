@@ -6,6 +6,7 @@ import boardWrite from './components/Board/boardWrite';
 import Career from './components/Career';
 import Review from './components/Review';
 import error from './components/e404';
+import FlowLife from './components/FlowLife';
 
 const routes = [
     // {path: "/",component: intro},
@@ -13,6 +14,7 @@ const routes = [
     {path: "/Myworks",component: boardList, meta: {title: 'Myworks'}},
     {path: "/Career",component: Career},
     {path: "/Review",component: Review},
+    {path: "/FlowLife",component: FlowLife},
     {path: "/detail/:id(\\d+)",component: boardDetail, name: 'boardDetail'},
     {path: "/Write",component: boardWrite},
     {path: "/:anything(.*)",component: error}

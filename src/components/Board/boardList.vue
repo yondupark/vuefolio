@@ -51,7 +51,6 @@ export default {
     board: Object,
   },
   beforecreated() {
-    console.log('beforecreated');
     document.title = "포트폴리오 소개";
   },
   mounted() {    
