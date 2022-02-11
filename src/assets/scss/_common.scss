@@ -273,7 +273,10 @@ footer {
     align-items: flex-start;
     padding: 0;
   }
-
+  > div.title_desc {
+    flex-direction: row;
+    align-items: center;
+  }
   h2 {
     @include texttype1;
     text-align: left;

@@ -83,9 +83,8 @@ export default {
         Dropcursor,
       ],
       content: `
-        <p>This is a basic example of implementing images. Drag to re-order.</p>
+        <p>여기에 글을 작성 할 수 있어요. Tiptab 에디터 !! Wow!! 😆</p>
         <img src="https://source.unsplash.com/8xznAGy4HcY/800x400" />
-        <img src="https://source.unsplash.com/K9QHL52rE2k/800x400" />
       `,
     })
   },

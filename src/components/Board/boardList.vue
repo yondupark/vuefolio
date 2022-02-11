@@ -3,9 +3,16 @@
     <div class="portfolios">
       <div class="title_desc">
         <h2>My works</h2>
+        <!-- <router-link to="/Write" class="button write">
+          <span class="__hidden"> viewmore </span>
+        </router-link> -->
+
+        <a href="javascript:alert('🙄로그인해주세요.')" class="button write">
+          <span class="__hidden"> viewmore </span>
+        </a>
       </div>
       <!-- 로딩 전 표시 -->
-      <Skeleton v-if="loading == true" :loading="loading" />
+      <Skeleton v-if="loading == true" />
       <!-- // 로딩 전 표시 -->
 
       <!-- 렌더될 페이지 -->
@@ -43,27 +50,22 @@ export default {
   props: {
     board: Object,
   },
-  methods: {},
-  created() {
+  beforecreated() {
+    console.log('beforecreated');
     document.title = "포트폴리오 소개";
   },
-  mounted() {
-    const readyHandler = () => {
-      if (document.readyState == "complete") {
-        this.loading = false;
-        this.loaded = true;
-        setTimeout(function () {
-          document.removeEventListener("readystatechange", readyHandler);
-        }, 2000);
-      }
-    };
-
-    document.addEventListener("readystatechange", readyHandler);
-    
-    readyHandler();
-    
-    console.log(this.$firebase);
+  mounted() {    
+    console.log('mounted');
+    setTimeout(() => {
+      this.loading = false;
+      this.loaded = true;
+    }, 1500);
   },
+  unmounted() {
+    console.log('destroyed');
+    this.loading == true;
+    this.loaded == false;
+  }
 };
 </script>
 
